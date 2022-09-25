@@ -14,4 +14,10 @@ public static class Manager_Events
         public static Event OnButtonSelect = new();
     }
 
+    public static class GameManager
+    {
+        public static Event Pause = new();
+        public static Event Unpause = new();
+    }
+
 }

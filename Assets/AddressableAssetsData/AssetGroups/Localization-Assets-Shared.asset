@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Assets-Shared
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Assets-Shared
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 2c9c351aad60ee74ba30b32a3b9d6f38
+  m_SerializeEntries:
+  - m_GUID: c4b1f1840c9bb144187fd88d79395032
+    m_Address: Assets/Settings/Localization/Tables/Boards Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: e5307a48c61278446b97e9e2d933daab
+    m_Address: Assets/Settings/Localization/Tables/Boards_Routes Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: bfcc21b75035aa543b0f576e6dfdc0bd
+    m_Address: Assets/Settings/Localization/Tables/Boards_Viridian Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 2edb47f9322dfff4c9f1581e909de10e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 2ee32e9f4bf2c7c45ab078813726fe60, type: 2}
+    - {fileID: 11400000, guid: 02921c3afe9092c45bd0fa2811526a85, type: 2}

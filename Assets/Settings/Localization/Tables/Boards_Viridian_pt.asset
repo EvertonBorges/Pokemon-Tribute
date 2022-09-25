@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Boards_Viridian_pt
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pt
+  m_SharedData: {fileID: 11400000, guid: bfcc21b75035aa543b0f576e6dfdc0bd, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 9399398400
+    m_Localized: DICAS PARA TREINADORES
+    m_Metadata:
+      m_Items: []
+  - m_Id: 467052490752
+    m_Localized: "Os movimentos de \nbatalha do POKEMON\ns\xE3o limitados pelos seus
+      \nPONTOS DE PODER, PP."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 496685248512
+    m_Localized: "Para recuperar o PP,\ndescanse seu \nPOKEMON exausto\nno CENTRO
+      POKEMON!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 672195899392
+    m_Localized: "CIDADE DE VIRIDIAN\nO Paraiso \nEternamente Verde."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5659055583232
+    m_Localized: 'Pegue POKEMON
+
+      e expanda sua
+
+      colecao!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5815855443968
+    m_Localized: 'Quanto mais voce
+
+      tiver, mais facil sera
+
+      sua luta!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5954133258240
+    m_Localized: 'CIDADE DE VIRIDIAN
+
+      GINASIO POKEMON'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

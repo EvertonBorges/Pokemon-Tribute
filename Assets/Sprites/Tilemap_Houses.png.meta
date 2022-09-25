@@ -128,7 +128,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: House_Simple
+      name: Tilemap_Houses_0
       rect:
         serializedVersion: 2
         x: 0
@@ -142,14 +142,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bea1cfde4e623b488d5ada974792be5
-      internalID: 97441010
+      spriteID: 70eb86cce3ba6d94e9f2aef5e74c0231
+      internalID: 636702128
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_Oak
+      name: Tilemap_Houses_1
       rect:
         serializedVersion: 2
         x: 80
@@ -163,8 +163,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d81b17c571ba3ea47967ce79ce6b5f73
-      internalID: -2048702191
+      spriteID: ecfc9ce1ad2cce74fab04e01d93bd974
+      internalID: 1061254975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Houses_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 928
+        width: 192
+        height: 96
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e0d233a492c77941b2ae98921b0d73c
+      internalID: 588451405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Houses_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 928
+        width: 64
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d304c9cfd5b1e64dad8d33fe73bdb49
+      internalID: -1081445501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Houses_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 848
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee20cae4a48cb964ab5d4afd20465e6d
+      internalID: -405828016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Houses_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 848
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c2b562fa126f041bf2261847f733a9
+      internalID: -1752017452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Houses_6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 848
+        width: 96
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf8f079ef56d594986e5bd03c59b9a1
+      internalID: 1782819745
       vertices: []
       indices: 
       edges: []
@@ -180,42 +285,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Tilemap_Houses_35: 522015664
-      Tilemap_Houses_27: -1579478186
       Tilemap_Houses_6: 1782819745
-      Tilemap_Houses_33: 718604935
-      Tilemap_Houses_16: 385469939
       Tilemap_Houses_4: -405828016
-      Tilemap_Houses_15: -1159598750
-      House_Oak: -2048702191
-      Tilemap_Houses_26: -131704504
-      Tilemap_Houses_22: 771048587
-      Tilemap_Houses_23: -12700338
       Tilemap_Houses_3: -1081445501
       Tilemap_Houses_2: 588451405
-      Tilemap_Houses_21: 2012211297
       Tilemap_Houses_0: 636702128
-      Tilemap_Houses_9: 2085533153
-      Tilemap_Houses_34: 685490313
-      Tilemap_Houses_14: 925732736
-      Tilemap_Houses_24: 1362084279
-      Tilemap_Houses_8: -1156963643
-      Tilemap_Houses_10: -1928843908
-      Tilemap_Houses_31: 1366063147
-      House_Simple: 97441010
-      Tilemap_Houses_17: 1779147455
-      Tilemap_Houses_32: 1564361809
       Tilemap_Houses_5: -1752017452
       Tilemap_Houses_1: 1061254975
-      Tilemap_Houses_7: -1377027439
-      Tilemap_Houses_25: -1649400818
-      Tilemap_Houses_28: -1683683559
-      Tilemap_Houses_11: 1361566362
-      Tilemap_Houses_12: -1365913712
-      Tilemap_Houses_13: 1293499950
-      Tilemap_Houses_18: 2057362925
-      Tilemap_Houses_19: -1383060049
-      Tilemap_Houses_29: -1521415859
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

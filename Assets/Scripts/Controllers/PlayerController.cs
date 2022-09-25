@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -17,8 +16,13 @@ public class PlayerController : MonoBehaviour
     private Vector2 nextPosition = Vector2.zero;
     private Vector2 m_boxCheckSize = new(-0.1f, 0.1f);
 
+    private bool IsBlocked => GameManager.Instance.IsBlocked;
+
     private void Update()
     {
+        if (IsBlocked)
+            return;
+
         if (m_move == Vector2.zero)
             return;
 
@@ -32,14 +36,16 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 move = Vector2.zero;
 
-        if (m_move.x > 0f)
-            move = Vector2.right;
-        else if (m_move.y < 0f)
-            move = Vector2.down;
-        else if (m_move.x < 0f)
-            move = Vector2.left;
-        else if (m_move.y > 0f)
-            move = Vector2.up;
+        if (m_move.y != 0f)
+            if (m_move.y < 0f)
+                move = Vector2.down;
+            else
+                move = Vector2.up;
+        else if (m_move.x != 0f)
+            if (m_move.x > 0f)
+                move = Vector2.right;
+            else
+                move = Vector2.left;
 
         if (move == Vector2.zero)
             return;
@@ -95,6 +101,14 @@ public class PlayerController : MonoBehaviour
 
     private void OnButtonA()
     {
+        if (IsBlocked)
+        {
+            if (Manager_Dialog.Instance.IsShowing)
+                Manager_Dialog.Instance.NextLine();
+
+            return;
+        }
+
         var collider = Physics2D.OverlapArea(nextPosition + m_boxCheckSize, nextPosition - m_boxCheckSize, _interactableLayerMask);
 
         if (collider == null || !collider.TryGetComponent(out IInteractable interactable))
@@ -105,7 +119,13 @@ public class PlayerController : MonoBehaviour
 
     private void OnButtonB()
     {
-        Debug.Log("OnButtonB");
+        if (IsBlocked)
+        {
+            if (Manager_Dialog.Instance.IsShowing)
+                Manager_Dialog.Instance.NextLine();
+
+            return;
+        }
     }
 
     private void OnButtonPause()

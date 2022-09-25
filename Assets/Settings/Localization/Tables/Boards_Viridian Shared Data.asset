@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Boards_Viridian Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Boards_Viridian
+  m_TableCollectionNameGuidString: bfcc21b75035aa543b0f576e6dfdc0bd
+  m_Entries:
+  - m_Id: 9399398400
+    m_Key: tips_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 467052490752
+    m_Key: tip_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 496685248512
+    m_Key: tip_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 672195899392
+    m_Key: viridian_city_entrance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5659055583232
+    m_Key: tip_04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5815855443968
+    m_Key: tip_05
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5954133258240
+    m_Key: gym
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 6173572542930092033
+  references:
+    version: 2
+    RefIds:
+    - rid: 6173572542930092033
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1664080229896

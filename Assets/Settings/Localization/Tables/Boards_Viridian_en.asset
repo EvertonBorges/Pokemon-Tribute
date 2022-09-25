@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Boards_Viridian_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: bfcc21b75035aa543b0f576e6dfdc0bd, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 9399398400
+    m_Localized: TRAINER TIPS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 467052490752
+    m_Localized: 'The battle moves
+
+      of POKEMON are
+
+      limited by their
+
+      POWER
+      POINTs, PP.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 496685248512
+    m_Localized: 'To replenish PP,
+
+      rest your tired
+
+      POKEMON at a
+
+      POKEMON
+      CENTER!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 672195899392
+    m_Localized: 'VIRIDIAN CITY
+
+      The Eternally
+
+      Green Paradise'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5659055583232
+    m_Localized: 'Catch POKEMON
+
+      and expand your
+
+      collection!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5815855443968
+    m_Localized: 'The more you have,
+
+      the easier it is
+
+      to fight!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5954133258240
+    m_Localized: 'VIRIDIAN CITY
+
+      POKEMON GYM'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
