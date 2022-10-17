@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform _body;
     [SerializeField] private LayerMask _notWalkableLayerMask;
     [SerializeField] private LayerMask _interactableLayerMask;
+    [SerializeField] private LayerMask _doorLayerMask;
 
     private Vector2 m_move = Vector2.zero;
 
@@ -58,6 +59,15 @@ public class PlayerController : MonoBehaviour
 
         _body.rotation = Quaternion.Euler(0f, 0f, angle);
 
+        var collider = Physics2D.OverlapArea(position + m_boxCheckSize, position - m_boxCheckSize, _doorLayerMask);
+
+        if (collider != null && collider.TryGetComponent(out DoorExit door) && move.Vector2ToDirection() == door.ExitDirection)
+        {
+            door.Interact();
+
+            return;
+        }
+
         if (Physics2D.OverlapArea(nextPosition + m_boxCheckSize, nextPosition - m_boxCheckSize, _notWalkableLayerMask))
             return;
 
@@ -90,6 +100,11 @@ public class PlayerController : MonoBehaviour
         }
 
         transform.position = to;
+
+        var collider = Physics2D.OverlapPoint(to, _doorLayerMask);
+
+        if (collider && collider.TryGetComponent(out Door door))
+            door.Interact();
 
         m_moveCoroutine = null;
     }
