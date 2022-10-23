@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class Door : MonoBehaviour, IInteractable
+public class DoorEnter : MonoBehaviour, IInteractable
 {
 
-    [SerializeField] private ScenesEnum _scene = ScenesEnum.SCN_Game;
+    [SerializeField] private InspectorScene _scene;
 
     public virtual void Interact()
     {

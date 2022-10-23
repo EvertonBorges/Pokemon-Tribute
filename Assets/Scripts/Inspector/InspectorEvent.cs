@@ -2,12 +2,14 @@ using UnityEngine;
 using static Observer;
 
 [System.Serializable]
-public class EventInspector
+public class InspectorEvent
 {
 
     [SerializeField] private string _event = "";
+    [SerializeField] private int _order = 0;
 
     public string Event => _event;
+    public int Order => _order;
 
     public void Notify<T1, T2, T3>(T1 obj1, T2 obj2, T3 obj3)
     {
@@ -39,7 +41,7 @@ public class EventInspector
             @event.Notify();
     }
 
-    public static bool operator == (EventInspector _eventInspector, IEvent _event)
+    public static bool operator == (InspectorEvent _eventInspector, IEvent _event)
     {
         if (_event == null)
             return false;
@@ -47,25 +49,25 @@ public class EventInspector
         return _eventInspector.Event == _event.GetEventName();
     }
 
-    public static bool operator != (EventInspector _eventInspector, IEvent _event) => !(_eventInspector == _event);
+    public static bool operator != (InspectorEvent _eventInspector, IEvent _event) => !(_eventInspector == _event);
 
-    public static bool operator == (IEvent _event, EventInspector _eventInspector) => _eventInspector == _event;
+    public static bool operator == (IEvent _event, InspectorEvent _eventInspector) => _eventInspector == _event;
 
-    public static bool operator != (IEvent _event, EventInspector _eventInspector) => !(_eventInspector == _event);
+    public static bool operator != (IEvent _event, InspectorEvent _eventInspector) => !(_eventInspector == _event);
 
     public override bool Equals(object obj)
     {
         if (obj == null)
             return false;
 
-        if (obj is not EventInspector || obj is not IEvent)
+        if (obj is not InspectorEvent || obj is not IEvent)
             return false;
 
-        if (obj is EventInspector @objInspector)
-            return Event == @objInspector.Event;
+        if (obj is InspectorEvent @objInspector)
+            return this == @objInspector;
 
         if (obj is IEvent @objEvent)
-            return Event == @objEvent.GetEventName();
+            return this == @objEvent;
 
         return base.Equals(obj);
     }

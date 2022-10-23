@@ -103,10 +103,15 @@ public class PlayerController : MonoBehaviour
 
         var collider = Physics2D.OverlapPoint(to, _doorLayerMask);
 
-        if (collider && collider.TryGetComponent(out Door door))
+        if (collider && collider.TryGetComponent(out DoorEnter door))
             door.Interact();
 
         m_moveCoroutine = null;
+    }
+
+    private void Teleport(Vector2 value)
+    {
+        transform.position = value;
     }
 
     private void OnMovement(Vector2 value)
@@ -155,8 +160,9 @@ public class PlayerController : MonoBehaviour
 
     void OnEnable()
     {
-        Manager_Events.Player.OnMovement += OnMovement;
+        Manager_Events.Player.OnTeleport += Teleport;
 
+        Manager_Events.Player.OnMovement += OnMovement;
         Manager_Events.Player.OnButtonA += OnButtonA;
         Manager_Events.Player.OnButtonB += OnButtonB;
         Manager_Events.Player.OnButtonPause += OnButtonPause;
@@ -165,8 +171,9 @@ public class PlayerController : MonoBehaviour
 
     void OnDisable()
     {
-        Manager_Events.Player.OnMovement -= OnMovement;
+        Manager_Events.Player.OnTeleport -= Teleport;
 
+        Manager_Events.Player.OnMovement -= OnMovement;
         Manager_Events.Player.OnButtonA -= OnButtonA;
         Manager_Events.Player.OnButtonB -= OnButtonB;
         Manager_Events.Player.OnButtonPause -= OnButtonPause;

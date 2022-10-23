@@ -6,7 +6,7 @@ public class DoorExit : MonoBehaviour, IInteractable
     [SerializeField] private DirectionsEnum _exitDirection;
     public DirectionsEnum ExitDirection => _exitDirection;
 
-    [SerializeField] private ScenesEnum _scene = ScenesEnum.SCN_Game;
+    [SerializeField] private InspectorScene _scene;
 
     public virtual void Interact()
     {

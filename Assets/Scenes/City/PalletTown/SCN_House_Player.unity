@@ -6775,6 +6775,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2008900050}
     m_Modifications:
+    - target: {fileID: 3769658161088360073, guid: 7db933a6019bf874aa7b86e1d67bbc0d, type: 3}
+      propertyPath: _scene._scene
+      value: SCN_Game
+      objectReference: {fileID: 0}
     - target: {fileID: 7818176262848463929, guid: 7db933a6019bf874aa7b86e1d67bbc0d, type: 3}
       propertyPath: m_Name
       value: DoorExit
@@ -6921,6 +6925,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2008900050}
     m_Modifications:
+    - target: {fileID: 3769658161088360073, guid: 7db933a6019bf874aa7b86e1d67bbc0d, type: 3}
+      propertyPath: _scene._scene
+      value: SCN_Game
+      objectReference: {fileID: 0}
     - target: {fileID: 7818176262848463929, guid: 7db933a6019bf874aa7b86e1d67bbc0d, type: 3}
       propertyPath: m_Name
       value: DoorExit

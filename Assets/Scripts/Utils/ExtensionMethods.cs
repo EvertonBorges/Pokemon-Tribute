@@ -1,21 +1,16 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public static class ExtensionMethods
 {
     
-    public static bool IsEmpty(this string value) => value == null || value == "" || value.Length <= 0;
+    public static bool IsEmpty(this string value) => value == null || value == "" || value.Length <= 0 || value.ToLower() == "null";
     
     public static bool IsEmpty<T>(this T[] value) => value == null || value.Length <= 0;
 
     public static bool IsEmpty<T>(this IList<T> value) => value == null || value.Count <= 0;
-
-    public static AsyncOperation LoadSceneAsync(this ScenesEnum value, LoadSceneMode mode = LoadSceneMode.Single) => SceneManager.LoadSceneAsync(value.ToString(), mode);
-
-    public static void LoadScene(this ScenesEnum value, LoadSceneMode mode = LoadSceneMode.Single) => SceneManager.LoadScene(value.ToString(), mode);
-
-    public static AsyncOperation UnloadSceneAsync(this ScenesEnum value) => SceneManager.UnloadSceneAsync(value.ToString());
+    
+    public static bool IsEmpty<T, U>(this Dictionary<T, U> value) => value == null || value.Count <= 0;
 
     public static DirectionsEnum Vector2ToDirection(this Vector2 value)
     {
