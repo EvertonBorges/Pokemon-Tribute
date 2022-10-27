@@ -124,4 +124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85c4d4615be5eb9408d09a1ec2936404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Teste
+  _door: {fileID: 0}
+  _enterDirection: -1
+  _exitDirection: 2

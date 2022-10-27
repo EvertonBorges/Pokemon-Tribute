@@ -5,8 +5,9 @@ using UnityEditor;
 public class PD_InspectorScene : PropertyDrawer
 {
 
-    private const string variableName = "_scene";
-    private const string emptyValue = "Null";
+    private const string sceneVariableName = "_scene";
+    private const string visibleLabelVariableName = "_visibleLabel";
+    private const string emptyValue = "Null Scene";
 
     private readonly Color missingEnumColor = new(1, 0, 0, 0.2f);
 
@@ -17,13 +18,13 @@ public class PD_InspectorScene : PropertyDrawer
 
     public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
     {
-        var drawFromInspector = property.serializedObject.targetObject is MonoBehaviour;
+        var sceneProperty = property.FindPropertyRelative(sceneVariableName);
 
-        var sceneProperty = property.FindPropertyRelative(variableName);
+        var visibleLabelProperty = property.FindPropertyRelative(visibleLabelVariableName);
 
         var rectButton = position;
 
-        if (drawFromInspector)
+        if (visibleLabelProperty.boolValue)
             rectButton = EditorGUI.PrefixLabel(position, label);
 
         var name = sceneProperty.stringValue;
@@ -38,16 +39,11 @@ public class PD_InspectorScene : PropertyDrawer
         {
             tooltip = name.Replace("/", " > ");
 
-            if (drawFromInspector)
-            {
-                var paths = name.Split("/");
-                name = "";
+            var paths = name.Split("/");
+            name = "";
 
-                for (int i = Mathf.Max(paths.Length - 1, 0); i < paths.Length; i++)
-                    name += $"{paths[i]}";
-            }
-            else
-                name = tooltip;
+            for (int i = Mathf.Max(paths.Length - 1, 0); i < paths.Length; i++)
+                name += $"{paths[i]}";
         }
 
         if (GUI.Button(rectButton, new GUIContent(name, tooltip)))

@@ -61,7 +61,8 @@ public class PlayerController : MonoBehaviour
 
         var collider = Physics2D.OverlapArea(position + m_boxCheckSize, position - m_boxCheckSize, _doorLayerMask);
 
-        if (collider != null && collider.TryGetComponent(out DoorExit door) && move.Vector2ToDirection() == door.ExitDirection)
+        if (collider != null && collider.TryGetComponent(out Door door) && 
+            door.EnterDirection != DirectionsEnum.NONE && move.Vector2ToDirection() == door.EnterDirection)
         {
             door.Interact();
 
@@ -103,7 +104,7 @@ public class PlayerController : MonoBehaviour
 
         var collider = Physics2D.OverlapPoint(to, _doorLayerMask);
 
-        if (collider && collider.TryGetComponent(out DoorEnter door))
+        if (collider && collider.TryGetComponent(out Door door) && door.EnterDirection == DirectionsEnum.NONE)
             door.Interact();
 
         m_moveCoroutine = null;

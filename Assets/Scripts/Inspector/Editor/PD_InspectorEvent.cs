@@ -7,7 +7,7 @@ public class PD_InspectorEvent : PropertyDrawer
 
     private const string eventVariableName = "_event";
     private const string orderVariableName = "_order";
-    private const string emptyValue = "Null";
+    private const string emptyValue = "Null Event";
 
     private readonly Color missingEnumColor = new(1, 0, 0, 0.2f);
 

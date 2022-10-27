@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class InspectorScene
 {
 
+    [SerializeField] private bool _visibleLabel = true;
     [SerializeField] private string _scene;
 
     public string Scene => _scene;
@@ -54,36 +55,31 @@ public class InspectorScene
 
     public class Extensions
     {
-        
-        private static readonly Dictionary<string, string> m_scenes = new();
+
         public static Dictionary<string, string> Scenes
         {
             get
             {
-                if (m_scenes.IsEmpty())
-                    Setup();
+                Dictionary<string, string> scenes = new();
 
-                return m_scenes;
-            }
-        }
+                for (int i = 0; i < SceneManager.sceneCountInBuildSettings; i++)
+                {
+                    var path = SceneUtility.GetScenePathByBuildIndex(i);
 
-        private static void Setup()
-        {
-            for (int i = 0; i < SceneManager.sceneCountInBuildSettings; i++)
-            {
-                var path = SceneUtility.GetScenePathByBuildIndex(i);
+                    if (path.IsEmpty())
+                        continue;
 
-                if (path.IsEmpty())
-                    continue;
+                    scenes.Add(GetScenePath(path), path);
+                }
 
-                m_scenes.Add(GetScenePath(path), path);
+                return scenes;
             }
         }
 
         private static string GetScenePath(string path)
         {
             for (int i = 0; i < 2; i++)
-                path.Remove(0, path.IndexOf("/") + 1);
+                path = path.Remove(0, path.IndexOf("/") + 1);
 
             return path.Replace(".unity", "");
         }

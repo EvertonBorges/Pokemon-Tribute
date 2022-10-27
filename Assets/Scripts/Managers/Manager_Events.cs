@@ -34,6 +34,8 @@ public static class Manager_Events
     {
         public static Event Pause;
         public static Event Unpause;
+
+        public static Event<bool, Action> OnTransite;
     }
 
     public static bool TryGetEvent(InspectorEvent inspectorEvent, out IEvent ev)

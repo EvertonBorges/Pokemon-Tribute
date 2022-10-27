@@ -14,13 +14,27 @@ public static class ExtensionMethods
 
     public static DirectionsEnum Vector2ToDirection(this Vector2 value)
     {
+        if (value == Vector2.up) return DirectionsEnum.UP;
+
         if (value == Vector2.right) return DirectionsEnum.RIGHT;
 
         if (value == Vector2.down) return DirectionsEnum.DOWN;
         
         if (value == Vector2.left) return DirectionsEnum.LEFT;
 
-        return DirectionsEnum.UP;
+        return DirectionsEnum.NONE;
+    }
+
+    public static Vector3 DirectionToVector3(this DirectionsEnum value)
+    {
+        return value switch
+        {
+            DirectionsEnum.UP => Vector2.up,
+            DirectionsEnum.RIGHT => Vector2.right,
+            DirectionsEnum.DOWN => Vector2.down,
+            DirectionsEnum.LEFT => Vector2.left,
+            _ => Vector2.zero,
+        };
     }
 
 }
