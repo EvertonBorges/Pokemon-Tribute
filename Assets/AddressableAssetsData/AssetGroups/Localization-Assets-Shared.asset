@@ -29,6 +29,10 @@ MonoBehaviour:
     m_Address: Assets/Settings/Localization/Tables/Boards_Viridian Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+  - m_GUID: a32bc29a6dff4624da1ac559501fe803
+    m_Address: Assets/Settings/Localization/Tables/Pallet Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 2edb47f9322dfff4c9f1581e909de10e, type: 2}
   m_SchemaSet:

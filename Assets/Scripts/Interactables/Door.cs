@@ -5,20 +5,25 @@ using UnityEngine;
 public class Door : MonoBehaviour, IInteractable
 {
 
-    [SerializeField] private SO_Door _door;
+    [SerializeField] private InspectorDoorSelector _door;
     [SerializeField] private DirectionsEnum _enterDirection;
     [SerializeField] private DirectionsEnum _exitDirection;
-    public SO_Door GetDoor => _door;
+    public InspectorDoorSelector GetDoor => _door;
     public DirectionsEnum EnterDirection => _enterDirection;
     public DirectionsEnum ExitDirection => _exitDirection;
 
     public virtual void Interact()
     {
-        var doorTransite = InspectorDoor.Extensions.Doors[_door.To.Path];
+        var door = Manager_Resources.Door_Resources.Doors[_door.Path];
+
+        if (door == null)
+            return;
+
+        var doorTransite = Manager_Resources.Door_Resources.Doors[door.To.Path];
 
         if (doorTransite == null)
         {
-            Debug.LogError($"Scene path error: {_door.To.Path}");
+            Debug.LogError($"Scene path error: {door.To.Path}");
 
             return;
         }
@@ -45,16 +50,28 @@ public class Door : MonoBehaviour, IInteractable
 
         asyncOperation.allowSceneActivation = true;
 
+        Manager_Events.GameManager.Pause.Notify();
+
         while(asyncOperation.progress < 1f)
             yield return null;
 
         Manager_Events.GameManager.Pause.Notify();
 
-        var nextDoor = FindObjectsOfType<Door>().First(x => x.GetDoor == door);
+        var nextDoor = 
+            FindObjectsOfType<Door>()
+                .ToList()
+                .FindAll(x => x.GetDoor.Path == door.From.Path)
+                .OrderBy(x => x.transform.position.x)
+                .First();
 
         var positionTeleport = nextDoor.transform.position + (Vector3.down + Vector3.right) * 0.5f;
 
-        positionTeleport += nextDoor.ExitDirection.DirectionToVector3();
+        var exitDirection = nextDoor.ExitDirection.DirectionToVector3();
+
+        positionTeleport += exitDirection;
+
+        if (exitDirection != Vector3.zero)
+            Manager_Events.Player.OnRotate.Notify(exitDirection);
 
         Manager_Events.Player.OnTeleport.Notify(positionTeleport);
 

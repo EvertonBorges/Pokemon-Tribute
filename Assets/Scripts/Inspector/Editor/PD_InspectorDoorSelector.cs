@@ -1,12 +1,11 @@
 using UnityEditor;
 using UnityEngine;
 
-[CustomPropertyDrawer(typeof(InspectorDoorLink))]
-public class PD_InspectorDoorLink : PropertyDrawer
+[CustomPropertyDrawer(typeof(InspectorDoorSelector))]
+public class PD_InspectorDoorSelector : PropertyDrawer
 {
 
     private const string pathVariableName = "_path";
-    private const string visibleLabelVariableName = "_visibleLabel";
     private const string emptyValue = "Null Door";
 
     private readonly Color missingEnumColor = new(1, 0, 0, 0.2f);
@@ -20,12 +19,9 @@ public class PD_InspectorDoorLink : PropertyDrawer
     {
         var pathProperty = property.FindPropertyRelative(pathVariableName);
 
-        var visibleLabelProperty = property.FindPropertyRelative(visibleLabelVariableName);
-
         var rectButton = position;
 
-        if (visibleLabelProperty.boolValue)
-            rectButton = EditorGUI.PrefixLabel(rectButton, label);
+        rectButton = EditorGUI.PrefixLabel(rectButton, label);
 
         var name = pathProperty.stringValue;
 

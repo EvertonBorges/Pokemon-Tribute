@@ -2917,8 +2917,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 532622871
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
@@ -3263,6 +3263,10 @@ PrefabInstance:
       propertyPath: _door
       value: 
       objectReference: {fileID: 11400000, guid: bf2f4a75ff8f5d4429d79936f03d8675, type: 2}
+    - target: {fileID: -7154692384851352379, guid: b500353764b5d354795c34c08462838e, type: 3}
+      propertyPath: _door._path
+      value: PalletTown/Rival/Enter
+      objectReference: {fileID: 0}
     - target: {fileID: 8115260009363716353, guid: b500353764b5d354795c34c08462838e, type: 3}
       propertyPath: m_Name
       value: Door
@@ -84833,6 +84837,10 @@ PrefabInstance:
       value: 101
       objectReference: {fileID: 0}
     - target: {fileID: -7154692384851352379, guid: b500353764b5d354795c34c08462838e, type: 3}
+      propertyPath: _door._path
+      value: PalletTown/Player/Enter
+      objectReference: {fileID: 0}
+    - target: {fileID: -7154692384851352379, guid: b500353764b5d354795c34c08462838e, type: 3}
       propertyPath: _scene._scene
       value: City/PalletTown/SCN_House_Player
       objectReference: {fileID: 0}
@@ -125443,6 +125451,10 @@ PrefabInstance:
       propertyPath: _door
       value: 
       objectReference: {fileID: 11400000, guid: 014cf544a9a218042b144d174ec0f19e, type: 2}
+    - target: {fileID: -7154692384851352379, guid: b500353764b5d354795c34c08462838e, type: 3}
+      propertyPath: _door._path
+      value: PalletTown/OaksLab/Enter
+      objectReference: {fileID: 0}
     - target: {fileID: 8115260009363716353, guid: b500353764b5d354795c34c08462838e, type: 3}
       propertyPath: m_Name
       value: Door

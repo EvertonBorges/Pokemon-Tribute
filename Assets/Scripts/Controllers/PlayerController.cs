@@ -35,6 +35,43 @@ public class PlayerController : MonoBehaviour
 
     private void Move()
     {
+        Vector2 move = MoveDirection();
+
+        if (move == Vector2.zero)
+            return;
+
+        Vector2 position = transform.position;
+
+        var pointA = position + m_boxCheckSize;
+
+        var pointB = position - m_boxCheckSize;
+
+        Rotate(move);
+
+        var collider = Physics2D.OverlapArea(pointA, pointB, _doorLayerMask);
+
+        if (collider != null && collider.TryGetComponent(out Door door) && 
+            door.EnterDirection != DirectionsEnum.NONE && move.Vector2ToDirection() == door.EnterDirection)
+        {
+            door.Interact();
+
+            return;
+        }
+
+        nextPosition = position + move * 0.5f;
+
+        pointA = nextPosition + m_boxCheckSize;
+
+        pointB = nextPosition - m_boxCheckSize;
+
+        if (Physics2D.OverlapArea(pointA, pointB, _notWalkableLayerMask))
+            return;
+
+        m_moveCoroutine = StartCoroutine(Move(move));
+    }
+
+    private Vector2 MoveDirection()
+    {
         Vector2 move = Vector2.zero;
 
         if (m_move.y != 0f)
@@ -48,31 +85,7 @@ public class PlayerController : MonoBehaviour
             else
                 move = Vector2.left;
 
-        if (move == Vector2.zero)
-            return;
-
-        Vector2 position = transform.position;
-
-        nextPosition = position + move * 0.5f;
-
-        var angle = Vector2.SignedAngle(Vector2.up, move);
-
-        _body.rotation = Quaternion.Euler(0f, 0f, angle);
-
-        var collider = Physics2D.OverlapArea(position + m_boxCheckSize, position - m_boxCheckSize, _doorLayerMask);
-
-        if (collider != null && collider.TryGetComponent(out Door door) && 
-            door.EnterDirection != DirectionsEnum.NONE && move.Vector2ToDirection() == door.EnterDirection)
-        {
-            door.Interact();
-
-            return;
-        }
-
-        if (Physics2D.OverlapArea(nextPosition + m_boxCheckSize, nextPosition - m_boxCheckSize, _notWalkableLayerMask))
-            return;
-
-        m_moveCoroutine = StartCoroutine(Move(move));
+        return move;
     }
 
     private IEnumerator Move(Vector2 direction, float duration = 1f)
@@ -113,6 +126,13 @@ public class PlayerController : MonoBehaviour
     private void Teleport(Vector2 value)
     {
         transform.position = value;
+    }
+
+    private void Rotate(Vector2 direction)
+    {
+        var angle = Vector2.SignedAngle(Vector2.up, direction);
+
+        _body.rotation = Quaternion.Euler(0f, 0f, angle);
     }
 
     private void OnMovement(Vector2 value)
@@ -162,6 +182,7 @@ public class PlayerController : MonoBehaviour
     void OnEnable()
     {
         Manager_Events.Player.OnTeleport += Teleport;
+        Manager_Events.Player.OnRotate += Rotate;
 
         Manager_Events.Player.OnMovement += OnMovement;
         Manager_Events.Player.OnButtonA += OnButtonA;
@@ -173,6 +194,7 @@ public class PlayerController : MonoBehaviour
     void OnDisable()
     {
         Manager_Events.Player.OnTeleport -= Teleport;
+        Manager_Events.Player.OnRotate -= Rotate;
 
         Manager_Events.Player.OnMovement -= OnMovement;
         Manager_Events.Player.OnButtonA -= OnButtonA;

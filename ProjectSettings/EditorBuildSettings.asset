@@ -9,11 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/SCN_Game.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/City/PalletTown/SCN_House_Player.unity
+    path: Assets/Scenes/City/PalletTown/SCN_House_Rival.unity
     guid: 69f8d25887c3f7344bbd1bf140b93dc9
   - enabled: 1
-    path: Assets/Scenes/City/PalletTown/SCN_House_Rival.unity
-    guid: 24fbe17ba852e7047871300697b5732f
+    path: Assets/Scenes/City/PalletTown/SCN_House_Player.unity
+    guid: 873086d13baf3e04faa1f98613042524
+  - enabled: 1
+    path: Assets/Scenes/City/PalletTown/SCN_House_Player_2nd_Floor.unity
+    guid: 538c0c0000009a544aa9f0443b5d45e1
   - enabled: 1
     path: Assets/Scenes/City/PalletTown/SCN_House_OaksLab.unity
     guid: 4707c6537fb1de44bb0c8c86b112399e

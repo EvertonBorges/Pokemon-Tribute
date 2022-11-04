@@ -8,4 +8,9 @@ public class InspectorDoorLink
     [SerializeField] private string _path;
     public string Path => _path;
 
+    public override string ToString()
+    {
+        return _path;
+    }
+
 }

@@ -16,29 +16,9 @@ public class InspectorDoor
 
     public void SetPath(string value) => _path = value;
 
-    public static class Extensions
+    public override string ToString()
     {
-        public static Dictionary<string, SO_Door> Doors
-        {
-            get
-            {
-                var doorsResource = Resources.LoadAll<SO_Door>("").ToList();
-
-                Dictionary<string, SO_Door> doors = new();
-
-                foreach (var door in doorsResource)
-                    doors.Add(GetReducedPath(AssetDatabase.GetAssetPath(door)), door);
-
-                return doors;
-            }
-        }
-
-        public static string GetReducedPath(string path)
-        {
-            for (int i = 0; i < 3; i++)
-                path = path.Remove(0, path.IndexOf("/") + 1);
-
-            return path.Replace(".asset", "");
-        }
+        return _path;
     }
+    
 }

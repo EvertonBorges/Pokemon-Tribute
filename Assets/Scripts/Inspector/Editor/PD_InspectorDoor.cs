@@ -17,9 +17,6 @@ public class PD_InspectorDoor : PropertyDrawer
 
     private readonly Color missingEnumColor = new(1, 0, 0, 0.2f);
 
-    private static string ResourcesDoor => $"Assets/Resources/Doors";
-    private static string ResourcesDoorFilename(string value) => $"{ResourcesDoor}/{value}.asset";
-
     public override bool CanCacheInspectorGUI(SerializedProperty property)
     {
         return false;
@@ -114,21 +111,12 @@ public class PD_InspectorDoor : PropertyDrawer
 
             var filename = relativeProperty.stringValue;
 
-            var newPath = ResourcesDoorFilename(filename);
+            if (!filename.IsEmpty())
+            {
+                D_Doors.CreateDoor(filename);
 
-            var folder = newPath[..newPath.LastIndexOf("/")];
-
-            CreateFolder(folder);
-
-            var oldPath = $"{ResourcesDoor}/Door_Temp.asset";
-
-            var door = AssetDatabase.LoadAssetAtPath<SO_Door>(oldPath);
-
-            AssetDatabase.MoveAsset(oldPath, newPath);
-
-            door.SetPath(InspectorDoor.Extensions.GetReducedPath(newPath));
-
-            Save();
+                relativeProperty.stringValue = "";
+            }
 
             SceneView.RepaintAll();
 
@@ -176,7 +164,7 @@ public class PD_InspectorDoor : PropertyDrawer
             obj.ApplyModifiedProperties();
         });
 
-        foreach (var item in InspectorDoor.Extensions.Doors)
+        foreach (var item in Manager_Resources.Door_Resources.Doors)
         {
             if (item.Key.EndsWith("Door_Temp"))
                 continue;
@@ -194,44 +182,6 @@ public class PD_InspectorDoor : PropertyDrawer
         }
 
         menu.ShowAsContext();
-    }
-
-    private void CreateFolder(string folder)
-    {
-        var paths = folder.Split("/");
-
-        var path = "";
-
-        for (int i = 0; i < paths.Length; i++)
-        {
-            if (i == 0)
-                path += paths[i];
-            else
-                path += $"/{paths[i]}";
-
-            if(!AssetDatabase.IsValidFolder(path))
-            {
-                var parentDir = path[..path.LastIndexOf("/")];
-
-                var folderDir = path[(path.LastIndexOf("/") + 1)..];
-
-                AssetDatabase.CreateFolder(parentDir, folderDir);
-            }
-        }
-
-        Save();
-    }
-
-    private void Save()
-    {
-        AssetDatabase.SaveAssets();
-
-        AssetDatabase.Refresh();
-
-        var window = EditorWindow.GetWindow<W_Doors>();
-
-        if (window != null)
-            window.Setup();
     }
 
 }

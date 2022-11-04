@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+using System;
 using UnityEditor;
 using UnityEngine;
 
@@ -13,19 +13,25 @@ public class W_Doors : EditorWindow
     private static string ResourcesDoor => $"Assets/Resources/Doors";
     private static string ResourcesDoorTemp => $"{ResourcesDoor}/Door_Temp.asset";
 
-    public static Generic_Tree<string, SO_Door> m_doorsTree = null;
-    private static Dictionary<string, SO_Door> Doors => InspectorDoor.Extensions.Doors;
+    private static Generic_Tree<SO_Door> Doors => D_Doors.DoorsTree;
+
+    private static W_Doors m_window = null;
 
     private Vector2 m_scroolPosition;
 
     [MenuItem("Tools/Doors")]
     private static void ShowWindow()
     {
-        var window = GetWindow<W_Doors>("Doors Window");
-
         var size = new Vector2(800, 400);
 
-        // var teste = EditorGUIUtility.GetMainWindowPosition().center;
+        if (m_window == null)
+        {
+            m_window = GetWindow<W_Doors>("Doors Window");
+
+            m_window.minSize = size;
+
+            m_window.maxSize = size * 1.25f;
+        }
 
         var position = new Vector2(
             (Screen.currentResolution.width - size.x) / 2f,
@@ -34,25 +40,14 @@ public class W_Doors : EditorWindow
 
         var rect = new Rect(position, size);
 
-        window.minSize = size;
-
-        window.maxSize = size * 1.25f;
-
-        window.position = rect;
+        m_window.position = rect;
 
         m_isSetuped = false;
 
-        window.Show();
+        m_window.Show();
     }
 
     public void Setup()
-    {
-        SetupStyles();
-
-        PopulateDoorsTree();
-    }
-
-    private void SetupStyles()
     {
         boxStyle = new(GUI.skin.box)
         {
@@ -67,46 +62,8 @@ public class W_Doors : EditorWindow
         separatorStyle.normal.textColor = Color.grey;
 
         m_isSetuped = true;
-    }
 
-    private static void PopulateDoorsTree()
-    {
-        m_doorsTree = new("");
-
-        foreach (var item in Doors)
-        {
-            string[] paths;
-
-            if (item.Key.Contains("/"))
-                paths = item.Key[..item.Key.LastIndexOf("/")].Split("/");
-            else
-                paths = new string[] { "" };
-
-            var path = "";
-
-            var actualNode = m_doorsTree;
-
-            for (int i = 0; i < paths.Length; i++)
-            {
-                path += $"{(path.IsEmpty() ? "" : "/")}{paths[i]}";
-
-                var node = actualNode.FindNode(path);
-
-                if (node == null)
-                {
-                    node = new Generic_Tree<string, SO_Door>(path);
-
-                    actualNode.AddNode(node);
-                }
-
-                actualNode = node;
-
-                if (i == paths.Length - 1)
-                    node.AddObj(item.Value);
-            }
-        }
-
-        // m_doorsTree.PrintTree();
+        D_Doors.Setup();
     }
 
     void OnGUI()
@@ -118,33 +75,7 @@ public class W_Doors : EditorWindow
 
         DrawTableBody();
 
-        DrawButtons();
-
         GUILayout.EndVertical();
-    }
-
-    private void DrawButtons()
-    {
-        GUILayout.BeginHorizontal(GUILayout.Height(40), GUILayout.ExpandWidth(true));
-
-        GUILayout.FlexibleSpace();
-
-        var disabledPlus = m_doorsTree.FindObj("Door_Temp") != null;
-
-        EditorGUI.BeginDisabledGroup(disabledPlus);
-
-        if (GUILayout.Button("+", GUILayout.ExpandHeight(true), GUILayout.Width(40)))
-        {
-            var door = CreateInstance<SO_Door>();
-
-            AssetDatabase.CreateAsset(door, ResourcesDoorTemp);
-
-            Save();
-        }
-
-        GUILayout.FlexibleSpace();
-
-        GUILayout.EndHorizontal();
     }
 
     private void Save()
@@ -153,26 +84,24 @@ public class W_Doors : EditorWindow
 
         AssetDatabase.Refresh();
 
-        Setup();
-
-        Repaint();
+        D_Doors.Setup();
     }
 
     private void DrawTableBody()
     {
         m_scroolPosition = GUILayout.BeginScrollView(m_scroolPosition, false, false, null, GUI.skin.verticalScrollbar, GUILayout.ExpandWidth(true), GUILayout.ExpandHeight(true));
 
-        DrawNode(m_doorsTree);
+        DrawNode(Doors);
 
         GUILayout.EndScrollView();
     }
 
-    private void DrawNode(Generic_Tree<string, SO_Door> node)
+    private void DrawNode(Generic_Tree<SO_Door> node)
     {
         if (node == null)
             return;
 
-        if (node != m_doorsTree)
+        if (node != Doors)
         {
             var path = node.path;
 
@@ -223,24 +152,22 @@ public class W_Doors : EditorWindow
 
             EditorGUILayout.PropertyField(to, GUILayout.Width(250));
 
-            DrawHorizontalSeparator();
+            var door = obj.Key;
 
-            EditorGUI.EndDisabledGroup();
+            var path = door.From.Path;
 
-            if (GUILayout.Button("D", GUILayout.ExpandHeight(true), GUILayout.Width(25)))
+            if (!path.IsEmpty())
             {
-                var door = obj.Key;
+                DrawHorizontalSeparator();
 
-                var path = door.From.Path;
-
-                if (path.IsEmpty())
-                    path = "Door Temporary";
-
-                if (EditorUtility.DisplayDialog("DELETE", $"Delete asset: {path}?", "CONFIRM", "CANCEL"))
+                if (GUILayout.Button("D", GUILayout.ExpandHeight(true), GUILayout.Width(25)))
                 {
-                    AssetDatabase.DeleteAsset(AssetDatabase.GetAssetPath(door));
+                    if (EditorUtility.DisplayDialog("DELETE", $"Delete asset: {path}?", "CONFIRM", "CANCEL"))
+                    {
+                        AssetDatabase.DeleteAsset(AssetDatabase.GetAssetPath(door));
 
-                    Save();
+                        Save();
+                    }
                 }
             }
 
@@ -252,10 +179,22 @@ public class W_Doors : EditorWindow
             GUILayout.EndHorizontal();
         }
 
-        foreach (var item in node.nodes)
-            DrawNode(item);
+        try
+        {
+            foreach (var item in node.nodes)
+            {
+                if (item == null)
+                    continue;
 
-        if (node != m_doorsTree)
+                DrawNode(item);
+            }
+        }
+        catch (InvalidOperationException)
+        {
+
+        }
+
+        if (node != Doors)
             EditorGUI.indentLevel--;
     }
 

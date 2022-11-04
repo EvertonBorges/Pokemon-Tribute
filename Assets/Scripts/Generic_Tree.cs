@@ -2,32 +2,74 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public class Generic_Tree<T, U> where U : ScriptableObject
+public class Generic_Tree<U> where U : ScriptableObject
 {
 
-    public List<Generic_Tree<T, U>> nodes = new();
-    public T path;
-    public bool isExpanded;
+    public string path;
+    public Generic_Tree<U> parent = null;
+    public List<Generic_Tree<U>> nodes = new();
     public Dictionary<U, SerializedObject> objs = new();
+    public bool isExpanded;
 
-    public bool HasNode => !nodes.IsEmpty();
-
-    public Generic_Tree(T path)
+    public Generic_Tree(string path)
     {
         this.path = path;
     }
 
-    public void AddObj(U obj)
+    public void AddNode(KeyValuePair<string, U> item, bool toExpand = false)
     {
-        objs.Add(obj, new(obj));
+        string[] paths;
+
+        if (item.Key.Contains("/"))
+            paths = item.Key[..item.Key.LastIndexOf("/")].Split("/");
+        else
+            paths = new string[] { "" };
+
+        var path = "";
+
+        var actualNode = this;
+
+        for (int i = 0; i < paths.Length; i++)
+        {
+            path += $"{(path.IsEmpty() ? "" : "/")}{paths[i]}";
+
+            var node = actualNode.FindNode(path);
+
+            if (node == null)
+            {
+                node = new Generic_Tree<U>(path);
+
+                actualNode.nodes.Add(node);
+            }
+
+            if (node != actualNode)
+                node.parent = actualNode;
+
+            actualNode = node;
+
+            if (i == paths.Length - 1)
+                node.objs.Add(item.Value, new(item.Value));
+        }
+
+        if (!toExpand)
+            return;
+
+        while(actualNode.parent != null)
+        {
+            actualNode.isExpanded = true;
+
+            actualNode = actualNode.parent;
+        }
     }
 
-    public void AddNode(Generic_Tree<T, U> child)
+    public void Clear()
     {
-        nodes.Add(child);
+        nodes.Clear();
+
+        objs.Clear();
     }
 
-    public Generic_Tree<T, U> FindNode(T value)
+    public Generic_Tree<U> FindNode(string value)
     {
         if (path.Equals(value))
             return this;
@@ -39,7 +81,7 @@ public class Generic_Tree<T, U> where U : ScriptableObject
         return null;
     }
 
-    public Generic_Tree<T, U> FindObj(string value)
+    public Generic_Tree<U> FindObj(string value)
     {
         foreach (var item in objs)
             if (item.Key.name.Equals(value))
@@ -65,7 +107,12 @@ public class Generic_Tree<T, U> where U : ScriptableObject
 
     public override string ToString()
     {
-        return path.ToString();
+        var parentPath = "Null";
+
+        if (parent != null)
+            parentPath = parent.path;
+
+        return $"{path} ({parentPath})";
     }
 
 }

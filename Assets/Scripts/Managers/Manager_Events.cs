@@ -22,6 +22,7 @@ public static class Manager_Events
     public static class Player
     {
         public static Event<Vector2> OnTeleport;
+        public static Event<Vector2> OnRotate;
 
         public static Event<Vector2> OnMovement;
         public static Event OnButtonA;

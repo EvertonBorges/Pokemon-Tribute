@@ -69,19 +69,11 @@ public class InspectorScene
                     if (path.IsEmpty())
                         continue;
 
-                    scenes.Add(GetScenePath(path), path);
+                    scenes.Add(StringUtils.GetReducedPath(path, ".unity", 2), path);
                 }
 
                 return scenes;
             }
-        }
-
-        private static string GetScenePath(string path)
-        {
-            for (int i = 0; i < 2; i++)
-                path = path.Remove(0, path.IndexOf("/") + 1);
-
-            return path.Replace(".unity", "");
         }
 
     }
