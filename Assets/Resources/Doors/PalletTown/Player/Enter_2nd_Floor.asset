@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Enter_2nd_Floor
   m_EditorClassIdentifier: 
   _from:
-    _visibleLabel: 1
+    _visibleLabel: 0
     _path: PalletTown/Player/Enter_2nd_Floor
     _scene:
-      _visibleLabel: 1
-      _scene: 
+      _visibleLabel: 0
+      _scene: City/PalletTown/SCN_House_Player
   _to:
-    _visibleLabel: 1
-    _path: 
+    _visibleLabel: 0
+    _path: PalletTown/Player/Exit_2nd_Floor
