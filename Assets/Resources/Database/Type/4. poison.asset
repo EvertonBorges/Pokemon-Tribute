@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4db05b91df445d046841a49d0f596679, type: 3}
+  m_Name: 4. poison
+  m_EditorClassIdentifier: 
+  id: 4
+  name: poison
+  double_damage_from:
+  - {fileID: 11400000, guid: 6a30e92921eab594591ec0783dace39f, type: 2}
+  - {fileID: 11400000, guid: 46f48b936bca3fa47b92c01de801f6a1, type: 2}
+  - {fileID: 11400000, guid: 67e80901fa49a864eb4700d43543d0aa, type: 2}
+  double_damage_to:
+  - {fileID: 11400000, guid: 7e0cc00b1eb0ca5449c7a0b51ab49f33, type: 2}
+  - {fileID: 11400000, guid: 67e80901fa49a864eb4700d43543d0aa, type: 2}
+  half_damage_from:
+  - {fileID: 11400000, guid: b8bf10a7c2303cd4dbacd250cff90274, type: 2}
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 7e0cc00b1eb0ca5449c7a0b51ab49f33, type: 2}
+  half_damage_to:
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 6a30e92921eab594591ec0783dace39f, type: 2}
+  - {fileID: 11400000, guid: e94647405f7746f47845c12743de7e74, type: 2}
+  - {fileID: 11400000, guid: 6165e04acc2aaec428901ce15a1c254b, type: 2}
+  no_damage_from: []
+  no_damage_to: []

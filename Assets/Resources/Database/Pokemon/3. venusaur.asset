@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 3. venusaur
+  m_EditorClassIdentifier: 
+  id: 3
+  name: venusaur
+  description: "The plant blooms when it is absorbing solar\fenergy. It stays on
+    the move to seek sunlight."
+  base_stats:
+    hp: 80
+    attack: 82
+    defense: 83
+    special_attack: 100
+    special_defense: 100
+    speed: 80
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 7bd0a56cec02aa042a64b4423fd82f0e, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 6ee720a59f157944d8038cc136b526e8, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 49c0a1f1fcf7e2447944f83ef25898e7, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 26c1b361578d2ea438b296234afd3f80, type: 2}
+  - learn_level: 22
+    name: {fileID: 11400000, guid: 1c2b96234f6324746a919f6297a70b8c, type: 2}
+  - learn_level: 30
+    name: {fileID: 11400000, guid: ccfcde50f9ea7654d8c668f6b61b67d9, type: 2}
+  - learn_level: 43
+    name: {fileID: 11400000, guid: 8ff2d262807b64e4083ddf428afa4a01, type: 2}
+  - learn_level: 55
+    name: {fileID: 11400000, guid: 10bfa4bf09630be4c984f6455228675b, type: 2}
+  - learn_level: 65
+    name: {fileID: 11400000, guid: 648e595d90a8e8443bfec892b22ad089, type: 2}
+  types:
+  - {fileID: 11400000, guid: 7e0cc00b1eb0ca5449c7a0b51ab49f33, type: 2}
+  - {fileID: 11400000, guid: dacdbc865dafd2d4aa6fbf739482e1e9, type: 2}
+  evolve_to: []

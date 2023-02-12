@@ -5,6 +5,7 @@ using UnityEngine;
 public class Generic_Tree<U> where U : ScriptableObject
 {
 
+    public bool isRootable = false;
     public string path;
     public Generic_Tree<U> parent = null;
     public List<Generic_Tree<U>> nodes = new();
@@ -22,6 +23,8 @@ public class Generic_Tree<U> where U : ScriptableObject
 
         if (item.Key.Contains("/"))
             paths = item.Key[..item.Key.LastIndexOf("/")].Split("/");
+        else if (isRootable)
+            paths = new string[] { $"/{item.Value}" };
         else
             paths = new string[] { "" };
 

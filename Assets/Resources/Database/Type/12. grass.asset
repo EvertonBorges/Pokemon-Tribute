@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4db05b91df445d046841a49d0f596679, type: 3}
+  m_Name: 12. grass
+  m_EditorClassIdentifier: 
+  id: 12
+  name: grass
+  double_damage_from:
+  - {fileID: 11400000, guid: d8b0cb44c79821540a6dec292b30b876, type: 2}
+  - {fileID: 11400000, guid: dacdbc865dafd2d4aa6fbf739482e1e9, type: 2}
+  - {fileID: 11400000, guid: 67e80901fa49a864eb4700d43543d0aa, type: 2}
+  - {fileID: 11400000, guid: c543eb169464d6f48832acd66df97221, type: 2}
+  - {fileID: 11400000, guid: 545a8138c18f7d1408e23c35b2833e8b, type: 2}
+  double_damage_to:
+  - {fileID: 11400000, guid: 6a30e92921eab594591ec0783dace39f, type: 2}
+  - {fileID: 11400000, guid: e94647405f7746f47845c12743de7e74, type: 2}
+  - {fileID: 11400000, guid: ae403da2e82ddcd42ae422ef3eb0a687, type: 2}
+  half_damage_from:
+  - {fileID: 11400000, guid: 6a30e92921eab594591ec0783dace39f, type: 2}
+  - {fileID: 11400000, guid: ae403da2e82ddcd42ae422ef3eb0a687, type: 2}
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 7c9061704c4acbb4192002ff4addd5f3, type: 2}
+  half_damage_to:
+  - {fileID: 11400000, guid: d8b0cb44c79821540a6dec292b30b876, type: 2}
+  - {fileID: 11400000, guid: dacdbc865dafd2d4aa6fbf739482e1e9, type: 2}
+  - {fileID: 11400000, guid: 67e80901fa49a864eb4700d43543d0aa, type: 2}
+  - {fileID: 11400000, guid: c543eb169464d6f48832acd66df97221, type: 2}
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 7f1bfc639c1fb9041b0041bc7fe6fd83, type: 2}
+  no_damage_from: []
+  no_damage_to: []

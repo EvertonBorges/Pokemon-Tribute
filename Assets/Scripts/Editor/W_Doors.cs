@@ -26,7 +26,7 @@ public class W_Doors : EditorWindow
 
         if (m_window == null)
         {
-            m_window = GetWindow<W_Doors>("Doors Window");
+            m_window = GetWindow<W_Doors>("Doors Windows");
 
             m_window.minSize = size;
 

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 106. hitmonlee
+  m_EditorClassIdentifier: 
+  id: 106
+  name: hitmonlee
+  description: "When in a hurry, its legs lengthen progressively.\fIt runs smoothly
+    with extra long, loping strides."
+  base_stats:
+    hp: 50
+    attack: 120
+    defense: 53
+    special_attack: 35
+    special_defense: 110
+    speed: 87
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 95050974296683c4ea03aed22c939dd1, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: ddc7b060cface494794dbb594d49f7b2, type: 2}
+  - learn_level: 33
+    name: {fileID: 11400000, guid: fd1411cd7138f40408a126acff37fe8b, type: 2}
+  - learn_level: 38
+    name: {fileID: 11400000, guid: 0a75a9ecdcd2d4f459d39f4a33ed8fb2, type: 2}
+  - learn_level: 43
+    name: {fileID: 11400000, guid: fc76dd531e800f04eb627e5b906c9e99, type: 2}
+  - learn_level: 48
+    name: {fileID: 11400000, guid: 731d84864d1bedb4aacc1f13e53c6188, type: 2}
+  - learn_level: 53
+    name: {fileID: 11400000, guid: 127269cf3bdd1a747b42c0bc59d9ed92, type: 2}
+  types:
+  - {fileID: 11400000, guid: b8bf10a7c2303cd4dbacd250cff90274, type: 2}
+  evolve_to: []

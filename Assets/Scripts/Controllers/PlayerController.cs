@@ -171,6 +171,8 @@ public class PlayerController : MonoBehaviour
 
     private void OnButtonPause()
     {
+        ND_Pokemon.GetPokemonDatabase();
+
         Debug.Log("OnButtonPause");
     }
 

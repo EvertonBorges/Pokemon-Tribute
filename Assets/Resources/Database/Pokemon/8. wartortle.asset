@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 8. wartortle
+  m_EditorClassIdentifier: 
+  id: 8
+  name: wartortle
+  description: "Often hides in water to stalk unwary prey. For\fswimming fast, it
+    moves its ears to maintain balance."
+  base_stats:
+    hp: 59
+    attack: 63
+    defense: 80
+    special_attack: 65
+    special_defense: 80
+    speed: 58
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: d34e78393cc84584685733fa31107611, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 49c0a1f1fcf7e2447944f83ef25898e7, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 1e02e7956045b444888ab03e7ed44e64, type: 2}
+  - learn_level: 15
+    name: {fileID: 11400000, guid: 73f9b76d1fd16dd468bef78fb338b989, type: 2}
+  - learn_level: 24
+    name: {fileID: 11400000, guid: 0876023e3cb23c8468c7c75bcab3bb81, type: 2}
+  - learn_level: 31
+    name: {fileID: 11400000, guid: 4d01b6b4f052d9b47ba396e2d62ed3ad, type: 2}
+  - learn_level: 39
+    name: {fileID: 11400000, guid: 697cdcdc3b92d1740bf125c2d4e9e21d, type: 2}
+  - learn_level: 47
+    name: {fileID: 11400000, guid: 2b838e31fa5433a4db5b8e352471b3d7, type: 2}
+  types:
+  - {fileID: 11400000, guid: ae403da2e82ddcd42ae422ef3eb0a687, type: 2}
+  evolve_to:
+  - evolutionConditions:
+    - trigger: level-up
+      min_level: 36
+    pokemon: {fileID: 11400000, guid: d8f716e9a1927914eb9a91c536fe0553, type: 2}

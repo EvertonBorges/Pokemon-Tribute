@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 118. goldeen
+  m_EditorClassIdentifier: 
+  id: 118
+  name: goldeen
+  description: "Its tail fin billows like an elegant ballroom\fdress, giving it the
+    nickname of the Water Queen."
+  base_stats:
+    hp: 45
+    attack: 67
+    defense: 60
+    special_attack: 35
+    special_defense: 50
+    speed: 63
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 5bb186ea4a36ba9489c03520a70db929, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 1e02e7956045b444888ab03e7ed44e64, type: 2}
+  - learn_level: 19
+    name: {fileID: 11400000, guid: 28acf5f561080f648925ce754a813c68, type: 2}
+  - learn_level: 24
+    name: {fileID: 11400000, guid: f656eec34d01c5546a18bff0d14c9b59, type: 2}
+  - learn_level: 30
+    name: {fileID: 11400000, guid: 2fcf446738c6dbd4c89de8046181d8bf, type: 2}
+  - learn_level: 37
+    name: {fileID: 11400000, guid: 5f54c7222ade13a4ca8b6d904c53dd48, type: 2}
+  - learn_level: 45
+    name: {fileID: 11400000, guid: 176c2e1a412cc3b49b8c896884bbef06, type: 2}
+  - learn_level: 54
+    name: {fileID: 11400000, guid: 26cf01562405afa4091f83446658f4af, type: 2}
+  types:
+  - {fileID: 11400000, guid: ae403da2e82ddcd42ae422ef3eb0a687, type: 2}
+  evolve_to:
+  - evolutionConditions:
+    - trigger: level-up
+      min_level: 33
+    pokemon: {fileID: 11400000, guid: 2c41b5fc37dae1c428aca49d35259046, type: 2}

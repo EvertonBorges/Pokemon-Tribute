@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 140. kabuto
+  m_EditorClassIdentifier: 
+  id: 140
+  name: kabuto
+  description: "A POK\xE9MON that was resurrected from a fossil\ffound in what was
+    once the ocean floor eons ago."
+  base_stats:
+    hp: 30
+    attack: 80
+    defense: 90
+    special_attack: 55
+    special_defense: 45
+    speed: 55
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: a8e2ce2cec95e344d939d1012510ca49, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 31fe8fe75144e0240b1abbb2ea42f962, type: 2}
+  - learn_level: 34
+    name: {fileID: 11400000, guid: c121153e32752b342a5a9c8ce394581a, type: 2}
+  - learn_level: 39
+    name: {fileID: 11400000, guid: 05a364534a1081e43832e20e4d3795cc, type: 2}
+  - learn_level: 44
+    name: {fileID: 11400000, guid: 28dc69bd14f4d1e4a9c3c0ceb7678c2e, type: 2}
+  - learn_level: 49
+    name: {fileID: 11400000, guid: 2b838e31fa5433a4db5b8e352471b3d7, type: 2}
+  types:
+  - {fileID: 11400000, guid: e94647405f7746f47845c12743de7e74, type: 2}
+  - {fileID: 11400000, guid: ae403da2e82ddcd42ae422ef3eb0a687, type: 2}
+  evolve_to:
+  - evolutionConditions:
+    - trigger: level-up
+      min_level: 40
+    pokemon: {fileID: 11400000, guid: 61ae3120698d0e849aa91e37ffbc1e5f, type: 2}

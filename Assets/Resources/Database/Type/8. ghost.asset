@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4db05b91df445d046841a49d0f596679, type: 3}
+  m_Name: 8. ghost
+  m_EditorClassIdentifier: 
+  id: 8
+  name: ghost
+  double_damage_from:
+  - {fileID: 11400000}
+  double_damage_to:
+  - {fileID: 11400000}
+  half_damage_from:
+  - {fileID: 11400000, guid: dacdbc865dafd2d4aa6fbf739482e1e9, type: 2}
+  - {fileID: 11400000, guid: 67e80901fa49a864eb4700d43543d0aa, type: 2}
+  half_damage_to: []
+  no_damage_from:
+  - {fileID: 11400000, guid: b3780e8201acfc84bb9739723ef07fd4, type: 2}
+  - {fileID: 11400000, guid: b8bf10a7c2303cd4dbacd250cff90274, type: 2}
+  no_damage_to:
+  - {fileID: 11400000, guid: b3780e8201acfc84bb9739723ef07fd4, type: 2}
+  - {fileID: 11400000, guid: 46f48b936bca3fa47b92c01de801f6a1, type: 2}

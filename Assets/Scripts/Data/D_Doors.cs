@@ -54,7 +54,7 @@ public static class D_Doors
 
         var folder = assetPath[..assetPath.LastIndexOf("/")];
 
-        CreateFolder(folder);
+        folder.CreateResourcesFolder();
 
         AssetDatabase.CreateAsset(door, assetPath);
 
@@ -65,30 +65,6 @@ public static class D_Doors
         m_doorsTree.AddNode(new(path, door), true);
 
         m_doorsTree.PrintTree();
-    }
-
-    private static void CreateFolder(string folder)
-    {
-        var paths = folder.Split("/");
-
-        var path = "";
-
-        for (int i = 0; i < paths.Length; i++)
-        {
-            if (i == 0)
-                path += paths[i];
-            else
-                path += $"/{paths[i]}";
-
-            if(!AssetDatabase.IsValidFolder(path))
-            {
-                var parentDir = path[..path.LastIndexOf("/")];
-
-                var folderDir = path[(path.LastIndexOf("/") + 1)..];
-
-                AssetDatabase.CreateFolder(parentDir, folderDir);
-            }
-        }
     }
 
 }

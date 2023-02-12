@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 108. lickitung
+  m_EditorClassIdentifier: 
+  id: 108
+  name: lickitung
+  description: "Its tongue can be extended like a chameleon's. It\fleaves a tingling
+    sensation when it licks enemies."
+  base_stats:
+    hp: 90
+    attack: 55
+    defense: 75
+    special_attack: 60
+    special_defense: 75
+    speed: 30
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 28acf5f561080f648925ce754a813c68, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 46e186cbf5808954eba2ea5663fd214b, type: 2}
+  - learn_level: 7
+    name: {fileID: 11400000, guid: 951b2793315d25a4faa2e6560d362aa5, type: 2}
+  - learn_level: 15
+    name: {fileID: 11400000, guid: 5d263dfe80f710044a71f6a195d220ff, type: 2}
+  - learn_level: 23
+    name: {fileID: 11400000, guid: a7966cedae5011b46811af94358b659f, type: 2}
+  - learn_level: 31
+    name: {fileID: 11400000, guid: 100119fd457c95d48b12b89b9427b24e, type: 2}
+  - learn_level: 39
+    name: {fileID: 11400000, guid: bb55b80f8f0ac094a857c1c214e8cc89, type: 2}
+  types:
+  - {fileID: 11400000, guid: b3780e8201acfc84bb9739723ef07fd4, type: 2}
+  evolve_to: []

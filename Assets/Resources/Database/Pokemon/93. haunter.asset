@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 93. haunter
+  m_EditorClassIdentifier: 
+  id: 93
+  name: haunter
+  description: "Because of its ability to slip through block\fwalls, it is said to
+    be from an\xAD other dimension."
+  base_stats:
+    hp: 45
+    attack: 50
+    defense: 45
+    special_attack: 115
+    special_defense: 55
+    speed: 95
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: cc99e266b09c8344c82f60965875965b, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 9c1f93bfaf1d5504aac691c0a4079898, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: b180f8f9cd65dd64197c3e7bc852175d, type: 2}
+  - learn_level: 29
+    name: {fileID: 11400000, guid: 7b14095a64c4be6449ee11f456b15684, type: 2}
+  - learn_level: 38
+    name: {fileID: 11400000, guid: ef496fbb0fffdc948a2a113b6b4d31d7, type: 2}
+  types:
+  - {fileID: 11400000, guid: 6165e04acc2aaec428901ce15a1c254b, type: 2}
+  - {fileID: 11400000, guid: dacdbc865dafd2d4aa6fbf739482e1e9, type: 2}
+  evolve_to:
+  - evolutionConditions:
+    - trigger: trade
+      min_level: -1
+    pokemon: {fileID: 11400000, guid: 70bb79496bfb9904fbdd9503c5b19b42, type: 2}

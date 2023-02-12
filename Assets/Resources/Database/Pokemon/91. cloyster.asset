@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 91. cloyster
+  m_EditorClassIdentifier: 
+  id: 91
+  name: cloyster
+  description: "When attacked, it launches its horns in quick\fvolleys. Its innards
+    have never been seen."
+  base_stats:
+    hp: 50
+    attack: 95
+    defense: 180
+    special_attack: 85
+    special_defense: 45
+    speed: 70
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: bc0612a2478508749ae45cad03230f55, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: e3936e53ed7b65449bac0565b9b704df, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 28acf5f561080f648925ce754a813c68, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 4d01b6b4f052d9b47ba396e2d62ed3ad, type: 2}
+  - learn_level: 50
+    name: {fileID: 11400000, guid: 479ce6d42441f62439392ab95b40125a, type: 2}
+  types:
+  - {fileID: 11400000, guid: ae403da2e82ddcd42ae422ef3eb0a687, type: 2}
+  - {fileID: 11400000, guid: 545a8138c18f7d1408e23c35b2833e8b, type: 2}
+  evolve_to: []

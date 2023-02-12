@@ -35,4 +35,54 @@ public static class Manager_Resources
         }
     }
 
+    public static class Pokemon_Resourcers
+    {
+        private static Dictionary<string, SO_Type> m_types;
+
+        public static Dictionary<string, SO_Type> Types
+        {
+            get
+            {
+                if (!Application.isPlaying)
+                    Setup();
+                else if (m_types.IsEmpty())
+                    Setup();
+
+                return m_types;
+            }
+        }
+
+        private static Dictionary<string, SO_Pokemon> m_pokemons;
+
+        public static Dictionary<string, SO_Pokemon> Pokemons
+        {
+            get
+            {
+                if (!Application.isPlaying)
+                    Setup();
+                else if (m_pokemons.IsEmpty())
+                    Setup();
+
+                return m_pokemons;
+            }
+        }
+
+        private static void Setup()
+        {
+            var typeResources = Resources.LoadAll<SO_Type>("").ToList();
+
+            var pokemonResources = Resources.LoadAll<SO_Pokemon>("").ToList();
+
+            m_types = new();
+
+            m_pokemons = new();
+
+            foreach (var type in typeResources.OrderBy(x => x.id))
+                m_types.Add(type.name, type);
+
+            foreach (var pokemon in pokemonResources.OrderBy(x => x.id))
+                m_pokemons.Add(pokemon.name, pokemon);
+        }
+    }
+
 }

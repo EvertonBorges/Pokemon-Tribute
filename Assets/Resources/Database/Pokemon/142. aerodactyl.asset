@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 142. aerodactyl
+  m_EditorClassIdentifier: 
+  id: 142
+  name: aerodactyl
+  description: "A ferocious, pre\xAD historic POK\xE9MON that goes for the\fenemy's
+    throat with its serrated saw-like fangs."
+  base_stats:
+    hp: 80
+    attack: 105
+    defense: 65
+    special_attack: 60
+    special_defense: 75
+    speed: 130
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 26cf01562405afa4091f83446658f4af, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: e3fa7ca1241ca714ca0f24328fcc7ef0, type: 2}
+  - learn_level: 33
+    name: {fileID: 11400000, guid: 28acf5f561080f648925ce754a813c68, type: 2}
+  - learn_level: 38
+    name: {fileID: 11400000, guid: 0876023e3cb23c8468c7c75bcab3bb81, type: 2}
+  - learn_level: 45
+    name: {fileID: 11400000, guid: b3891e08fda149e45afa7439977e6f40, type: 2}
+  - learn_level: 54
+    name: {fileID: 11400000, guid: a47ebfa517171ed47a67f8bcd50649c8, type: 2}
+  types:
+  - {fileID: 11400000, guid: e94647405f7746f47845c12743de7e74, type: 2}
+  - {fileID: 11400000, guid: d8b0cb44c79821540a6dec292b30b876, type: 2}
+  evolve_to: []
