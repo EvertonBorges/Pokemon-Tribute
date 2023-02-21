@@ -25,24 +25,27 @@ MonoBehaviour:
     speed: 25
   moves:
   - learn_level: 1
-    name: {fileID: 11400000, guid: f656eec34d01c5546a18bff0d14c9b59, type: 2}
+    name: {fileID: 11400000, guid: 9a126a932c75ac347b0bcaab95bf8764, type: 2}
   - learn_level: 30
-    name: {fileID: 11400000, guid: 951b2793315d25a4faa2e6560d362aa5, type: 2}
+    name: {fileID: 11400000, guid: c74a3861aeef03146a5fa17c68e3c0f6, type: 2}
   - learn_level: 35
-    name: {fileID: 11400000, guid: 1e02e7956045b444888ab03e7ed44e64, type: 2}
+    name: {fileID: 11400000, guid: 64fbe2067251faf499e9633400562cc2, type: 2}
   - learn_level: 40
-    name: {fileID: 11400000, guid: 2fcf446738c6dbd4c89de8046181d8bf, type: 2}
+    name: {fileID: 11400000, guid: 5b39ab90d3c79e04e9dc6eeb421e9e17, type: 2}
   - learn_level: 45
-    name: {fileID: 11400000, guid: 176c2e1a412cc3b49b8c896884bbef06, type: 2}
+    name: {fileID: 11400000, guid: 2cdaa37c1c2dea149bffba653d923463, type: 2}
   - learn_level: 50
-    name: {fileID: 11400000, guid: 28dc69bd14f4d1e4a9c3c0ceb7678c2e, type: 2}
+    name: {fileID: 11400000, guid: a1c5d113340e33e43adb832ce0b192d2, type: 2}
   - learn_level: 55
-    name: {fileID: 11400000, guid: b3891e08fda149e45afa7439977e6f40, type: 2}
+    name: {fileID: 11400000, guid: d653114b16e81d3458ae12390d000aed, type: 2}
   types:
-  - {fileID: 11400000, guid: 6a30e92921eab594591ec0783dace39f, type: 2}
-  - {fileID: 11400000, guid: e94647405f7746f47845c12743de7e74, type: 2}
+  - {fileID: 11400000, guid: 6073242af4df7804499221e154852c97, type: 2}
+  - {fileID: 11400000, guid: 856b6e7697fc99a409f8b06286888049, type: 2}
   evolve_to:
   - evolutionConditions:
     - trigger: level-up
       min_level: 42
-    pokemon: {fileID: 11400000, guid: 350c7e2137a6eac4e9e2b980e9c6649f, type: 2}
+    pokemon: {fileID: 11400000, guid: d945ad23720575c498e07511b3596b31, type: 2}
+  sprites:
+    backDefault: {fileID: 21300000, guid: 06065bb83b2d2084d8654421c6370155, type: 3}
+    frontDefault: {fileID: 21300000, guid: 646c1341370d5014487c7a3408208b62, type: 3}

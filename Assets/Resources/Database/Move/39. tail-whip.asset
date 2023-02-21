@@ -17,5 +17,5 @@ MonoBehaviour:
   description: Lowers the foe's DEFENSE.
   pp: 30
   priority: 0
-  moveTarget: {fileID: 11400000, guid: bcfda99bbc2d9ee40b1ed4078e624e45, type: 2}
-  type: {fileID: 11400000, guid: b3780e8201acfc84bb9739723ef07fd4, type: 2}
+  moveTarget: {fileID: 11400000, guid: 0940ec1a24bdfb24dbf8452e2f8a75f3, type: 2}
+  type: {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}

@@ -17,5 +17,5 @@ MonoBehaviour:
   description: A strong water- type attack.
   pp: 15
   priority: 0
-  moveTarget: {fileID: 11400000, guid: 92679f288d4567b478789db5a848de3f, type: 2}
-  type: {fileID: 11400000, guid: ae403da2e82ddcd42ae422ef3eb0a687, type: 2}
+  moveTarget: {fileID: 11400000, guid: a479f45a4a743cf45baf86efaff9dab5, type: 2}
+  type: {fileID: 11400000, guid: 2d8d2cd79db45b54ba4b220b056cdafe, type: 2}

@@ -17,5 +17,5 @@ MonoBehaviour:
   description: Always inflicts 40HP damage.
   pp: 10
   priority: 0
-  moveTarget: {fileID: 11400000, guid: 9ee1cd037f7c9b148935858982c3a1f8, type: 2}
-  type: {fileID: 11400000, guid: 7f1bfc639c1fb9041b0041bc7fe6fd83, type: 2}
+  moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
+  type: {fileID: 11400000, guid: db70450f3c6615e47955f1ee261b4156, type: 2}

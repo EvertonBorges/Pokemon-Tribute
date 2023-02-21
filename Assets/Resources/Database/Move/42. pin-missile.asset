@@ -17,5 +17,5 @@ MonoBehaviour:
   description: Fires pins that strike 2-5 times.
   pp: 20
   priority: 0
-  moveTarget: {fileID: 11400000, guid: 9ee1cd037f7c9b148935858982c3a1f8, type: 2}
-  type: {fileID: 11400000, guid: 67e80901fa49a864eb4700d43543d0aa, type: 2}
+  moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
+  type: {fileID: 11400000, guid: adb45f974dc601040912429d0cbe78aa, type: 2}

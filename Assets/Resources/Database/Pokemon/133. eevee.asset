@@ -25,29 +25,32 @@ MonoBehaviour:
     speed: 55
   moves:
   - learn_level: 1
-    name: {fileID: 11400000, guid: 10661561b16da32468d28f6db203a223, type: 2}
+    name: {fileID: 11400000, guid: f064efedc43e6b7428879ff3db2c4cfe, type: 2}
   - learn_level: 1
-    name: {fileID: 11400000, guid: 49c0a1f1fcf7e2447944f83ef25898e7, type: 2}
+    name: {fileID: 11400000, guid: fc691a37d4af9954a9f06c53601a863d, type: 2}
   - learn_level: 27
-    name: {fileID: 11400000, guid: 5c792a5d92fdf3e4db49b69f16654232, type: 2}
+    name: {fileID: 11400000, guid: ff5e326bb9d245642a61ecac5dfc6cf6, type: 2}
   - learn_level: 31
-    name: {fileID: 11400000, guid: 1e02e7956045b444888ab03e7ed44e64, type: 2}
+    name: {fileID: 11400000, guid: 64fbe2067251faf499e9633400562cc2, type: 2}
   - learn_level: 37
-    name: {fileID: 11400000, guid: 0876023e3cb23c8468c7c75bcab3bb81, type: 2}
+    name: {fileID: 11400000, guid: 9104e2b270eb18b4d9e07615d73e7b9e, type: 2}
   - learn_level: 45
-    name: {fileID: 11400000, guid: b3891e08fda149e45afa7439977e6f40, type: 2}
+    name: {fileID: 11400000, guid: d653114b16e81d3458ae12390d000aed, type: 2}
   types:
-  - {fileID: 11400000, guid: b3780e8201acfc84bb9739723ef07fd4, type: 2}
+  - {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}
   evolve_to:
   - evolutionConditions:
     - trigger: use-item
       min_level: -1
-    pokemon: {fileID: 11400000, guid: c72337bd026a9f34e98ac48c51e2f658, type: 2}
+    pokemon: {fileID: 11400000, guid: 10c3c3fc00f7b7d439bf24e9eb1b7c3b, type: 2}
   - evolutionConditions:
     - trigger: use-item
       min_level: -1
-    pokemon: {fileID: 11400000, guid: 5dcda2d5f5bf86e46b71cd69d8c2f5fe, type: 2}
+    pokemon: {fileID: 11400000, guid: 38111b00161da5e4ca60b2df4c377ba8, type: 2}
   - evolutionConditions:
     - trigger: use-item
       min_level: -1
-    pokemon: {fileID: 11400000, guid: 6e111dce20303be45bdc346d8c18c3a7, type: 2}
+    pokemon: {fileID: 11400000, guid: 149386758fde2b24c8003fea27d64ac5, type: 2}
+  sprites:
+    backDefault: {fileID: 21300000, guid: 9889ce28570ca0943b2106a25adf13ba, type: 3}
+    frontDefault: {fileID: 21300000, guid: 9d2c3b58114d3e2499255231c2785103, type: 3}

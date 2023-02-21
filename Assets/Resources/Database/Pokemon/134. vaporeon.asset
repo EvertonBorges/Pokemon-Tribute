@@ -25,25 +25,28 @@ MonoBehaviour:
     speed: 65
   moves:
   - learn_level: 1
-    name: {fileID: 11400000, guid: 5c792a5d92fdf3e4db49b69f16654232, type: 2}
+    name: {fileID: 11400000, guid: ff5e326bb9d245642a61ecac5dfc6cf6, type: 2}
   - learn_level: 1
-    name: {fileID: 11400000, guid: 10661561b16da32468d28f6db203a223, type: 2}
+    name: {fileID: 11400000, guid: f064efedc43e6b7428879ff3db2c4cfe, type: 2}
   - learn_level: 1
-    name: {fileID: 11400000, guid: 49c0a1f1fcf7e2447944f83ef25898e7, type: 2}
+    name: {fileID: 11400000, guid: fc691a37d4af9954a9f06c53601a863d, type: 2}
   - learn_level: 1
-    name: {fileID: 11400000, guid: 73f9b76d1fd16dd468bef78fb338b989, type: 2}
+    name: {fileID: 11400000, guid: 47b02d18984b6dd40a03f23165bdf40b, type: 2}
   - learn_level: 37
-    name: {fileID: 11400000, guid: 1e02e7956045b444888ab03e7ed44e64, type: 2}
+    name: {fileID: 11400000, guid: 64fbe2067251faf499e9633400562cc2, type: 2}
   - learn_level: 40
-    name: {fileID: 11400000, guid: 0876023e3cb23c8468c7c75bcab3bb81, type: 2}
+    name: {fileID: 11400000, guid: 9104e2b270eb18b4d9e07615d73e7b9e, type: 2}
   - learn_level: 42
-    name: {fileID: 11400000, guid: 1001dbdf4121dd941b07351cd1523a44, type: 2}
+    name: {fileID: 11400000, guid: d74c9638f518d9c459b3bd3b728c95f1, type: 2}
   - learn_level: 44
-    name: {fileID: 11400000, guid: c84e4f2cd6510e94c89f38260e5222d3, type: 2}
+    name: {fileID: 11400000, guid: 1780899c17e6ce742950b4a2c2840c09, type: 2}
   - learn_level: 48
-    name: {fileID: 11400000, guid: 05225a79f76358245811e7f87958bd45, type: 2}
+    name: {fileID: 11400000, guid: 2d5890e5a702b724291c6cd54b91cc11, type: 2}
   - learn_level: 54
-    name: {fileID: 11400000, guid: 2b838e31fa5433a4db5b8e352471b3d7, type: 2}
+    name: {fileID: 11400000, guid: 3d9e5de932ae6064fa0174bb00ff753a, type: 2}
   types:
-  - {fileID: 11400000, guid: ae403da2e82ddcd42ae422ef3eb0a687, type: 2}
+  - {fileID: 11400000, guid: 2d8d2cd79db45b54ba4b220b056cdafe, type: 2}
   evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: 59574dbfb0d46084687cbf8719322f17, type: 3}
+    frontDefault: {fileID: 21300000, guid: 4bfb26654caca6f429485eef843c34d8, type: 3}

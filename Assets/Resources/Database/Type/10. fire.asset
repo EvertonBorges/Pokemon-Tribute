@@ -15,21 +15,21 @@ MonoBehaviour:
   id: 10
   name: fire
   double_damage_from:
-  - {fileID: 11400000, guid: 6a30e92921eab594591ec0783dace39f, type: 2}
-  - {fileID: 11400000, guid: e94647405f7746f47845c12743de7e74, type: 2}
-  - {fileID: 11400000, guid: ae403da2e82ddcd42ae422ef3eb0a687, type: 2}
+  - {fileID: 11400000, guid: 6073242af4df7804499221e154852c97, type: 2}
+  - {fileID: 11400000, guid: 856b6e7697fc99a409f8b06286888049, type: 2}
+  - {fileID: 11400000, guid: 2d8d2cd79db45b54ba4b220b056cdafe, type: 2}
   double_damage_to:
-  - {fileID: 11400000, guid: 67e80901fa49a864eb4700d43543d0aa, type: 2}
-  - {fileID: 11400000, guid: 7e0cc00b1eb0ca5449c7a0b51ab49f33, type: 2}
-  - {fileID: 11400000, guid: 545a8138c18f7d1408e23c35b2833e8b, type: 2}
+  - {fileID: 11400000, guid: adb45f974dc601040912429d0cbe78aa, type: 2}
+  - {fileID: 11400000, guid: 711c988eda0231c4f878da626d985275, type: 2}
+  - {fileID: 11400000, guid: fd31f123d4752944598855b9e091f391, type: 2}
   half_damage_from:
-  - {fileID: 11400000, guid: 67e80901fa49a864eb4700d43543d0aa, type: 2}
+  - {fileID: 11400000, guid: adb45f974dc601040912429d0cbe78aa, type: 2}
   - {fileID: 11400000}
-  - {fileID: 11400000, guid: 7e0cc00b1eb0ca5449c7a0b51ab49f33, type: 2}
+  - {fileID: 11400000, guid: 711c988eda0231c4f878da626d985275, type: 2}
   half_damage_to:
-  - {fileID: 11400000, guid: e94647405f7746f47845c12743de7e74, type: 2}
+  - {fileID: 11400000, guid: 856b6e7697fc99a409f8b06286888049, type: 2}
   - {fileID: 11400000}
-  - {fileID: 11400000, guid: ae403da2e82ddcd42ae422ef3eb0a687, type: 2}
-  - {fileID: 11400000, guid: 7f1bfc639c1fb9041b0041bc7fe6fd83, type: 2}
+  - {fileID: 11400000, guid: 2d8d2cd79db45b54ba4b220b056cdafe, type: 2}
+  - {fileID: 11400000, guid: db70450f3c6615e47955f1ee261b4156, type: 2}
   no_damage_from: []
   no_damage_to: []

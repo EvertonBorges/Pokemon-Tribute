@@ -17,5 +17,5 @@ MonoBehaviour:
   description: An attack that may cause flinching.
   pp: 10
   priority: 0
-  moveTarget: {fileID: 11400000, guid: bcfda99bbc2d9ee40b1ed4078e624e45, type: 2}
-  type: {fileID: 11400000, guid: e94647405f7746f47845c12743de7e74, type: 2}
+  moveTarget: {fileID: 11400000, guid: 0940ec1a24bdfb24dbf8452e2f8a75f3, type: 2}
+  type: {fileID: 11400000, guid: 856b6e7697fc99a409f8b06286888049, type: 2}

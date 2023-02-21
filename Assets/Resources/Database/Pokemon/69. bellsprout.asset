@@ -25,28 +25,31 @@ MonoBehaviour:
     speed: 40
   moves:
   - learn_level: 1
-    name: {fileID: 11400000, guid: 8ff2d262807b64e4083ddf428afa4a01, type: 2}
+    name: {fileID: 11400000, guid: 5ac28a9a9349df346a1d60110dfb0ad1, type: 2}
   - learn_level: 1
-    name: {fileID: 11400000, guid: 26c1b361578d2ea438b296234afd3f80, type: 2}
+    name: {fileID: 11400000, guid: 88f41df74b57dce469c5ac966cab458b, type: 2}
   - learn_level: 13
-    name: {fileID: 11400000, guid: 46e186cbf5808954eba2ea5663fd214b, type: 2}
+    name: {fileID: 11400000, guid: 992e05d1a7a66e8418174c71327ea483, type: 2}
   - learn_level: 15
-    name: {fileID: 11400000, guid: 1c2b96234f6324746a919f6297a70b8c, type: 2}
+    name: {fileID: 11400000, guid: 464560c3dc4386b4d945f00d9926935d, type: 2}
   - learn_level: 18
-    name: {fileID: 11400000, guid: 10bfa4bf09630be4c984f6455228675b, type: 2}
+    name: {fileID: 11400000, guid: 4af46453fbfd8a04aabf7708cb5c80b8, type: 2}
   - learn_level: 21
-    name: {fileID: 11400000, guid: 66fd4fdb1953a764d941aaceccc07977, type: 2}
+    name: {fileID: 11400000, guid: 4cb99ad9f436d184e9a252d486774496, type: 2}
   - learn_level: 26
-    name: {fileID: 11400000, guid: 5170133b992db35458877b14f79712f2, type: 2}
+    name: {fileID: 11400000, guid: 878c98b73ee96264c91c2a2606e9336a, type: 2}
   - learn_level: 33
-    name: {fileID: 11400000, guid: ccfcde50f9ea7654d8c668f6b61b67d9, type: 2}
+    name: {fileID: 11400000, guid: eadd806ee1ab9b94085a0441b06fa34f, type: 2}
   - learn_level: 42
-    name: {fileID: 11400000, guid: 100119fd457c95d48b12b89b9427b24e, type: 2}
+    name: {fileID: 11400000, guid: 09f4b12d5cdfd2d4eacbb4b346df3072, type: 2}
   types:
-  - {fileID: 11400000, guid: 7e0cc00b1eb0ca5449c7a0b51ab49f33, type: 2}
-  - {fileID: 11400000, guid: dacdbc865dafd2d4aa6fbf739482e1e9, type: 2}
+  - {fileID: 11400000, guid: 711c988eda0231c4f878da626d985275, type: 2}
+  - {fileID: 11400000, guid: 86937549e4613db4cb25e915c753dc2e, type: 2}
   evolve_to:
   - evolutionConditions:
     - trigger: level-up
       min_level: 21
-    pokemon: {fileID: 11400000, guid: a120333882dc4404bbb0cff5a35e10bc, type: 2}
+    pokemon: {fileID: 11400000, guid: bb323b7c05c0c1d45a1444cd09f6990a, type: 2}
+  sprites:
+    backDefault: {fileID: 21300000, guid: 1e29b93c375b6c14c8e33accb3e98883, type: 3}
+    frontDefault: {fileID: 21300000, guid: 7c07adfbce2c771429c0e765ab61693e, type: 3}

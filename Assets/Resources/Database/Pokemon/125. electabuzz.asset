@@ -25,19 +25,22 @@ MonoBehaviour:
     speed: 105
   moves:
   - learn_level: 1
-    name: {fileID: 11400000, guid: 28dc69bd14f4d1e4a9c3c0ceb7678c2e, type: 2}
+    name: {fileID: 11400000, guid: a1c5d113340e33e43adb832ce0b192d2, type: 2}
   - learn_level: 1
-    name: {fileID: 11400000, guid: 5c792a5d92fdf3e4db49b69f16654232, type: 2}
+    name: {fileID: 11400000, guid: ff5e326bb9d245642a61ecac5dfc6cf6, type: 2}
   - learn_level: 34
-    name: {fileID: 11400000, guid: e580c6b96401f9d47b39432829357798, type: 2}
+    name: {fileID: 11400000, guid: e9636a1c972137d41993d9084ffe8fff, type: 2}
   - learn_level: 37
-    name: {fileID: 11400000, guid: bb55b80f8f0ac094a857c1c214e8cc89, type: 2}
+    name: {fileID: 11400000, guid: 0f3cb4d7bb4f1eb46a8545a1a585ed3d, type: 2}
   - learn_level: 42
-    name: {fileID: 11400000, guid: 79949a77498e5714288d532f2cc3acdf, type: 2}
+    name: {fileID: 11400000, guid: 46c014eff9e50b9478a63c5804cb3a7c, type: 2}
   - learn_level: 49
-    name: {fileID: 11400000, guid: 8a886c78f8bfcbf44b6b84b9d54f3eec, type: 2}
+    name: {fileID: 11400000, guid: 1a907d44e6fe9da4791798e992ab53e2, type: 2}
   - learn_level: 54
-    name: {fileID: 11400000, guid: 3b02a90191a39954d98c80148c81a9f3, type: 2}
+    name: {fileID: 11400000, guid: 0839b8932e39508499bc2462425fd1be, type: 2}
   types:
-  - {fileID: 11400000, guid: 7c9061704c4acbb4192002ff4addd5f3, type: 2}
+  - {fileID: 11400000, guid: e188e36d1242f8f4abbac5cd66ac8cfc, type: 2}
   evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: 27dc932fe9a00224580769d3f1cedf93, type: 3}
+    frontDefault: {fileID: 21300000, guid: 205a3d15a0f00c145a9c5fcb57ab0fb1, type: 3}

@@ -25,24 +25,27 @@ MonoBehaviour:
     speed: 100
   moves:
   - learn_level: 1
-    name: {fileID: 11400000, guid: 5170133b992db35458877b14f79712f2, type: 2}
+    name: {fileID: 11400000, guid: 878c98b73ee96264c91c2a2606e9336a, type: 2}
   - learn_level: 1
-    name: {fileID: 11400000, guid: 28acf5f561080f648925ce754a813c68, type: 2}
+    name: {fileID: 11400000, guid: e6ec670a4f64361439f786d115d19275, type: 2}
   - learn_level: 1
-    name: {fileID: 11400000, guid: 46e186cbf5808954eba2ea5663fd214b, type: 2}
+    name: {fileID: 11400000, guid: 992e05d1a7a66e8418174c71327ea483, type: 2}
   - learn_level: 18
-    name: {fileID: 11400000, guid: cd516b3a1a03bb749b93cfbb705d1c88, type: 2}
+    name: {fileID: 11400000, guid: e8dbd29dbe89e56449a29bd7d11d549c, type: 2}
   - learn_level: 22
-    name: {fileID: 11400000, guid: 73f9b76d1fd16dd468bef78fb338b989, type: 2}
+    name: {fileID: 11400000, guid: 47b02d18984b6dd40a03f23165bdf40b, type: 2}
   - learn_level: 27
-    name: {fileID: 11400000, guid: 1cc393758f7064f4b8d1c6fa5482b275, type: 2}
+    name: {fileID: 11400000, guid: 0229b4ac40b724d4aa726e212f5fc37a, type: 2}
   - learn_level: 35
-    name: {fileID: 11400000, guid: 727e9c379ca99dc4ca9dc460287eaf00, type: 2}
+    name: {fileID: 11400000, guid: bcc93c844a64f4f4e9f15df9952f5f73, type: 2}
   - learn_level: 43
-    name: {fileID: 11400000, guid: bb55b80f8f0ac094a857c1c214e8cc89, type: 2}
+    name: {fileID: 11400000, guid: 0f3cb4d7bb4f1eb46a8545a1a585ed3d, type: 2}
   - learn_level: 50
-    name: {fileID: 11400000, guid: 2b838e31fa5433a4db5b8e352471b3d7, type: 2}
+    name: {fileID: 11400000, guid: 3d9e5de932ae6064fa0174bb00ff753a, type: 2}
   types:
-  - {fileID: 11400000, guid: ae403da2e82ddcd42ae422ef3eb0a687, type: 2}
-  - {fileID: 11400000, guid: dacdbc865dafd2d4aa6fbf739482e1e9, type: 2}
+  - {fileID: 11400000, guid: 2d8d2cd79db45b54ba4b220b056cdafe, type: 2}
+  - {fileID: 11400000, guid: 86937549e4613db4cb25e915c753dc2e, type: 2}
   evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: 480ffa42ed01aaa4e98339b40101508d, type: 3}
+    frontDefault: {fileID: 21300000, guid: 3001e235cfce31045816f25032664569, type: 3}

@@ -15,12 +15,12 @@ MonoBehaviour:
   id: 1
   name: normal
   double_damage_from:
-  - {fileID: 11400000, guid: b8bf10a7c2303cd4dbacd250cff90274, type: 2}
+  - {fileID: 11400000, guid: 642efe96ee9dc644e87c1119e24481e6, type: 2}
   double_damage_to: []
   half_damage_from: []
   half_damage_to:
-  - {fileID: 11400000, guid: e94647405f7746f47845c12743de7e74, type: 2}
+  - {fileID: 11400000, guid: 856b6e7697fc99a409f8b06286888049, type: 2}
   no_damage_from:
-  - {fileID: 11400000, guid: 6165e04acc2aaec428901ce15a1c254b, type: 2}
+  - {fileID: 11400000, guid: d514b7da7cfc6ee40be372fa9b9d0356, type: 2}
   no_damage_to:
-  - {fileID: 11400000, guid: 6165e04acc2aaec428901ce15a1c254b, type: 2}
+  - {fileID: 11400000, guid: d514b7da7cfc6ee40be372fa9b9d0356, type: 2}

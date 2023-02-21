@@ -17,5 +17,5 @@ MonoBehaviour:
   description: Restores HP by 1/2 the user's max HP.
   pp: 10
   priority: 0
-  moveTarget: {fileID: 11400000, guid: d9fe39a93b29cfd45a1b463963639630, type: 2}
-  type: {fileID: 11400000, guid: b3780e8201acfc84bb9739723ef07fd4, type: 2}
+  moveTarget: {fileID: 11400000, guid: e133dd0dc5277324bb0e451b685748d7, type: 2}
+  type: {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}

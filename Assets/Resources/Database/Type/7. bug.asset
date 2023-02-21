@@ -15,22 +15,22 @@ MonoBehaviour:
   id: 7
   name: bug
   double_damage_from:
-  - {fileID: 11400000, guid: d8b0cb44c79821540a6dec292b30b876, type: 2}
-  - {fileID: 11400000, guid: e94647405f7746f47845c12743de7e74, type: 2}
-  - {fileID: 11400000, guid: c543eb169464d6f48832acd66df97221, type: 2}
-  - {fileID: 11400000, guid: dacdbc865dafd2d4aa6fbf739482e1e9, type: 2}
+  - {fileID: 11400000, guid: e3b39be3fcac2974c9f569113a83f7e3, type: 2}
+  - {fileID: 11400000, guid: 856b6e7697fc99a409f8b06286888049, type: 2}
+  - {fileID: 11400000, guid: d7de067c0c2c6c24fa8115d1f13e0aaa, type: 2}
+  - {fileID: 11400000, guid: 86937549e4613db4cb25e915c753dc2e, type: 2}
   double_damage_to:
-  - {fileID: 11400000, guid: 7e0cc00b1eb0ca5449c7a0b51ab49f33, type: 2}
-  - {fileID: 11400000, guid: 46f48b936bca3fa47b92c01de801f6a1, type: 2}
-  - {fileID: 11400000, guid: dacdbc865dafd2d4aa6fbf739482e1e9, type: 2}
+  - {fileID: 11400000, guid: 711c988eda0231c4f878da626d985275, type: 2}
+  - {fileID: 11400000, guid: f18070f1d70e9f14aac1240b2f4370bd, type: 2}
+  - {fileID: 11400000, guid: 86937549e4613db4cb25e915c753dc2e, type: 2}
   half_damage_from:
-  - {fileID: 11400000, guid: b8bf10a7c2303cd4dbacd250cff90274, type: 2}
-  - {fileID: 11400000, guid: 6a30e92921eab594591ec0783dace39f, type: 2}
-  - {fileID: 11400000, guid: 7e0cc00b1eb0ca5449c7a0b51ab49f33, type: 2}
+  - {fileID: 11400000, guid: 642efe96ee9dc644e87c1119e24481e6, type: 2}
+  - {fileID: 11400000, guid: 6073242af4df7804499221e154852c97, type: 2}
+  - {fileID: 11400000, guid: 711c988eda0231c4f878da626d985275, type: 2}
   half_damage_to:
-  - {fileID: 11400000, guid: b8bf10a7c2303cd4dbacd250cff90274, type: 2}
-  - {fileID: 11400000, guid: d8b0cb44c79821540a6dec292b30b876, type: 2}
-  - {fileID: 11400000, guid: 6165e04acc2aaec428901ce15a1c254b, type: 2}
-  - {fileID: 11400000, guid: c543eb169464d6f48832acd66df97221, type: 2}
+  - {fileID: 11400000, guid: 642efe96ee9dc644e87c1119e24481e6, type: 2}
+  - {fileID: 11400000, guid: e3b39be3fcac2974c9f569113a83f7e3, type: 2}
+  - {fileID: 11400000, guid: d514b7da7cfc6ee40be372fa9b9d0356, type: 2}
+  - {fileID: 11400000, guid: d7de067c0c2c6c24fa8115d1f13e0aaa, type: 2}
   no_damage_from: []
   no_damage_to: []

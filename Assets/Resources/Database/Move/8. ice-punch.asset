@@ -17,5 +17,5 @@ MonoBehaviour:
   description: An icy punch. May cause freezing.
   pp: 15
   priority: 0
-  moveTarget: {fileID: 11400000, guid: 9ee1cd037f7c9b148935858982c3a1f8, type: 2}
-  type: {fileID: 11400000, guid: 545a8138c18f7d1408e23c35b2833e8b, type: 2}
+  moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
+  type: {fileID: 11400000, guid: fd31f123d4752944598855b9e091f391, type: 2}

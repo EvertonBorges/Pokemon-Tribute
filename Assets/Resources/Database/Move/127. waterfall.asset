@@ -17,5 +17,5 @@ MonoBehaviour:
   description: An aquatic charge attack.
   pp: 15
   priority: 0
-  moveTarget: {fileID: 11400000, guid: 9ee1cd037f7c9b148935858982c3a1f8, type: 2}
-  type: {fileID: 11400000, guid: ae403da2e82ddcd42ae422ef3eb0a687, type: 2}
+  moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
+  type: {fileID: 11400000, guid: 2d8d2cd79db45b54ba4b220b056cdafe, type: 2}

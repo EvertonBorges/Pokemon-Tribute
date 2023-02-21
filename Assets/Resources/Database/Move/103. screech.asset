@@ -18,5 +18,5 @@ MonoBehaviour:
     stat."
   pp: 40
   priority: 0
-  moveTarget: {fileID: 11400000, guid: 9ee1cd037f7c9b148935858982c3a1f8, type: 2}
-  type: {fileID: 11400000, guid: b3780e8201acfc84bb9739723ef07fd4, type: 2}
+  moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
+  type: {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}

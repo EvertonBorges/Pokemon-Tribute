@@ -17,5 +17,5 @@ MonoBehaviour:
   description: Works 2-3 turns and confuses user.
   pp: 10
   priority: 0
-  moveTarget: {fileID: 11400000, guid: ee36919613d18034abae0c97ed6bdc7e, type: 2}
-  type: {fileID: 11400000, guid: 7e0cc00b1eb0ca5449c7a0b51ab49f33, type: 2}
+  moveTarget: {fileID: 11400000, guid: e84acf7e49b062141852b475e3329713, type: 2}
+  type: {fileID: 11400000, guid: 711c988eda0231c4f878da626d985275, type: 2}

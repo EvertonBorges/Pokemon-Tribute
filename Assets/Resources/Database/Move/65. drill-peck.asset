@@ -17,5 +17,5 @@ MonoBehaviour:
   description: "A strong, spin\xAD ning-peck attack."
   pp: 20
   priority: 0
-  moveTarget: {fileID: 11400000, guid: 9ee1cd037f7c9b148935858982c3a1f8, type: 2}
-  type: {fileID: 11400000, guid: d8b0cb44c79821540a6dec292b30b876, type: 2}
+  moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
+  type: {fileID: 11400000, guid: e3b39be3fcac2974c9f569113a83f7e3, type: 2}

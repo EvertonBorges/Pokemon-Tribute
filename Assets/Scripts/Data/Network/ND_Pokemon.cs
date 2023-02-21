@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
@@ -44,11 +45,13 @@ public static class ND_Pokemon
     private static string ResourcesType => $"{Resources}/Type";
     private static string ResourcesMove => $"{Resources}/Move";
     private static string ResourcesMoveTarget => $"{Resources}/MoveTarget";
+    private static string ResourcesSprite => $"{Resources}/Sprite";
 
     private static string ResourcesPokemonFilename(string value) => $"{ResourcesPokemon}/{value}.asset";
     private static string ResourcesTypeFilename(string value) => $"{ResourcesType}/{value}.asset";
     private static string ResourcesMoveFilename(string value) => $"{ResourcesMove}/{value}.asset";
     private static string ResourcesMoveTargetFilename(string value) => $"{ResourcesMoveTarget}/{value}.asset";
+    private static string ResourcesSpriteFilename(int id, string value) => $"{ResourcesSprite}/{id}/{value}.png";
 
     private const string URL_MOVE_TARGET = "https://pokeapi.co/api/v2/move-target?limit=10000";
     private const string URL_GENERATION = "https://pokeapi.co/api/v2/generation";
@@ -58,6 +61,10 @@ public static class ND_Pokemon
     private static readonly Dictionary<string, PokeAPI_MoveTarget> m_moveTargets = new();
     private static readonly Dictionary<string, SO_MoveTarget> m_moveTargets_so = new();
     private static readonly Dictionary<string, SO_Move> moves_so = new();
+    private static readonly Dictionary<string, SO_Pokemon> pokemons_so = new();
+
+
+    private static readonly Dictionary<string, PokeAPI_Pokemon> pokemons_api = new();
 
     public static void GetPokemonDatabase()
     {
@@ -93,6 +100,12 @@ public static class ND_Pokemon
         await PopulatePokemons(generation, generationApi.pokemon_species);
 
         Debug.Log("Pokemons Populated");
+
+        Debug.Log("Populating Pokemons Sprites");
+
+        await PopulatePokemonsSprites();
+
+        Debug.Log("Pokemons Sprites Populated");
 
         AssetDatabase.SaveAssets();
     }
@@ -297,8 +310,6 @@ public static class ND_Pokemon
     {
         Dictionary<string, PokeAPI_PokemonSpecies> pokemonSpeciesApi = new();
 
-        Dictionary<string, PokeAPI_Pokemon> pokemonsApi = new();
-
         Dictionary<string, PokeAPI_EvolutionChain> pokemonsEvolutionChainApi = new();
 
         ClearLog();
@@ -311,7 +322,7 @@ public static class ND_Pokemon
 
             pokemonSpeciesApi.Add(pokemonSpecieApi.name, pokemonSpecieApi);
 
-            pokemonsApi.Add(pokemonApi.name, pokemonApi);
+            pokemons_api.Add(pokemonApi.name, pokemonApi);
 
             if (!pokemonsEvolutionChainApi.ContainsKey(pokemonSpecieApi.evolution_chain.url))
             {
@@ -322,8 +333,6 @@ public static class ND_Pokemon
 
             Debug.Log($"Pokemons (API): {pokemonSpeciesApi.Count}/{pokemonSpecies.Count}");
         }
-
-        Dictionary<string, SO_Pokemon> pokemons_so = new();
 
         foreach (var pokemonSpecieApi in pokemonSpeciesApi)
         {
@@ -338,7 +347,7 @@ public static class ND_Pokemon
 
             var pokemonSpecieApi = pokemonSpeciesApi[pokemon_so.Key];
 
-            var pokemonApi = pokemonsApi[pokemon_so.Key];
+            var pokemonApi = pokemons_api[pokemon_so.Key];
 
             so_pokemon.id = pokemonApi.id;
 
@@ -425,6 +434,58 @@ public static class ND_Pokemon
             EditorUtility.SetDirty(so_pokemon);
 
             AssetDatabase.SaveAssetIfDirty(so_pokemon);
+
+            AssetDatabase.Refresh();
+        }
+
+        static void UpdateSpritesReference(SO_Pokemon so_pokemon)
+        {
+            var id = so_pokemon.id;
+
+            var backDefault = AssetDatabase.LoadAssetAtPath<Sprite>(ResourcesSpriteFilename(id, "backDefault"));
+
+            var frontDefault = AssetDatabase.LoadAssetAtPath<Sprite>(ResourcesSpriteFilename(id, "frontDefault"));
+
+            so_pokemon.sprites.backDefault = backDefault;
+
+            so_pokemon.sprites.frontDefault = frontDefault;
+        }
+    }
+
+    private async static Task PopulatePokemonsSprites()
+    {
+        ClearLog();
+
+        foreach (var pokemon_so in pokemons_so.OrderBy(x => x.Value.id))
+        {
+            var so_pokemon = pokemon_so.Value;
+
+            var pokemonApi = pokemons_api[pokemon_so.Key];
+
+            await SaveTextures(pokemonApi);
+
+            UpdateSpritesReference(so_pokemon);
+
+            Debug.Log($"Pokemon Sprites: {so_pokemon.id}/{pokemons_so.Count}");
+
+            EditorUtility.SetDirty(so_pokemon);
+
+            AssetDatabase.SaveAssetIfDirty(so_pokemon);
+
+            AssetDatabase.Refresh();
+        }
+
+        static void UpdateSpritesReference(SO_Pokemon so_pokemon)
+        {
+            var id = so_pokemon.id;
+
+            var backDefault = AssetDatabase.LoadAssetAtPath<Sprite>(ResourcesSpriteFilename(id, "backDefault"));
+
+            var frontDefault = AssetDatabase.LoadAssetAtPath<Sprite>(ResourcesSpriteFilename(id, "frontDefault"));
+
+            so_pokemon.sprites.backDefault = backDefault;
+
+            so_pokemon.sprites.frontDefault = frontDefault;
         }
     }
 
@@ -489,6 +550,64 @@ public static class ND_Pokemon
         var method = type.GetMethod("Clear");
 
         method.Invoke(new object(), null);
+    }
+
+    private static async Task SaveTextures(PokeAPI_Pokemon pokemon)
+    {
+        var id = pokemon.id;
+
+        var sprites = pokemon.sprites.versions.generation_i.red_blue;
+
+        await Task.WhenAll(
+            SaveTexture(id, sprites.back_default, "backDefault"),
+            SaveTexture(id, sprites.front_default, "frontDefault")
+        );
+    }
+
+    private static async Task SaveTexture(int id, string url, string filename)
+    {
+        if (url.IsEmpty())
+            return;
+
+        var texture = await NetworkTask<Texture2D>.GetTexture(url);
+
+        SaveTexture(ResourcesSpriteFilename(id, filename), texture);
+    }
+
+    private static void SaveTexture(string path, Texture2D texture)
+    {
+        path.CreateResourcesFolder();
+
+        File.WriteAllBytes(path, texture.EncodeToPNG());
+
+        AssetDatabase.ImportAsset(path);
+
+        TextureImporter importer = (TextureImporter)AssetImporter.GetAtPath(path);
+
+        importer.isReadable = true;
+        importer.textureType = TextureImporterType.Sprite;
+
+        TextureImporterSettings importerSettings = new();
+        importer.ReadTextureSettings(importerSettings);
+        importerSettings.spriteExtrude = 0;
+        importerSettings.spriteGenerateFallbackPhysicsShape = false;
+        importerSettings.spriteMeshType = SpriteMeshType.Tight;
+        importerSettings.spriteMode = (int)SpriteImportMode.Single;
+        importer.SetTextureSettings(importerSettings);
+
+        importer.spriteImportMode = SpriteImportMode.Single;
+        importer.maxTextureSize = 2048;
+        importer.alphaIsTransparency = true;
+        importer.textureCompression = TextureImporterCompression.Uncompressed;
+        importer.alphaSource = TextureImporterAlphaSource.FromInput;
+        importer.wrapMode = TextureWrapMode.Repeat;
+        importer.filterMode = FilterMode.Point;
+
+        EditorUtility.SetDirty(importer);
+        importer.SaveAndReimport();
+
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();
     }
 
 }

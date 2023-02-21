@@ -12,6 +12,7 @@ public class SO_Pokemon : ScriptableObject
     public List<Move> moves = new();
     public List<SO_Type> types = new();
     public List<Evolution> evolve_to = new();
+    public Sprite sprites = new();
 
     [Serializable]
     public class Stats
@@ -43,6 +44,13 @@ public class SO_Pokemon : ScriptableObject
     {
         public string trigger = null;
         public int min_level = -1;
+    }
+
+    [Serializable]
+    public class Sprite
+    {
+        public UnityEngine.Sprite backDefault;
+        public UnityEngine.Sprite frontDefault;
     }
 
     public new string ToString => $"{id}. {name}";

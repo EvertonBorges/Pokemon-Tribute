@@ -17,5 +17,5 @@ MonoBehaviour:
   description: Steals 1/2 of the damage inflicted.
   pp: 10
   priority: 0
-  moveTarget: {fileID: 11400000, guid: 9ee1cd037f7c9b148935858982c3a1f8, type: 2}
-  type: {fileID: 11400000, guid: 7e0cc00b1eb0ca5449c7a0b51ab49f33, type: 2}
+  moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
+  type: {fileID: 11400000, guid: 711c988eda0231c4f878da626d985275, type: 2}

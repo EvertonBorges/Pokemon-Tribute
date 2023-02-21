@@ -25,25 +25,28 @@ MonoBehaviour:
     speed: 65
   moves:
   - learn_level: 1
-    name: {fileID: 11400000, guid: 7bd0a56cec02aa042a64b4423fd82f0e, type: 2}
+    name: {fileID: 11400000, guid: a7ad94a791247644097a722e9b767add, type: 2}
   - learn_level: 1
-    name: {fileID: 11400000, guid: 31fe8fe75144e0240b1abbb2ea42f962, type: 2}
+    name: {fileID: 11400000, guid: 4dabfd23c68b58d41a22f86fd5217092, type: 2}
   - learn_level: 9
-    name: {fileID: 11400000, guid: be610eed9304c624c91759465f04e5d1, type: 2}
+    name: {fileID: 11400000, guid: f771b10c13a0f0f4cbc3a0affb4c1b6c, type: 2}
   - learn_level: 15
-    name: {fileID: 11400000, guid: 28dc69bd14f4d1e4a9c3c0ceb7678c2e, type: 2}
+    name: {fileID: 11400000, guid: a1c5d113340e33e43adb832ce0b192d2, type: 2}
   - learn_level: 22
-    name: {fileID: 11400000, guid: 649b0be141311e945b8867bac7839755, type: 2}
+    name: {fileID: 11400000, guid: a7dffe83164543e4a9ab5c185db22071, type: 2}
   - learn_level: 30
-    name: {fileID: 11400000, guid: 05a364534a1081e43832e20e4d3795cc, type: 2}
+    name: {fileID: 11400000, guid: 62b926586860a1249a3cd4b7b88666a2, type: 2}
   - learn_level: 38
-    name: {fileID: 11400000, guid: 32b8d762f0a77db4aac53379ff93a95a, type: 2}
+    name: {fileID: 11400000, guid: fa74fb50ef5ee9b4383b7f36954b35dc, type: 2}
   - learn_level: 46
-    name: {fileID: 11400000, guid: dde55917db6fa984db9ca89cbe4a9691, type: 2}
+    name: {fileID: 11400000, guid: b485164ae84d6244ea259d037c1ec2de, type: 2}
   types:
-  - {fileID: 11400000, guid: c543eb169464d6f48832acd66df97221, type: 2}
+  - {fileID: 11400000, guid: d7de067c0c2c6c24fa8115d1f13e0aaa, type: 2}
   evolve_to:
   - evolutionConditions:
     - trigger: level-up
       min_level: 16
-    pokemon: {fileID: 11400000, guid: 4e11297ed1d623247b2868ee60a35b8d, type: 2}
+    pokemon: {fileID: 11400000, guid: 0883e18d52c89e747ba566fd4e8f80af, type: 2}
+  sprites:
+    backDefault: {fileID: 21300000, guid: 210bcaea6e53ea64b9c0958cae96d698, type: 3}
+    frontDefault: {fileID: 21300000, guid: c17f85f39c81f2a43ac24396ad7b55a7, type: 3}

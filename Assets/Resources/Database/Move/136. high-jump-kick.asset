@@ -17,5 +17,5 @@ MonoBehaviour:
   description: May miss and hurt the user.
   pp: 10
   priority: 0
-  moveTarget: {fileID: 11400000, guid: 9ee1cd037f7c9b148935858982c3a1f8, type: 2}
-  type: {fileID: 11400000, guid: b8bf10a7c2303cd4dbacd250cff90274, type: 2}
+  moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
+  type: {fileID: 11400000, guid: 642efe96ee9dc644e87c1119e24481e6, type: 2}

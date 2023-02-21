@@ -17,5 +17,5 @@ MonoBehaviour:
   description: A move that causes confusion.
   pp: 10
   priority: 0
-  moveTarget: {fileID: 11400000, guid: 9ee1cd037f7c9b148935858982c3a1f8, type: 2}
-  type: {fileID: 11400000, guid: 6165e04acc2aaec428901ce15a1c254b, type: 2}
+  moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
+  type: {fileID: 11400000, guid: d514b7da7cfc6ee40be372fa9b9d0356, type: 2}

@@ -17,5 +17,5 @@ MonoBehaviour:
   description: An attack with variable power.
   pp: 15
   priority: 0
-  moveTarget: {fileID: 11400000, guid: 9ee1cd037f7c9b148935858982c3a1f8, type: 2}
-  type: {fileID: 11400000, guid: 46f48b936bca3fa47b92c01de801f6a1, type: 2}
+  moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
+  type: {fileID: 11400000, guid: f18070f1d70e9f14aac1240b2f4370bd, type: 2}

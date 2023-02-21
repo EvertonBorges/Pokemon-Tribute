@@ -25,23 +25,26 @@ MonoBehaviour:
     speed: 72
   moves:
   - learn_level: 1
-    name: {fileID: 11400000, guid: 49c0a1f1fcf7e2447944f83ef25898e7, type: 2}
+    name: {fileID: 11400000, guid: fc691a37d4af9954a9f06c53601a863d, type: 2}
   - learn_level: 1
-    name: {fileID: 11400000, guid: 1e02e7956045b444888ab03e7ed44e64, type: 2}
+    name: {fileID: 11400000, guid: 64fbe2067251faf499e9633400562cc2, type: 2}
   - learn_level: 7
-    name: {fileID: 11400000, guid: 5c792a5d92fdf3e4db49b69f16654232, type: 2}
+    name: {fileID: 11400000, guid: ff5e326bb9d245642a61ecac5dfc6cf6, type: 2}
   - learn_level: 14
-    name: {fileID: 11400000, guid: 46ffcc854acbceb4184c2f961de36c74, type: 2}
+    name: {fileID: 11400000, guid: bde16d88f8feedf4193dc53fb7f3e033, type: 2}
   - learn_level: 23
-    name: {fileID: 11400000, guid: fc76dd531e800f04eb627e5b906c9e99, type: 2}
+    name: {fileID: 11400000, guid: 15a5592ee22b114488ecbf7fcf7f751a, type: 2}
   - learn_level: 34
-    name: {fileID: 11400000, guid: cd3a60cd9f9f8d942a286f1658717819, type: 2}
+    name: {fileID: 11400000, guid: 6a82bdaff119e434587d9372ea3232f5, type: 2}
   types:
-  - {fileID: 11400000, guid: b3780e8201acfc84bb9739723ef07fd4, type: 2}
+  - {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}
   evolve_to:
   - evolutionConditions:
     - trigger: level-up
       min_level: 20
     - trigger: level-up
       min_level: 20
-    pokemon: {fileID: 11400000, guid: 2160d7176d43072409b066601caea2fe, type: 2}
+    pokemon: {fileID: 11400000, guid: 25f91c9ea97c63e40ba09d435d2ffdf9, type: 2}
+  sprites:
+    backDefault: {fileID: 21300000, guid: 42220b510eede0e40999286e13bd4010, type: 3}
+    frontDefault: {fileID: 21300000, guid: f24eb92633b65fa4baa308ee4233a5ed, type: 3}

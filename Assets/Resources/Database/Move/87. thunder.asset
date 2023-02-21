@@ -17,5 +17,5 @@ MonoBehaviour:
   description: An attack that may cause paralysis.
   pp: 10
   priority: 0
-  moveTarget: {fileID: 11400000, guid: 9ee1cd037f7c9b148935858982c3a1f8, type: 2}
-  type: {fileID: 11400000, guid: 7c9061704c4acbb4192002ff4addd5f3, type: 2}
+  moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
+  type: {fileID: 11400000, guid: e188e36d1242f8f4abbac5cd66ac8cfc, type: 2}

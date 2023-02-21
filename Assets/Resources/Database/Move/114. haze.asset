@@ -17,5 +17,5 @@ MonoBehaviour:
   description: Eliminates all stat changes.
   pp: 30
   priority: 0
-  moveTarget: {fileID: 11400000, guid: b01f0c50fada0954db68fc4ca89259d4, type: 2}
-  type: {fileID: 11400000, guid: 545a8138c18f7d1408e23c35b2833e8b, type: 2}
+  moveTarget: {fileID: 11400000, guid: b4469d1925b878a4cae4610242cafdca, type: 2}
+  type: {fileID: 11400000, guid: fd31f123d4752944598855b9e091f391, type: 2}

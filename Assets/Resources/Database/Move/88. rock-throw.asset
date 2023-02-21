@@ -17,5 +17,5 @@ MonoBehaviour:
   description: Drops rocks on the enemy.
   pp: 15
   priority: 0
-  moveTarget: {fileID: 11400000, guid: 9ee1cd037f7c9b148935858982c3a1f8, type: 2}
-  type: {fileID: 11400000, guid: e94647405f7746f47845c12743de7e74, type: 2}
+  moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
+  type: {fileID: 11400000, guid: 856b6e7697fc99a409f8b06286888049, type: 2}

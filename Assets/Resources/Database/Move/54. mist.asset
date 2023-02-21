@@ -17,5 +17,5 @@ MonoBehaviour:
   description: Prevents stat reduction.
   pp: 30
   priority: 0
-  moveTarget: {fileID: 11400000, guid: 2ca13bcf739307641a4eb81943e0aa4e, type: 2}
-  type: {fileID: 11400000, guid: 545a8138c18f7d1408e23c35b2833e8b, type: 2}
+  moveTarget: {fileID: 11400000, guid: 4848230287912954993c8db622412611, type: 2}
+  type: {fileID: 11400000, guid: fd31f123d4752944598855b9e091f391, type: 2}

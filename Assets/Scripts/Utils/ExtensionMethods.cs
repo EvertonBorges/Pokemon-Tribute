@@ -114,7 +114,7 @@ public static class ExtensionMethods
         if (!fullpath.StartsWith(ResourcesFolder))
             return;
 
-        if (!fullpath.EndsWith(".asset"))
+        if (!fullpath.EndsWith(".asset") && !fullpath.EndsWith(".png"))
             return;
 
         var folder = fullpath[..fullpath.LastIndexOf("/")];
