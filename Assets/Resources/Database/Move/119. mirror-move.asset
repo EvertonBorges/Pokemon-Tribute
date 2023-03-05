@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 119. mirror-move
   m_EditorClassIdentifier: 
   id: 119
+  accuracy: -1
   name: mirror-move
   description: Counters with the same move.
+  power: -1
   pp: 20
   priority: 0
+  damageClass: status
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: e3b39be3fcac2974c9f569113a83f7e3, type: 2}

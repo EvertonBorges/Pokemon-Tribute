@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 82. dragon-rage
   m_EditorClassIdentifier: 
   id: 82
+  accuracy: 100
   name: dragon-rage
   description: Always inflicts 40HP damage.
+  power: -1
   pp: 10
   priority: 0
+  damageClass: special
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: db70450f3c6615e47955f1ee261b4156, type: 2}

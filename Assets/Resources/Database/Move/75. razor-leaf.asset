@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 75. razor-leaf
   m_EditorClassIdentifier: 
   id: 75
+  accuracy: 95
   name: razor-leaf
   description: "Has a high criti\xAD cal hit ratio."
+  power: 55
   pp: 25
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: 0940ec1a24bdfb24dbf8452e2f8a75f3, type: 2}
   type: {fileID: 11400000, guid: 711c988eda0231c4f878da626d985275, type: 2}

@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 24. double-kick
   m_EditorClassIdentifier: 
   id: 24
+  accuracy: 100
   name: double-kick
   description: A double kicking attack.
+  power: 30
   pp: 30
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 642efe96ee9dc644e87c1119e24481e6, type: 2}

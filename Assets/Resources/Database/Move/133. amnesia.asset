@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 133. amnesia
   m_EditorClassIdentifier: 
   id: 133
+  accuracy: -1
   name: amnesia
   description: Sharply raises the user's SPCL.DEF.
+  power: -1
   pp: 20
   priority: 0
+  damageClass: status
   moveTarget: {fileID: 11400000, guid: e133dd0dc5277324bb0e451b685748d7, type: 2}
   type: {fileID: 11400000, guid: f18070f1d70e9f14aac1240b2f4370bd, type: 2}

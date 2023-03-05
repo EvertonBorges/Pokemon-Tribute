@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 22. vine-whip
   m_EditorClassIdentifier: 
   id: 22
+  accuracy: 100
   name: vine-whip
   description: Whips the foe with slender vines.
+  power: 45
   pp: 10
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 711c988eda0231c4f878da626d985275, type: 2}

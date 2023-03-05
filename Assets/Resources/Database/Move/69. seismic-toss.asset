@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 69. seismic-toss
   m_EditorClassIdentifier: 
   id: 69
+  accuracy: 100
   name: seismic-toss
   description: "Inflicts damage identical to the user\u2019s level."
+  power: -1
   pp: 20
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 642efe96ee9dc644e87c1119e24481e6, type: 2}

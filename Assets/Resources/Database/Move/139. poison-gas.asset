@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 139. poison-gas
   m_EditorClassIdentifier: 
   id: 139
+  accuracy: 55
   name: poison-gas
   description: A move that may poison the foe.
+  power: -1
   pp: 40
   priority: 0
+  damageClass: status
   moveTarget: {fileID: 11400000, guid: 0940ec1a24bdfb24dbf8452e2f8a75f3, type: 2}
   type: {fileID: 11400000, guid: 86937549e4613db4cb25e915c753dc2e, type: 2}

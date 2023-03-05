@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 155. bonemerang
   m_EditorClassIdentifier: 
   id: 155
+  accuracy: 90
   name: bonemerang
   description: An attack that strikes twice.
+  power: 50
   pp: 10
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 6073242af4df7804499221e154852c97, type: 2}

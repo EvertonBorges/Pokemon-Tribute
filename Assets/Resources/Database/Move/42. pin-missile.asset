@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 42. pin-missile
   m_EditorClassIdentifier: 
   id: 42
+  accuracy: 85
   name: pin-missile
   description: Fires pins that strike 2-5 times.
+  power: 14
   pp: 20
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: adb45f974dc601040912429d0cbe78aa, type: 2}

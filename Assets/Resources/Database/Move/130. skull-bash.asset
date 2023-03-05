@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 130. skull-bash
   m_EditorClassIdentifier: 
   id: 130
+  accuracy: 100
   name: skull-bash
   description: '1st turn: Prepare 2nd turn: Attack'
+  power: 100
   pp: 15
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}

@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 122. lick
   m_EditorClassIdentifier: 
   id: 122
+  accuracy: 100
   name: lick
   description: An attack that may cause paralysis.
+  power: 20
   pp: 30
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: d514b7da7cfc6ee40be372fa9b9d0356, type: 2}

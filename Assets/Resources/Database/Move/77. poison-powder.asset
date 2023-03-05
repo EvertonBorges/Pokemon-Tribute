@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 77. poison-powder
   m_EditorClassIdentifier: 
   id: 77
+  accuracy: 75
   name: poison-powder
   description: A move that may poison the foe.
+  power: -1
   pp: 35
   priority: 0
+  damageClass: status
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 86937549e4613db4cb25e915c753dc2e, type: 2}

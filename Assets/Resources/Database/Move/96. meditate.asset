@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 96. meditate
   m_EditorClassIdentifier: 
   id: 96
+  accuracy: -1
   name: meditate
   description: Raises the user's ATTACK.
+  power: -1
   pp: 40
   priority: 0
+  damageClass: status
   moveTarget: {fileID: 11400000, guid: e133dd0dc5277324bb0e451b685748d7, type: 2}
   type: {fileID: 11400000, guid: f18070f1d70e9f14aac1240b2f4370bd, type: 2}

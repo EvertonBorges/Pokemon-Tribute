@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 86. thunder-wave
   m_EditorClassIdentifier: 
   id: 86
+  accuracy: 100
   name: thunder-wave
   description: A move that may cause paralysis.
+  power: -1
   pp: 20
   priority: 0
+  damageClass: status
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: e188e36d1242f8f4abbac5cd66ac8cfc, type: 2}

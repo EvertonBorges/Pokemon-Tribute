@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 67. low-kick
   m_EditorClassIdentifier: 
   id: 67
+  accuracy: 90
   name: low-kick
   description: An attack that may cause flinching.
+  power: 50
   pp: 20
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 642efe96ee9dc644e87c1119e24481e6, type: 2}

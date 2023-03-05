@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 140. barrage
   m_EditorClassIdentifier: 
   id: 140
+  accuracy: 85
   name: barrage
   description: Throws orbs to hit 2-5 times.
+  power: 15
   pp: 20
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}

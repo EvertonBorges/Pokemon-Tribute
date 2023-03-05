@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 115. reflect
   m_EditorClassIdentifier: 
   id: 115
+  accuracy: -1
   name: reflect
   description: Raises DEFENSE with a barrier.
+  power: -1
   pp: 20
   priority: 0
+  damageClass: status
   moveTarget: {fileID: 11400000, guid: 4848230287912954993c8db622412611, type: 2}
   type: {fileID: 11400000, guid: f18070f1d70e9f14aac1240b2f4370bd, type: 2}

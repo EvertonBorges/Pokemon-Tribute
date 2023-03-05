@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 97. agility
   m_EditorClassIdentifier: 
   id: 97
+  accuracy: -1
   name: agility
   description: Sharply increases the user's SPEED.
+  power: -1
   pp: 30
   priority: 0
+  damageClass: status
   moveTarget: {fileID: 11400000, guid: e133dd0dc5277324bb0e451b685748d7, type: 2}
   type: {fileID: 11400000, guid: f18070f1d70e9f14aac1240b2f4370bd, type: 2}

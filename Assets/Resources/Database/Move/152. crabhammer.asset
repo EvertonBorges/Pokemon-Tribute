@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 152. crabhammer
   m_EditorClassIdentifier: 
   id: 152
+  accuracy: 85
   name: crabhammer
   description: "Has a high criti\xAD cal hit ratio."
+  power: 100
   pp: 10
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 2d8d2cd79db45b54ba4b220b056cdafe, type: 2}

@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 109. confuse-ray
   m_EditorClassIdentifier: 
   id: 109
+  accuracy: 100
   name: confuse-ray
   description: A move that causes confusion.
+  power: -1
   pp: 10
   priority: 0
+  damageClass: status
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: d514b7da7cfc6ee40be372fa9b9d0356, type: 2}

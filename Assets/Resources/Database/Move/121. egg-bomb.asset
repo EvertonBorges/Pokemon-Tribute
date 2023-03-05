@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 121. egg-bomb
   m_EditorClassIdentifier: 
   id: 121
+  accuracy: 75
   name: egg-bomb
   description: Eggs are hurled at the foe.
+  power: 100
   pp: 10
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}

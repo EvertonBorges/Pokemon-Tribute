@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 99. rage
   m_EditorClassIdentifier: 
   id: 99
+  accuracy: 100
   name: rage
   description: Raises ATTACK if the user is hit.
+  power: 20
   pp: 20
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}

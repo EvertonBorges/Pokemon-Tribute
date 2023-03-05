@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 159. sharpen
   m_EditorClassIdentifier: 
   id: 159
+  accuracy: -1
   name: sharpen
   description: Reduces the polygon count and raises ATTACK.
+  power: -1
   pp: 30
   priority: 0
+  damageClass: status
   moveTarget: {fileID: 11400000, guid: e133dd0dc5277324bb0e451b685748d7, type: 2}
   type: {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}

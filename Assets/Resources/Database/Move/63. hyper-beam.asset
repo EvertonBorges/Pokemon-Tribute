@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 63. hyper-beam
   m_EditorClassIdentifier: 
   id: 63
+  accuracy: 90
   name: hyper-beam
   description: '1st turn: Attack 2nd turn: Rest'
+  power: 150
   pp: 5
   priority: 0
+  damageClass: special
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}

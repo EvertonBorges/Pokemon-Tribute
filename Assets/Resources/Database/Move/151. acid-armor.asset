@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 151. acid-armor
   m_EditorClassIdentifier: 
   id: 151
+  accuracy: -1
   name: acid-armor
   description: Sharply raises the user's DEFENSE.
+  power: -1
   pp: 40
   priority: 0
+  damageClass: status
   moveTarget: {fileID: 11400000, guid: e133dd0dc5277324bb0e451b685748d7, type: 2}
   type: {fileID: 11400000, guid: 86937549e4613db4cb25e915c753dc2e, type: 2}

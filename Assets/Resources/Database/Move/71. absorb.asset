@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 71. absorb
   m_EditorClassIdentifier: 
   id: 71
+  accuracy: 100
   name: absorb
   description: Steals 1/2 of the damage inflicted.
+  power: 20
   pp: 20
   priority: 0
+  damageClass: special
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 711c988eda0231c4f878da626d985275, type: 2}

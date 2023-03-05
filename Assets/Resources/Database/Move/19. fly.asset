@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 19. fly
   m_EditorClassIdentifier: 
   id: 19
+  accuracy: 95
   name: fly
   description: '1st turn: Fly 2nd turn: Attack'
+  power: 70
   pp: 15
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: e3b39be3fcac2974c9f569113a83f7e3, type: 2}

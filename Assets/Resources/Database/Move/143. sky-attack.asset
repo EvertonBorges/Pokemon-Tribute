@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 143. sky-attack
   m_EditorClassIdentifier: 
   id: 143
+  accuracy: 90
   name: sky-attack
   description: '1st turn: Prepare 2nd turn: Attack'
+  power: 140
   pp: 5
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: e3b39be3fcac2974c9f569113a83f7e3, type: 2}

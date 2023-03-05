@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 157. rock-slide
   m_EditorClassIdentifier: 
   id: 157
+  accuracy: 90
   name: rock-slide
   description: An attack that may cause flinching.
+  power: 75
   pp: 10
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: 0940ec1a24bdfb24dbf8452e2f8a75f3, type: 2}
   type: {fileID: 11400000, guid: 856b6e7697fc99a409f8b06286888049, type: 2}

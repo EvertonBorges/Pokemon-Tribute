@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 127. waterfall
   m_EditorClassIdentifier: 
   id: 127
+  accuracy: 100
   name: waterfall
   description: An aquatic charge attack.
+  power: 80
   pp: 15
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 2d8d2cd79db45b54ba4b220b056cdafe, type: 2}

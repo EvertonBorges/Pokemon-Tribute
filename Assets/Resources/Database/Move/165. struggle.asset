@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 165. struggle
   m_EditorClassIdentifier: 
   id: 165
+  accuracy: -1
   name: struggle
   description: Used only if all PP are exhausted.
+  power: 50
   pp: 1
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: e84acf7e49b062141852b475e3329713, type: 2}
   type: {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}

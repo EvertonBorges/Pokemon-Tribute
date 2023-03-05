@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 68. counter
   m_EditorClassIdentifier: 
   id: 68
+  accuracy: 100
   name: counter
   description: Returns a physical blow double.
+  power: -1
   pp: 20
   priority: -5
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: 6c842634566ff6a46ad803c6de524369, type: 2}
   type: {fileID: 11400000, guid: 642efe96ee9dc644e87c1119e24481e6, type: 2}

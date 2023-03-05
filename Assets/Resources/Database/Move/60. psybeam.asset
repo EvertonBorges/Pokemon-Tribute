@@ -13,10 +13,13 @@ MonoBehaviour:
   m_Name: 60. psybeam
   m_EditorClassIdentifier: 
   id: 60
+  accuracy: 100
   name: psybeam
   description: The target is attacked with a peculiar ray. This may also leave the
     target confused.
+  power: 65
   pp: 20
   priority: 0
+  damageClass: special
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: f18070f1d70e9f14aac1240b2f4370bd, type: 2}

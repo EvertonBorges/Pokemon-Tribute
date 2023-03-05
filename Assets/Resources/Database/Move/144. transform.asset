@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 144. transform
   m_EditorClassIdentifier: 
   id: 144
+  accuracy: -1
   name: transform
   description: The user assumes the foe's guise.
+  power: -1
   pp: 10
   priority: 0
+  damageClass: status
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}

@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 153. explosion
   m_EditorClassIdentifier: 
   id: 153
+  accuracy: 100
   name: explosion
   description: Inflicts severe damage but makes the user faint.
+  power: 170
   pp: 5
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a479f45a4a743cf45baf86efaff9dab5, type: 2}
   type: {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}

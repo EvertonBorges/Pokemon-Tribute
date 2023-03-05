@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 113. light-screen
   m_EditorClassIdentifier: 
   id: 113
+  accuracy: -1
   name: light-screen
   description: Ups SPCL.DEF with a wall of light.
+  power: -1
   pp: 30
   priority: 0
+  damageClass: status
   moveTarget: {fileID: 11400000, guid: 4848230287912954993c8db622412611, type: 2}
   type: {fileID: 11400000, guid: f18070f1d70e9f14aac1240b2f4370bd, type: 2}

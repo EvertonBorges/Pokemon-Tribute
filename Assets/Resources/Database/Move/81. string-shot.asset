@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 81. string-shot
   m_EditorClassIdentifier: 
   id: 81
+  accuracy: 95
   name: string-shot
   description: A move that lowers the foe's SPEED.
+  power: -1
   pp: 40
   priority: 0
+  damageClass: status
   moveTarget: {fileID: 11400000, guid: 0940ec1a24bdfb24dbf8452e2f8a75f3, type: 2}
   type: {fileID: 11400000, guid: adb45f974dc601040912429d0cbe78aa, type: 2}

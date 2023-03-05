@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 65. drill-peck
   m_EditorClassIdentifier: 
   id: 65
+  accuracy: 100
   name: drill-peck
   description: "A strong, spin\xAD ning-peck attack."
+  power: 80
   pp: 20
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: e3b39be3fcac2974c9f569113a83f7e3, type: 2}

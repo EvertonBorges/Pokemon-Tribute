@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 88. rock-throw
   m_EditorClassIdentifier: 
   id: 88
+  accuracy: 65
   name: rock-throw
   description: Drops rocks on the enemy.
+  power: 50
   pp: 15
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 856b6e7697fc99a409f8b06286888049, type: 2}

@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 27. rolling-kick
   m_EditorClassIdentifier: 
   id: 27
+  accuracy: 85
   name: rolling-kick
   description: A fast, spinning kick.
+  power: 60
   pp: 15
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 642efe96ee9dc644e87c1119e24481e6, type: 2}

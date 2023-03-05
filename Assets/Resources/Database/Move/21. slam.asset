@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 21. slam
   m_EditorClassIdentifier: 
   id: 21
+  accuracy: 75
   name: slam
   description: Slams the foe with a tail, vine, etc.
+  power: 80
   pp: 20
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}

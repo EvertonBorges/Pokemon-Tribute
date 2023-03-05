@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 39. tail-whip
   m_EditorClassIdentifier: 
   id: 39
+  accuracy: 100
   name: tail-whip
   description: Lowers the foe's DEFENSE.
+  power: -1
   pp: 30
   priority: 0
+  damageClass: status
   moveTarget: {fileID: 11400000, guid: 0940ec1a24bdfb24dbf8452e2f8a75f3, type: 2}
   type: {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}

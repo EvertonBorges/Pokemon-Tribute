@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 114. haze
   m_EditorClassIdentifier: 
   id: 114
+  accuracy: -1
   name: haze
   description: Eliminates all stat changes.
+  power: -1
   pp: 30
   priority: 0
+  damageClass: status
   moveTarget: {fileID: 11400000, guid: b4469d1925b878a4cae4610242cafdca, type: 2}
   type: {fileID: 11400000, guid: fd31f123d4752944598855b9e091f391, type: 2}

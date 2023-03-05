@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 17. wing-attack
   m_EditorClassIdentifier: 
   id: 17
+  accuracy: 100
   name: wing-attack
   description: Strikes the target with wings.
+  power: 35
   pp: 35
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: e3b39be3fcac2974c9f569113a83f7e3, type: 2}

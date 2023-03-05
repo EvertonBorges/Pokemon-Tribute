@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 30. horn-attack
   m_EditorClassIdentifier: 
   id: 30
+  accuracy: 100
   name: horn-attack
   description: An attack using a horn to jab.
+  power: 65
   pp: 25
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}

@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 51. acid
   m_EditorClassIdentifier: 
   id: 51
+  accuracy: 100
   name: acid
   description: An attack that may lower DEFENSE.
+  power: 40
   pp: 30
   priority: 0
+  damageClass: special
   moveTarget: {fileID: 11400000, guid: 0940ec1a24bdfb24dbf8452e2f8a75f3, type: 2}
   type: {fileID: 11400000, guid: 86937549e4613db4cb25e915c753dc2e, type: 2}

@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 13. razor-wind
   m_EditorClassIdentifier: 
   id: 13
+  accuracy: 75
   name: razor-wind
   description: '1st turn: Prepare 2nd turn: Attack'
+  power: 80
   pp: 10
   priority: 0
+  damageClass: special
   moveTarget: {fileID: 11400000, guid: 0940ec1a24bdfb24dbf8452e2f8a75f3, type: 2}
   type: {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}

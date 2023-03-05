@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 136. high-jump-kick
   m_EditorClassIdentifier: 
   id: 136
+  accuracy: 90
   name: high-jump-kick
   description: May miss and hurt the user.
+  power: 85
   pp: 10
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 642efe96ee9dc644e87c1119e24481e6, type: 2}

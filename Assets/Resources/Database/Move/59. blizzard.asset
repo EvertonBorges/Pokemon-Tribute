@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 59. blizzard
   m_EditorClassIdentifier: 
   id: 59
+  accuracy: 90
   name: blizzard
   description: An attack that may freeze the foe.
+  power: 110
   pp: 5
   priority: 0
+  damageClass: special
   moveTarget: {fileID: 11400000, guid: 0940ec1a24bdfb24dbf8452e2f8a75f3, type: 2}
   type: {fileID: 11400000, guid: fd31f123d4752944598855b9e091f391, type: 2}

@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 132. constrict
   m_EditorClassIdentifier: 
   id: 132
+  accuracy: 100
   name: constrict
   description: An attack that may lower SPEED.
+  power: 10
   pp: 35
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}

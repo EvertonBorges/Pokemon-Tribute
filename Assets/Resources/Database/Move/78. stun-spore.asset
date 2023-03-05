@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 78. stun-spore
   m_EditorClassIdentifier: 
   id: 78
+  accuracy: 75
   name: stun-spore
   description: A move that may paralyze the foe.
+  power: -1
   pp: 30
   priority: 0
+  damageClass: status
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 711c988eda0231c4f878da626d985275, type: 2}

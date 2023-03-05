@@ -17,20 +17,29 @@ public class Manager_Dialog : Singleton<Manager_Dialog>
     private int m_line = -1;
     private string[] m_text = null;
     private bool m_fastRead = false;
+    private bool m_autoHide = false;
     private Action m_callback = null;
     private Coroutine m_coroutineWriteText = null;
 
-    public void Setup(LocalizedString key, Action callback = null)
+    public void Setup(LocalizedString key = null, Action callback = null)
     {
-        _fadeEffect.FadeIn();
+        if (key != null)
+            _fadeEffect.FadeIn();
+        else
+            _fadeEffect.ShowForced();
 
-        _text.text = "";
+        _text.SetText("");
 
         m_line = 0;
 
-        m_text = key.GetLocalizedString().Split("\n");
+        m_autoHide = key != null;
 
         m_fastRead = false;
+
+        if (key == null)
+            return;
+
+        m_text = key.GetLocalizedString().Split("\n");
 
         m_callback = callback;
 
@@ -55,7 +64,7 @@ public class Manager_Dialog : Singleton<Manager_Dialog>
 
             m_coroutineWriteText = StartCoroutine(WriteText());
         }
-        else
+        else if (m_autoHide)
             Hide();
     }
 
@@ -66,7 +75,7 @@ public class Manager_Dialog : Singleton<Manager_Dialog>
         m_fastRead = false;
 
         if (m_line != 0)
-            _text.text += "\n";
+            _text.SetText($"{_text.text}\n");
 
         _scroll.verticalNormalizedPosition = 0f;
 
@@ -77,7 +86,7 @@ public class Manager_Dialog : Singleton<Manager_Dialog>
             for (int i = 0; i < (m_fastRead ? 1 : 3); i++)
                 yield return new WaitForFixedUpdate();
 
-            _text.text += item;
+            _text.SetText($"{_text.text}{item}");
 
             _scroll.verticalNormalizedPosition = 0f;
         }
@@ -92,7 +101,7 @@ public class Manager_Dialog : Singleton<Manager_Dialog>
         m_coroutineWriteText = null;
     }
 
-    private void Hide()
+    public void Hide()
     {
         m_line = -1;
 

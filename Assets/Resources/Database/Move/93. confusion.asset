@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 93. confusion
   m_EditorClassIdentifier: 
   id: 93
+  accuracy: 100
   name: confusion
   description: An attack that may cause confusion.
+  power: 50
   pp: 25
   priority: 0
+  damageClass: special
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: f18070f1d70e9f14aac1240b2f4370bd, type: 2}

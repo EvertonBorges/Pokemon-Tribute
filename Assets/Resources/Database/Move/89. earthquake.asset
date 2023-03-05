@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 89. earthquake
   m_EditorClassIdentifier: 
   id: 89
+  accuracy: 100
   name: earthquake
   description: Tough but useless vs. flying foes.
+  power: 100
   pp: 10
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a479f45a4a743cf45baf86efaff9dab5, type: 2}
   type: {fileID: 11400000, guid: 6073242af4df7804499221e154852c97, type: 2}

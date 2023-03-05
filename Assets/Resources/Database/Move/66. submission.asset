@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 66. submission
   m_EditorClassIdentifier: 
   id: 66
+  accuracy: 80
   name: submission
   description: "An attack that al\xAD so hurts the user."
+  power: 80
   pp: 25
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 642efe96ee9dc644e87c1119e24481e6, type: 2}

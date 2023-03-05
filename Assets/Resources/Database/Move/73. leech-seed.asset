@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 73. leech-seed
   m_EditorClassIdentifier: 
   id: 73
+  accuracy: 90
   name: leech-seed
   description: Steals HP from the foe on every turn.
+  power: -1
   pp: 10
   priority: 0
+  damageClass: status
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 711c988eda0231c4f878da626d985275, type: 2}

@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 28. sand-attack
   m_EditorClassIdentifier: 
   id: 28
+  accuracy: 100
   name: sand-attack
   description: Reduces accuracy by throwing sand.
+  power: -1
   pp: 15
   priority: 0
+  damageClass: status
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}

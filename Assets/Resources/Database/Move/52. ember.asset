@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 52. ember
   m_EditorClassIdentifier: 
   id: 52
+  accuracy: 100
   name: ember
   description: An attack that may inflict a burn.
+  power: 40
   pp: 25
   priority: 0
+  damageClass: special
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: d7de067c0c2c6c24fa8115d1f13e0aaa, type: 2}

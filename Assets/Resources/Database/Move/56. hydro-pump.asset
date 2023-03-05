@@ -13,10 +13,13 @@ MonoBehaviour:
   m_Name: 56. hydro-pump
   m_EditorClassIdentifier: 
   id: 56
+  accuracy: 80
   name: hydro-pump
   description: The target is blasted by a huge volume of water launched under great
     pressure.
+  power: 120
   pp: 5
   priority: 0
+  damageClass: special
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 2d8d2cd79db45b54ba4b220b056cdafe, type: 2}

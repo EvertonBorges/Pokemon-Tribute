@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 33. tackle
   m_EditorClassIdentifier: 
   id: 33
+  accuracy: 95
   name: tackle
   description: A full-body charge attack.
+  power: 35
   pp: 35
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}

@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 49. sonic-boom
   m_EditorClassIdentifier: 
   id: 49
+  accuracy: 90
   name: sonic-boom
   description: Always inflicts 20HP damage.
+  power: -1
   pp: 20
   priority: 0
+  damageClass: special
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}

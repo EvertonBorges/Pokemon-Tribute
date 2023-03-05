@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 41. twineedle
   m_EditorClassIdentifier: 
   id: 41
+  accuracy: 100
   name: twineedle
   description: Jabs the foe twice using stingers.
+  power: 25
   pp: 20
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: adb45f974dc601040912429d0cbe78aa, type: 2}

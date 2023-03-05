@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 7. fire-punch
   m_EditorClassIdentifier: 
   id: 7
+  accuracy: 100
   name: fire-punch
   description: A fiery punch. May cause a burn.
+  power: 75
   pp: 15
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: d7de067c0c2c6c24fa8115d1f13e0aaa, type: 2}

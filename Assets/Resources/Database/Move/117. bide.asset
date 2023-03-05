@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 117. bide
   m_EditorClassIdentifier: 
   id: 117
+  accuracy: -1
   name: bide
   description: Waits 2-3 turns & hits back double.
+  power: -1
   pp: 10
   priority: 1
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: e133dd0dc5277324bb0e451b685748d7, type: 2}
   type: {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}

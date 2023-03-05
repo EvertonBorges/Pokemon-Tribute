@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 72. mega-drain
   m_EditorClassIdentifier: 
   id: 72
+  accuracy: 100
   name: mega-drain
   description: Steals 1/2 of the damage inflicted.
+  power: 40
   pp: 10
   priority: 0
+  damageClass: special
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 711c988eda0231c4f878da626d985275, type: 2}

@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 145. bubble
   m_EditorClassIdentifier: 
   id: 145
+  accuracy: 100
   name: bubble
   description: An attack that may reduce SPEED.
+  power: 20
   pp: 30
   priority: 0
+  damageClass: special
   moveTarget: {fileID: 11400000, guid: 0940ec1a24bdfb24dbf8452e2f8a75f3, type: 2}
   type: {fileID: 11400000, guid: 2d8d2cd79db45b54ba4b220b056cdafe, type: 2}

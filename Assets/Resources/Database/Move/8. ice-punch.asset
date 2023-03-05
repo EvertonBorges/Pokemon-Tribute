@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 8. ice-punch
   m_EditorClassIdentifier: 
   id: 8
+  accuracy: 100
   name: ice-punch
   description: An icy punch. May cause freezing.
+  power: 75
   pp: 15
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: fd31f123d4752944598855b9e091f391, type: 2}

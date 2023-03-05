@@ -56,15 +56,14 @@ public static class ND_Pokemon
     private const string URL_MOVE_TARGET = "https://pokeapi.co/api/v2/move-target?limit=10000";
     private const string URL_GENERATION = "https://pokeapi.co/api/v2/generation";
 
-    private static readonly Dictionary<string, SO_Type> m_types_so = new();
+    private static Dictionary<string, PokeAPI_MoveTarget> m_moveTargets;
 
-    private static readonly Dictionary<string, PokeAPI_MoveTarget> m_moveTargets = new();
+    private static readonly Dictionary<string, SO_Type> m_types_so = new();
     private static readonly Dictionary<string, SO_MoveTarget> m_moveTargets_so = new();
     private static readonly Dictionary<string, SO_Move> moves_so = new();
     private static readonly Dictionary<string, SO_Pokemon> pokemons_so = new();
-
-
     private static readonly Dictionary<string, PokeAPI_Pokemon> pokemons_api = new();
+
 
     public static void GetPokemonDatabase()
     {
@@ -116,31 +115,24 @@ public static class ND_Pokemon
 
         m_moveTargets_so.Clear();
 
-        m_moveTargets.Clear();
-
         m_types_so.Clear();
     }
 
     private async static Task PopulateTypes(int generation, List<PokeAPI_NameUrl> types)
     {
-        Dictionary<string, PokeAPI_Type> typesApi = new();
-
         ClearLog();
 
-        foreach (var type in types)
-        {
-            var typeApi = await NetworkTask<PokeAPI_Type>.Get(type.url);
+        var tasks = types.Select(x => NetworkTask<PokeAPI_Type>.Get(x.url)).ToArray();
 
-            typesApi.Add(typeApi.name, typeApi);
-
-            Debug.Log($"Types (API): {typesApi.Count}/{types.Count}");
-        }
+        var typesApi = (await Task.WhenAll(tasks)).ToDictionary(x => x.name);
 
         foreach (var type in typesApi)
         {
             var so_type = ScriptableObject.CreateInstance<SO_Type>();
 
             m_types_so.Add(type.Key, so_type);
+
+            Debug.Log($"Types: {m_types_so.Count}/{types.Count}");
         }
 
         foreach (var type_so in m_types_so)
@@ -207,18 +199,11 @@ public static class ND_Pokemon
 
     private async static Task PopulateMoves(List<PokeAPI_NameUrl> moves)
     {
-        Dictionary<string, PokeAPI_Move> movesApi = new();
+        var tasks = moves.Select(x => NetworkTask<PokeAPI_Move>.Get(x.url));
+
+        var movesApi = (await Task.WhenAll(tasks)).ToDictionary(x => x.name);
 
         ClearLog();
-
-        foreach (var move in moves)
-        {
-            var moveApi = await NetworkTask<PokeAPI_Move>.Get(move.url);
-
-            movesApi.Add(moveApi.name, moveApi);
-
-            Debug.Log($"Moves (API): {movesApi.Count}/{moves.Count}");
-        }
 
         moves_so.Clear();
 
@@ -227,6 +212,8 @@ public static class ND_Pokemon
             var so_move = ScriptableObject.CreateInstance<SO_Move>();
 
             moves_so.Add(moveApi.Key, so_move);
+
+            Debug.Log($"Moves: {moves_so.Count}/{moves.Count}");
         }
 
         foreach (var move_so in moves_so)
@@ -237,7 +224,7 @@ public static class ND_Pokemon
 
             so_move.id = moveApi.id;
 
-            so_move.accuracy = moveApi.accuracy;
+            so_move.accuracy = moveApi.accuracy ?? -1;
 
             so_move.name = moveApi.name;
 
@@ -256,11 +243,13 @@ public static class ND_Pokemon
                     .flavor_text
                     .Replace("\n", " ");
 
-            so_move.power = moveApi.power;
+            so_move.power = moveApi.power ?? -1;
 
             so_move.pp = moveApi.pp;
 
             so_move.priority = moveApi.priority;
+
+            so_move.damageClass = moveApi.damage_class.name;
 
             if (m_types_so.ContainsKey(moveApi.type.name))
                 so_move.type = m_types_so[moveApi.type.name];
@@ -437,32 +426,21 @@ public static class ND_Pokemon
 
             AssetDatabase.Refresh();
         }
-
-        static void UpdateSpritesReference(SO_Pokemon so_pokemon)
-        {
-            var id = so_pokemon.id;
-
-            var backDefault = AssetDatabase.LoadAssetAtPath<Sprite>(ResourcesSpriteFilename(id, "backDefault"));
-
-            var frontDefault = AssetDatabase.LoadAssetAtPath<Sprite>(ResourcesSpriteFilename(id, "frontDefault"));
-
-            so_pokemon.sprites.backDefault = backDefault;
-
-            so_pokemon.sprites.frontDefault = frontDefault;
-        }
     }
 
     private async static Task PopulatePokemonsSprites()
     {
         ClearLog();
 
-        foreach (var pokemon_so in pokemons_so.OrderBy(x => x.Value.id))
+        var pokemon_so_ordered = pokemons_so.OrderBy(x => x.Value.id);
+
+        var tasks = pokemon_so_ordered.Select(x => pokemons_api[x.Key]).Select(SaveTextures);
+
+        await Task.WhenAll(tasks);
+
+        foreach (var pokemon_so in pokemon_so_ordered)
         {
             var so_pokemon = pokemon_so.Value;
-
-            var pokemonApi = pokemons_api[pokemon_so.Key];
-
-            await SaveTextures(pokemonApi);
 
             UpdateSpritesReference(so_pokemon);
 
@@ -502,15 +480,9 @@ public static class ND_Pokemon
     {
         var result = await NetworkTask<PokeAPI_Result>.Get(URL_MOVE_TARGET);
 
-        foreach (var item in result.results)
-        {
-            var moveTargetApi = await NetworkTask<PokeAPI_MoveTarget>.Get(item.url);
+        var tasks = result.results.Select(x => NetworkTask<PokeAPI_MoveTarget>.Get(x.url)).ToArray();
 
-            m_moveTargets.Add(item.name, moveTargetApi);
-        }
-
-        while (m_moveTargets.Count != result.results.Count)
-            await Task.Delay(1);
+        m_moveTargets = (await Task.WhenAll(tasks)).ToDictionary(x => x.name);
 
         m_moveTargets_so.Clear();
 
@@ -519,6 +491,8 @@ public static class ND_Pokemon
             var so_moveTarget = ScriptableObject.CreateInstance<SO_MoveTarget>();
 
             m_moveTargets_so.Add(item.Key, so_moveTarget);
+
+            Debug.Log($"MoveTarget: {m_moveTargets_so.Count}/{result.results.Count}");
         }
 
         foreach (var moveTarget_so in m_moveTargets_so)

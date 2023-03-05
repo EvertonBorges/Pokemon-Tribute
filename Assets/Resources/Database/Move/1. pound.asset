@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 1. pound
   m_EditorClassIdentifier: 
   id: 1
+  accuracy: 100
   name: pound
   description: "Pounds with fore\xAD legs or tail."
+  power: 40
   pp: 35
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}

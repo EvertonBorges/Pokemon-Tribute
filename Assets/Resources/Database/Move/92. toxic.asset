@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 92. toxic
   m_EditorClassIdentifier: 
   id: 92
+  accuracy: 85
   name: toxic
   description: Poisons the foe with an intensifying toxin.
+  power: -1
   pp: 10
   priority: 0
+  damageClass: status
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 86937549e4613db4cb25e915c753dc2e, type: 2}

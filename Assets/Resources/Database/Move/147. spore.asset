@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 147. spore
   m_EditorClassIdentifier: 
   id: 147
+  accuracy: 100
   name: spore
   description: The user scatters bursts of spores that induce sleep.
+  power: -1
   pp: 15
   priority: 0
+  damageClass: status
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 711c988eda0231c4f878da626d985275, type: 2}

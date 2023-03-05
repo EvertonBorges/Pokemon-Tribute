@@ -15,6 +15,7 @@ public class PokeAPI_Move
     public int priority;
     public PokeAPI_NameUrl target;
     public PokeAPI_NameUrl type;
+    public PokeAPI_NameUrl damage_class;
     
     public class PokeAPI_FlavorTextEntrie
     {

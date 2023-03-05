@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 111. defense-curl
   m_EditorClassIdentifier: 
   id: 111
+  accuracy: -1
   name: defense-curl
   description: Heightens the user's DEFENSE.
+  power: -1
   pp: 40
   priority: 0
+  damageClass: status
   moveTarget: {fileID: 11400000, guid: e133dd0dc5277324bb0e451b685748d7, type: 2}
   type: {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}

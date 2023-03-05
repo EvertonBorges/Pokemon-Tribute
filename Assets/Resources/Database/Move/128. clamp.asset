@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 128. clamp
   m_EditorClassIdentifier: 
   id: 128
+  accuracy: 75
   name: clamp
   description: Traps the foe for 2-5 turns.
+  power: 35
   pp: 10
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 2d8d2cd79db45b54ba4b220b056cdafe, type: 2}

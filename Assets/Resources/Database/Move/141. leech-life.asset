@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 141. leech-life
   m_EditorClassIdentifier: 
   id: 141
+  accuracy: 100
   name: leech-life
   description: Steals 1/2 of the damage inflicted.
+  power: 20
   pp: 15
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: adb45f974dc601040912429d0cbe78aa, type: 2}

@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 164. substitute
   m_EditorClassIdentifier: 
   id: 164
+  accuracy: -1
   name: substitute
   description: Makes a decoy with 1/4 user's max HP.
+  power: -1
   pp: 10
   priority: 0
+  damageClass: status
   moveTarget: {fileID: 11400000, guid: e133dd0dc5277324bb0e451b685748d7, type: 2}
   type: {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}

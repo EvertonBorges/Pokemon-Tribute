@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 87. thunder
   m_EditorClassIdentifier: 
   id: 87
+  accuracy: 70
   name: thunder
   description: An attack that may cause paralysis.
+  power: 110
   pp: 10
   priority: 0
+  damageClass: special
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: e188e36d1242f8f4abbac5cd66ac8cfc, type: 2}

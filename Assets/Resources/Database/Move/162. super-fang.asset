@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 162. super-fang
   m_EditorClassIdentifier: 
   id: 162
+  accuracy: 90
   name: super-fang
   description: Cuts the foe's HP by 1/2.
+  power: -1
   pp: 10
   priority: 0
+  damageClass: physical
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}

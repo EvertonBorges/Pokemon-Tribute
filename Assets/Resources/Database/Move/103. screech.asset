@@ -13,10 +13,13 @@ MonoBehaviour:
   m_Name: 103. screech
   m_EditorClassIdentifier: 
   id: 103
+  accuracy: 85
   name: screech
   description: "An earsplitting screech harshly lowers the target\u2019s Defense
     stat."
+  power: -1
   pp: 40
   priority: 0
+  damageClass: status
   moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
   type: {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}
