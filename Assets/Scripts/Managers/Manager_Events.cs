@@ -31,6 +31,12 @@ public static class Manager_Events
         public static Event OnButtonSelect;
     }
 
+    public static class Battle
+    {
+        public static Event<SO_Slot_Pokemon> UpdateHp;
+        public static Event<SO_Slot_Pokemon> PokemonDefeated;
+    }
+
     public static class GameManager
     {
         public static Event Pause;

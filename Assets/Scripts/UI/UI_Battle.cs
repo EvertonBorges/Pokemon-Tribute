@@ -1,3 +1,6 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -112,11 +115,41 @@ public class UI_Battle : Singleton<UI_Battle>
         if (m_moveIndex >= moves.Count)
             return;
 
-        var move = moves[m_moveIndex];
+        var myPokemon = Manager_Battle.Instance.MyPokemon;
 
-        var dd = Manager_Battle.Instance.MyPokemon.DamageDataCalc(Manager_Battle.Instance.TheirPokemon, move);
+        var myMove = moves[m_moveIndex];
 
-        Debug.Log($"BTN_Confirm: {dd.damage} - {dd.critical}");
+        var theirPokemon = Manager_Battle.Instance.TheirPokemon;
+
+        var theirMove = Manager_Battle.Instance.TheirPokemon.RandomMove;
+
+        var myAttacker = new AttackDatas(myPokemon, theirPokemon, myMove);
+
+        var theirAttacker = new AttackDatas(theirPokemon, myPokemon, theirMove);
+
+        var attackOrder = SO_Slot_Pokemon.AttackOrder(myAttacker, theirAttacker);
+
+        MonoBehaviourHelper.StartCoroutine(WaitAttacks(attackOrder));
+    }
+
+    private IEnumerator WaitAttacks(List<AttackDatas> attackersData)
+    {
+        DisableContainers();
+
+        foreach (var attackerData in attackersData)
+        {
+            var attacker = attackerData.attacker;
+
+            var defenser = attackerData.defenser;
+
+            var move = attackerData.move;
+
+            var dd = attacker.DamageDataCalc(defenser, move);
+
+            defenser.LoseHp(dd.damage);
+
+            yield return new WaitForSeconds(1f);
+        }
 
         ShowOptions();
     }

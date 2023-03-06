@@ -12,10 +12,14 @@ public class SO_Slot_Pokemon : ScriptableObject
     public int Level => level;
     [SerializeField] private SO_Move[] so_moves;
     public IList<SO_Move> Moves => so_moves.ToList().AsReadOnly();
+    public SO_Move RandomMove => Moves[Random.Range(0, Moves.Count)];
+
     [SerializeField] private int stateExp;
     [SerializeField] private DeterminantValues dv;
     [SerializeField] private bool randomizeDv = false;
 
+    public int lastUp;
+    public int hp;
 
     public int HP => HpCalc();
     public int Attack => StatCalc(so_pokemon.base_stats.attack, dv.Attack);
@@ -26,6 +30,34 @@ public class SO_Slot_Pokemon : ScriptableObject
     public void Setup()
     {
         dv.SetupValues(randomizeDv);
+
+        hp = HP;
+
+        lastUp = hp;
+    }
+
+    public void LoseHp(int value)
+    {
+        lastUp = hp;
+
+        hp -= value;
+
+        Manager_Events.Battle.UpdateHp.Notify(this);
+
+        if (hp <= 0)
+        {
+            Manager_Events.Battle.PokemonDefeated.Notify(this);
+
+            hp = 0;
+        }
+    }
+
+    public void RecoveryHp(int value = int.MaxValue)
+    {
+        hp += value;
+
+        if (hp > HP)
+            hp = HP;
     }
 
     public void ShowLogStats()
@@ -57,6 +89,11 @@ public class SO_Slot_Pokemon : ScriptableObject
         stat += 5;
 
         return stat;
+    }
+
+    public static List<AttackDatas> AttackOrder(params AttackDatas[] attackers)
+    {
+        return attackers.OrderByDescending(x => x.attacker.Speed).OrderByDescending(x => x.move.priority).ToList();
     }
 
     public DamageDatas DamageDataCalc(SO_Slot_Pokemon defender, SO_Move move)
