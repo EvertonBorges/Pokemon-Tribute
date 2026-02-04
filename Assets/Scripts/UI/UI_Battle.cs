@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,10 +18,10 @@ public class UI_Battle : Singleton<UI_Battle>
     {
         base.Init();
 
-        Setup();
+        DisableContainers();
     }
 
-    private void Setup()
+    public void Setup()
     {
         m_moveIndex = -1;
 

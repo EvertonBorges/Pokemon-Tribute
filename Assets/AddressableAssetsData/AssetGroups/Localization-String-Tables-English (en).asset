@@ -17,30 +17,41 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 5f91216ec9554284cbc87dfa461317f1
   m_SerializeEntries:
+  - m_GUID: 2cfdfb70a83774d48a1b2ea7d3717b8f
+    m_Address: Battle_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5364036e373f8a3498c8b59f2c96c3fd
     m_Address: Boards_Pallet_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
     - Preload
-  - m_GUID: f49be9fc9d73c2b458d6343ad54f8852
-    m_Address: Boards_Routes_en
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 99bf61984845e1149814187246bb47d0
     m_Address: Boards_Viridian_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
     - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f49be9fc9d73c2b458d6343ad54f8852
+    m_Address: Boards_Routes_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f8cbd5156cc5f194ab3355dd31195ff1
     m_Address: Pallet_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
     - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 2edb47f9322dfff4c9f1581e909de10e, type: 2}
   m_SchemaSet:

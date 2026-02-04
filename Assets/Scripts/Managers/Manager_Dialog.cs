@@ -10,7 +10,7 @@ public class Manager_Dialog : Singleton<Manager_Dialog>
 
     [SerializeField] private UI_FadeEffect _fadeEffect;
     public bool IsShowing => _fadeEffect.IsShowing || _fadeEffect.IsFading;
-    
+
     [SerializeField] private ScrollRect _scroll;
     [SerializeField] private TextMeshProUGUI _text;
 
@@ -21,25 +21,22 @@ public class Manager_Dialog : Singleton<Manager_Dialog>
     private Action m_callback = null;
     private Coroutine m_coroutineWriteText = null;
 
-    public void Setup(LocalizedString key = null, Action callback = null)
+    public void Setup(string text, bool autoHide = true, Action callback = null)
     {
-        if (key != null)
-            _fadeEffect.FadeIn();
-        else
-            _fadeEffect.ShowForced();
+        if (autoHide) _fadeEffect.ShowForced(); else _fadeEffect.FadeIn();
 
         _text.SetText("");
 
         m_line = 0;
 
-        m_autoHide = key != null;
+        m_autoHide = autoHide;
 
         m_fastRead = false;
 
-        if (key == null)
+        if (text == null)
             return;
 
-        m_text = key.GetLocalizedString().Split("\n");
+        m_text = text.Split("\n");
 
         m_callback = callback;
 
@@ -64,8 +61,21 @@ public class Manager_Dialog : Singleton<Manager_Dialog>
 
             m_coroutineWriteText = StartCoroutine(WriteText());
         }
-        else if (m_autoHide)
-            Hide();
+        else
+        {
+            if (m_autoHide)
+                Hide();
+            else
+            {
+                m_line = -1;
+
+                m_text = null;
+
+                _text.SetText("");
+
+                m_callback.Invoke();
+            }
+        }
     }
 
     public IEnumerator WriteText()
@@ -105,12 +115,26 @@ public class Manager_Dialog : Singleton<Manager_Dialog>
     {
         m_line = -1;
 
-        _fadeEffect.FadeOut(() => 
+        _fadeEffect.FadeOut(() =>
         {
             m_text = null;
 
             m_callback?.Invoke();
         });
+    }
+
+    void OnEnable()
+    {
+        Manager_Events.Player.OnButtonA += NextLine;
+
+        Manager_Events.Player.OnButtonB += NextLine;
+    }
+
+    void OnDisable()
+    {
+        Manager_Events.Player.OnButtonA -= NextLine;
+        
+        Manager_Events.Player.OnButtonB -= NextLine;
     }
 
 }

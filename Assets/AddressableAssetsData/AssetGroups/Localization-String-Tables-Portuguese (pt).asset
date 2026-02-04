@@ -17,30 +17,41 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: b73f8eb2994844949b3503b9dfae8574
   m_SerializeEntries:
-  - m_GUID: 8ba7cff7285c38f4c82a82aa5d3be8b6
-    m_Address: Boards_Pallet_pt
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-pt
-    - Preload
-  - m_GUID: 90316d3962e971f4b839c228ce17dec2
-    m_Address: Boards_Routes_pt
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-pt
-    - Preload
   - m_GUID: 163fa6125f0f1164a9e7f07f82d6fb36
     m_Address: Boards_Viridian_pt
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-pt
     - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4174a8a08db83e64dba3fb1611384734
     m_Address: Pallet_pt
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-pt
     - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 63af9775b8707f74bb4a9c23bd1b3ada
+    m_Address: Battle_pt
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8ba7cff7285c38f4c82a82aa5d3be8b6
+    m_Address: Boards_Pallet_pt
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 90316d3962e971f4b839c228ce17dec2
+    m_Address: Boards_Routes_pt
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 2edb47f9322dfff4c9f1581e909de10e, type: 2}
   m_SchemaSet:

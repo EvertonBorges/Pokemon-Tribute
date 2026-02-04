@@ -143,12 +143,7 @@ public class PlayerController : MonoBehaviour
     private void OnButtonA()
     {
         if (IsBlocked)
-        {
-            if (Manager_Dialog.Instance.IsShowing)
-                Manager_Dialog.Instance.NextLine();
-
             return;
-        }
 
         var collider = Physics2D.OverlapArea(nextPosition + m_boxCheckSize, nextPosition - m_boxCheckSize, _interactableLayerMask);
 
@@ -161,12 +156,9 @@ public class PlayerController : MonoBehaviour
     private void OnButtonB()
     {
         if (IsBlocked)
-        {
-            if (Manager_Dialog.Instance.IsShowing)
-                Manager_Dialog.Instance.NextLine();
-
             return;
-        }
+        
+        
     }
 
     private void OnButtonPause()

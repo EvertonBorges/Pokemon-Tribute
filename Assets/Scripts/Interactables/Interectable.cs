@@ -8,7 +8,8 @@ public class Interectable : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        Manager_Dialog.Instance.Setup(_keys[Random.Range(0, _keys.Length)]);
+        var text = _keys[Random.Range(0, _keys.Length)].GetLocalizedString();
+        Manager_Dialog.Instance.Setup(text);
     }
     
 }

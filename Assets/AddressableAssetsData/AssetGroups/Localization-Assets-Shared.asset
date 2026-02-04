@@ -17,22 +17,31 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 2c9c351aad60ee74ba30b32a3b9d6f38
   m_SerializeEntries:
-  - m_GUID: c4b1f1840c9bb144187fd88d79395032
-    m_Address: Assets/Settings/Localization/Tables/Boards Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-  - m_GUID: e5307a48c61278446b97e9e2d933daab
-    m_Address: Assets/Settings/Localization/Tables/Boards_Routes Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-  - m_GUID: bfcc21b75035aa543b0f576e6dfdc0bd
-    m_Address: Assets/Settings/Localization/Tables/Boards_Viridian Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
   - m_GUID: a32bc29a6dff4624da1ac559501fe803
     m_Address: Assets/Settings/Localization/Tables/Pallet Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bfcc21b75035aa543b0f576e6dfdc0bd
+    m_Address: Assets/Settings/Localization/Tables/Boards_Viridian Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c4b1f1840c9bb144187fd88d79395032
+    m_Address: Assets/Settings/Localization/Tables/Boards Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e0803829e997a12409688febffd76a0c
+    m_Address: Assets/Settings/Localization/Tables/Battle Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e5307a48c61278446b97e9e2d933daab
+    m_Address: Assets/Settings/Localization/Tables/Boards_Routes Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 2edb47f9322dfff4c9f1581e909de10e, type: 2}
   m_SchemaSet:

@@ -8,7 +8,7 @@ public class Board : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        Manager_Dialog.Instance.Setup(_key);
+        Manager_Dialog.Instance.Setup(_key.GetLocalizedString());
     }
     
 }
