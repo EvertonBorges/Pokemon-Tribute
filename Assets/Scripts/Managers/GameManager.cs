@@ -1,12 +1,5 @@
-using UnityEngine;
-
 public class GameManager : Singleton<GameManager>
 {
-
-    [SerializeField] private InspectorEvent _event;
-    [SerializeField] private InspectorScene _scene;
-    [SerializeField] private InspectorDoor _door;
-    [SerializeField] private InspectorDoorLink _doorLink;
 
     private bool m_isPaused = false;
 
