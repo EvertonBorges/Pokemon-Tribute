@@ -5,7 +5,8 @@ public class PlayerController : MonoBehaviour
 {
 
     [SerializeField] private float _speed = 5f;
-    [SerializeField] private Transform _body;
+    [SerializeField] private CharacterAnimationController _animator;
+    [SerializeField][Range(0.5f, 0.95f)] private float _idleAnimationDelay;
     [SerializeField] private LayerMask _notWalkableLayerMask;
     [SerializeField] private LayerMask _interactableLayerMask;
     [SerializeField] private LayerMask _doorLayerMask;
@@ -50,7 +51,7 @@ public class PlayerController : MonoBehaviour
 
         var collider = Physics2D.OverlapArea(pointA, pointB, _doorLayerMask);
 
-        if (collider != null && collider.TryGetComponent(out Door door) && 
+        if (collider != null && collider.TryGetComponent(out Door door) &&
             door.EnterDirection != DirectionsEnum.NONE && move.Vector2ToDirection() == door.EnterDirection)
         {
             door.Interact();
@@ -90,6 +91,8 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator Move(Vector2 direction, float duration = 1f)
     {
+        _animator.SetState(CharacterEnumState.WALK);
+
         Vector2 from = transform.position;
 
         Vector2 to = from + direction;
@@ -106,12 +109,17 @@ public class PlayerController : MonoBehaviour
 
             float proportion = currentTime / realDuration;
 
+            if (proportion > _idleAnimationDelay)
+                _animator.SetState(CharacterEnumState.IDLE);
+
             Vector2 position = Vector2.Lerp(from, to, proportion);
 
             transform.position = position;
 
             yield return null;
         }
+
+        _animator.SetState(CharacterEnumState.IDLE);
 
         transform.position = to;
 
@@ -128,11 +136,9 @@ public class PlayerController : MonoBehaviour
         transform.position = value;
     }
 
-    private void Rotate(Vector2 direction)
+    private void Rotate(Vector2 move)
     {
-        var angle = Vector2.SignedAngle(Vector2.up, direction);
-
-        _body.rotation = Quaternion.Euler(0f, 0f, angle);
+        _animator.SetDirection(move.Vector2ToDirection());
     }
 
     private void OnMovement(Vector2 value)
@@ -157,8 +163,8 @@ public class PlayerController : MonoBehaviour
     {
         if (IsBlocked)
             return;
-        
-        
+
+
     }
 
     private void OnButtonPause()
@@ -197,7 +203,8 @@ public class PlayerController : MonoBehaviour
         Manager_Events.Player.OnButtonSelect -= OnButtonSelect;
     }
 
-    private void OnDrawGizmos() {
+    private void OnDrawGizmos()
+    {
         Gizmos.color = Color.red;
 
         Gizmos.DrawCube(nextPosition, Vector3.one * 0.25f);

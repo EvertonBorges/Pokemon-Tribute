@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ea81fcd1e342a04380ebba4a98f4820, type: 3}
+  m_Name: CharacterSprite_Player_Idle
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterSpriteController
+  <DownSprites>k__BackingField:
+  - {fileID: -38409146, guid: 44fb7471265a511419eebb49c8ecf288, type: 3}
+  <LeftSprites>k__BackingField:
+  - {fileID: -1538874003, guid: 44fb7471265a511419eebb49c8ecf288, type: 3}
+  <UpSprites>k__BackingField:
+  - {fileID: 1693681880, guid: 44fb7471265a511419eebb49c8ecf288, type: 3}
+  <RightSprites>k__BackingField:
+  - {fileID: -623337016, guid: 44fb7471265a511419eebb49c8ecf288, type: 3}
