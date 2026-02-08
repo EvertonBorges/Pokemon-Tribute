@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dcd996e56bedb94f829afc4d24890fa, type: 3}
+  m_Name: 3. double-slap
+  m_EditorClassIdentifier: 
+  id: 3
+  accuracy: 85
+  name: double-slap
+  description: Repeatedly slaps 2-5 times.
+  power: 15
+  pp: 10
+  priority: 0
+  damageClass: physical
+  moveTarget: {fileID: 11400000, guid: a758c508d95406a4b8ebabf4f05d919c, type: 2}
+  type: {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}

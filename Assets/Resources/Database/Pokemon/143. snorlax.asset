@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 143. snorlax
+  m_EditorClassIdentifier: 
+  id: 143
+  name: snorlax
+  description: "Very lazy. Just eats and sleeps. As its rotund\fbulk builds, it becomes
+    steadily more slothful."
+  base_stats:
+    hp: 160
+    attack: 110
+    defense: 65
+    special_attack: 65
+    special_defense: 110
+    speed: 30
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: e6dc7ab45425bcf4aa8489f0949ac437, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 9805e4c76b26b384d9c5134b14bd4359, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: c293c4991de392f47a466c5595511e65, type: 2}
+  - learn_level: 35
+    name: {fileID: 11400000, guid: 8e3ac793e3063784d882fd05c64e04cc, type: 2}
+  - learn_level: 41
+    name: {fileID: 11400000, guid: 8e77520f61e8dd74b9cc1e1bf712caa3, type: 2}
+  - learn_level: 48
+    name: {fileID: 11400000, guid: ced05ef1736cd5540bfb9289862a9cfa, type: 2}
+  - learn_level: 56
+    name: {fileID: 11400000, guid: 34501124f100f4248a0dd1077c2cce5f, type: 2}
+  types:
+  - {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}
+  evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: 4ef79dbd7e6f4c541968ff3aa217fdb0, type: 3}
+    frontDefault: {fileID: 21300000, guid: f5e4b81c5d411474487f9cc01531c0b4, type: 3}

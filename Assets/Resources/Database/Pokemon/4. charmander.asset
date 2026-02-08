@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 4. charmander
+  m_EditorClassIdentifier: 
+  id: 4
+  name: charmander
+  description: "Obviously prefers hot places. When it rains, steam\fis said to spout
+    from the tip of its tail."
+  base_stats:
+    hp: 39
+    attack: 52
+    defense: 43
+    special_attack: 60
+    special_defense: 50
+    speed: 65
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: a7ad94a791247644097a722e9b767add, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 4dabfd23c68b58d41a22f86fd5217092, type: 2}
+  - learn_level: 9
+    name: {fileID: 11400000, guid: f771b10c13a0f0f4cbc3a0affb4c1b6c, type: 2}
+  - learn_level: 15
+    name: {fileID: 11400000, guid: a1c5d113340e33e43adb832ce0b192d2, type: 2}
+  - learn_level: 22
+    name: {fileID: 11400000, guid: a7dffe83164543e4a9ab5c185db22071, type: 2}
+  - learn_level: 30
+    name: {fileID: 11400000, guid: 62b926586860a1249a3cd4b7b88666a2, type: 2}
+  - learn_level: 38
+    name: {fileID: 11400000, guid: fa74fb50ef5ee9b4383b7f36954b35dc, type: 2}
+  - learn_level: 46
+    name: {fileID: 11400000, guid: b485164ae84d6244ea259d037c1ec2de, type: 2}
+  types:
+  - {fileID: 11400000, guid: d7de067c0c2c6c24fa8115d1f13e0aaa, type: 2}
+  evolve_to:
+  - evolutionConditions:
+    - trigger: level-up
+      min_level: 16
+    pokemon: {fileID: 11400000, guid: 0883e18d52c89e747ba566fd4e8f80af, type: 2}
+  sprites:
+    backDefault: {fileID: 21300000, guid: 210bcaea6e53ea64b9c0958cae96d698, type: 3}
+    frontDefault: {fileID: 21300000, guid: c17f85f39c81f2a43ac24396ad7b55a7, type: 3}

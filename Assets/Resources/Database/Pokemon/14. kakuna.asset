@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 14. kakuna
+  m_EditorClassIdentifier: 
+  id: 14
+  name: kakuna
+  description: "Almost incapable of moving, this POK\xE9MON can only\fharden its
+    shell to protect itself from predators."
+  base_stats:
+    hp: 45
+    attack: 25
+    defense: 50
+    special_attack: 25
+    special_defense: 25
+    speed: 35
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 8e77520f61e8dd74b9cc1e1bf712caa3, type: 2}
+  types:
+  - {fileID: 11400000, guid: adb45f974dc601040912429d0cbe78aa, type: 2}
+  - {fileID: 11400000, guid: 86937549e4613db4cb25e915c753dc2e, type: 2}
+  evolve_to:
+  - evolutionConditions:
+    - trigger: level-up
+      min_level: 10
+    pokemon: {fileID: 11400000, guid: a408c4a25c6d24b40b720c6f7f84278d, type: 2}
+  sprites:
+    backDefault: {fileID: 21300000, guid: e46a265be279cb346a3180d97d10cef2, type: 3}
+    frontDefault: {fileID: 21300000, guid: 0b30a03c342e28d4b91ef0ea6d3e3af7, type: 3}

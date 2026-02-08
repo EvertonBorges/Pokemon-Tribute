@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 113. chansey
+  m_EditorClassIdentifier: 
+  id: 113
+  name: chansey
+  description: "A rare and elusive POK\xE9MON that is said to bring\fhappiness to
+    those who manage to get it."
+  base_stats:
+    hp: 250
+    attack: 5
+    defense: 5
+    special_attack: 35
+    special_defense: 105
+    speed: 50
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 7162343556e0f7d488b520db4c77f2a3, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: b9497bec049c9f242b3bfd8c87164874, type: 2}
+  - learn_level: 24
+    name: {fileID: 11400000, guid: e9ed9d31f956e1a42b7c92aa7cac341a, type: 2}
+  - learn_level: 30
+    name: {fileID: 11400000, guid: a7ad94a791247644097a722e9b767add, type: 2}
+  - learn_level: 38
+    name: {fileID: 11400000, guid: 837a8652b67e1b44ba341b97537639d0, type: 2}
+  - learn_level: 44
+    name: {fileID: 11400000, guid: ca26f6b92b45aa24c809aa404b668051, type: 2}
+  - learn_level: 48
+    name: {fileID: 11400000, guid: 1a907d44e6fe9da4791798e992ab53e2, type: 2}
+  - learn_level: 54
+    name: {fileID: 11400000, guid: ced05ef1736cd5540bfb9289862a9cfa, type: 2}
+  types:
+  - {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}
+  evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: f624cb82a1f4949448dacd3a6064c711, type: 3}
+    frontDefault: {fileID: 21300000, guid: d41556012bd12d949afea2bbc276a105, type: 3}

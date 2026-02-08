@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 47. parasect
+  m_EditorClassIdentifier: 
+  id: 47
+  name: parasect
+  description: "A host-parasite pair in which the parasite mushroom\fhas taken over
+    the host bug. Prefers damp places."
+  base_stats:
+    hp: 60
+    attack: 95
+    defense: 80
+    special_attack: 60
+    special_defense: 80
+    speed: 30
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 16d8546f247771a4aa50b35c11e431b7, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 4dabfd23c68b58d41a22f86fd5217092, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 4cb99ad9f436d184e9a252d486774496, type: 2}
+  - learn_level: 30
+    name: {fileID: 11400000, guid: 43a18a2721a472b48a38b6b5999be59a, type: 2}
+  - learn_level: 39
+    name: {fileID: 11400000, guid: 62b926586860a1249a3cd4b7b88666a2, type: 2}
+  - learn_level: 48
+    name: {fileID: 11400000, guid: 5ac28a9a9349df346a1d60110dfb0ad1, type: 2}
+  types:
+  - {fileID: 11400000, guid: adb45f974dc601040912429d0cbe78aa, type: 2}
+  - {fileID: 11400000, guid: 711c988eda0231c4f878da626d985275, type: 2}
+  evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: 494602c99eec060418197ef1061051c4, type: 3}
+    frontDefault: {fileID: 21300000, guid: 65bed8fc337d6964483deabcf3331589, type: 3}

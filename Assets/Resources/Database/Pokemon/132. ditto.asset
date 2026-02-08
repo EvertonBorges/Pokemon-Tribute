@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 132. ditto
+  m_EditorClassIdentifier: 
+  id: 132
+  name: ditto
+  description: "Capable of copying an enemy's genetic code to instantly\ftransform
+    itself into a duplicate of the enemy."
+  base_stats:
+    hp: 48
+    attack: 48
+    defense: 48
+    special_attack: 48
+    special_defense: 48
+    speed: 48
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 7e78268bf17904540bc1b7d39aa16786, type: 2}
+  types:
+  - {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}
+  evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: e8d98eb377736c24ba6e9ff6d9e4b643, type: 3}
+    frontDefault: {fileID: 21300000, guid: a866bbddf8834ba4e9a45b2b62837837, type: 3}

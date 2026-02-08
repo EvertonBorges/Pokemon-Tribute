@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 134. vaporeon
+  m_EditorClassIdentifier: 
+  id: 134
+  name: vaporeon
+  description: "Lives close to water. Its long tail is ridged\fwith a fin which is
+    often mistaken for a mermaid's."
+  base_stats:
+    hp: 130
+    attack: 65
+    defense: 60
+    special_attack: 110
+    special_defense: 95
+    speed: 65
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: ff5e326bb9d245642a61ecac5dfc6cf6, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: f064efedc43e6b7428879ff3db2c4cfe, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: fc691a37d4af9954a9f06c53601a863d, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 47b02d18984b6dd40a03f23165bdf40b, type: 2}
+  - learn_level: 37
+    name: {fileID: 11400000, guid: 64fbe2067251faf499e9633400562cc2, type: 2}
+  - learn_level: 40
+    name: {fileID: 11400000, guid: 9104e2b270eb18b4d9e07615d73e7b9e, type: 2}
+  - learn_level: 42
+    name: {fileID: 11400000, guid: d74c9638f518d9c459b3bd3b728c95f1, type: 2}
+  - learn_level: 44
+    name: {fileID: 11400000, guid: 1780899c17e6ce742950b4a2c2840c09, type: 2}
+  - learn_level: 48
+    name: {fileID: 11400000, guid: 2d5890e5a702b724291c6cd54b91cc11, type: 2}
+  - learn_level: 54
+    name: {fileID: 11400000, guid: 3d9e5de932ae6064fa0174bb00ff753a, type: 2}
+  types:
+  - {fileID: 11400000, guid: 2d8d2cd79db45b54ba4b220b056cdafe, type: 2}
+  evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: 59574dbfb0d46084687cbf8719322f17, type: 3}
+    frontDefault: {fileID: 21300000, guid: 4bfb26654caca6f429485eef843c34d8, type: 3}

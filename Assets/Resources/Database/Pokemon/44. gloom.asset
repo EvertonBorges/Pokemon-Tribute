@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 44. gloom
+  m_EditorClassIdentifier: 
+  id: 44
+  name: gloom
+  description: "The fluid that oozes from its mouth isn't drool.\fIt is a nectar
+    that is used to attract prey."
+  base_stats:
+    hp: 60
+    attack: 65
+    defense: 70
+    special_attack: 85
+    special_defense: 75
+    speed: 40
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: a7f8aa9c6c6128544849ef4e8e01e413, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 464560c3dc4386b4d945f00d9926935d, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 4cb99ad9f436d184e9a252d486774496, type: 2}
+  - learn_level: 19
+    name: {fileID: 11400000, guid: 4af46453fbfd8a04aabf7708cb5c80b8, type: 2}
+  - learn_level: 28
+    name: {fileID: 11400000, guid: 878c98b73ee96264c91c2a2606e9336a, type: 2}
+  - learn_level: 38
+    name: {fileID: 11400000, guid: 7cdd8802443cabe41a17895841d145d1, type: 2}
+  - learn_level: 52
+    name: {fileID: 11400000, guid: 656f6626416d9d642bda24b8f38f5a63, type: 2}
+  types:
+  - {fileID: 11400000, guid: 711c988eda0231c4f878da626d985275, type: 2}
+  - {fileID: 11400000, guid: 86937549e4613db4cb25e915c753dc2e, type: 2}
+  evolve_to:
+  - evolutionConditions:
+    - trigger: use-item
+      min_level: -1
+    pokemon: {fileID: 11400000, guid: 31d06eabfb25f6b4b95a6446efd4d3f5, type: 2}
+  sprites:
+    backDefault: {fileID: 21300000, guid: 564eb46f7d4b2ad40b16b7835dff7456, type: 3}
+    frontDefault: {fileID: 21300000, guid: b39a5f4ba02425e469bbf66f867a9d1a, type: 3}

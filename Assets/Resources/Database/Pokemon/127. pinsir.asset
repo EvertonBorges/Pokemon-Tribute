@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 127. pinsir
+  m_EditorClassIdentifier: 
+  id: 127
+  name: pinsir
+  description: "If it fails to crush the victim in its pincers,\fit will swing it
+    around and toss it hard."
+  base_stats:
+    hp: 65
+    attack: 125
+    defense: 100
+    special_attack: 55
+    special_defense: 70
+    speed: 85
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 811f39c15685e044894afa8b593d2cba, type: 2}
+  - learn_level: 25
+    name: {fileID: 11400000, guid: f4b12c60ad9641542bd3cc739b4e5a1a, type: 2}
+  - learn_level: 30
+    name: {fileID: 11400000, guid: 26f36c7bdefdc6d4284b1b916efc1b98, type: 2}
+  - learn_level: 36
+    name: {fileID: 11400000, guid: 15a5592ee22b114488ecbf7fcf7f751a, type: 2}
+  - learn_level: 43
+    name: {fileID: 11400000, guid: 8e77520f61e8dd74b9cc1e1bf712caa3, type: 2}
+  - learn_level: 49
+    name: {fileID: 11400000, guid: 62b926586860a1249a3cd4b7b88666a2, type: 2}
+  - learn_level: 54
+    name: {fileID: 11400000, guid: 9756e155dfc7af14bbbfd5ce6b90922a, type: 2}
+  types:
+  - {fileID: 11400000, guid: adb45f974dc601040912429d0cbe78aa, type: 2}
+  evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: 77f531ada74d3004e833e1b7d33bb398, type: 3}
+    frontDefault: {fileID: 21300000, guid: 6212445587a0d87468e7050a0a4aa325, type: 3}

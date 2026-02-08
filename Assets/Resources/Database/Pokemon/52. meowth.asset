@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 52. meowth
+  m_EditorClassIdentifier: 
+  id: 52
+  name: meowth
+  description: "Adores circular objects. Wanders the streets on a\fnightly basis
+    to look for dropped loose change."
+  base_stats:
+    hp: 40
+    attack: 45
+    defense: 35
+    special_attack: 40
+    special_defense: 40
+    speed: 90
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: a7ad94a791247644097a722e9b767add, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 4dabfd23c68b58d41a22f86fd5217092, type: 2}
+  - learn_level: 12
+    name: {fileID: 11400000, guid: 9104e2b270eb18b4d9e07615d73e7b9e, type: 2}
+  - learn_level: 17
+    name: {fileID: 11400000, guid: c1150f97f877e97489cef63110327832, type: 2}
+  - learn_level: 24
+    name: {fileID: 11400000, guid: 0f3cb4d7bb4f1eb46a8545a1a585ed3d, type: 2}
+  - learn_level: 33
+    name: {fileID: 11400000, guid: 160dc607f78bc2f48beb36f5a680b912, type: 2}
+  - learn_level: 44
+    name: {fileID: 11400000, guid: 62b926586860a1249a3cd4b7b88666a2, type: 2}
+  types:
+  - {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}
+  evolve_to:
+  - evolutionConditions:
+    - trigger: level-up
+      min_level: 28
+    - trigger: level-up
+      min_level: -1
+    pokemon: {fileID: 11400000, guid: b075d40198dc06f4da5e6ee0e903f1e3, type: 2}
+  sprites:
+    backDefault: {fileID: 21300000, guid: 2dc6e752c4a3fa04b8d13f2d76787892, type: 3}
+    frontDefault: {fileID: 21300000, guid: 803d9654d4922a543a241a8c21a9aeec, type: 3}

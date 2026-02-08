@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 112. rhydon
+  m_EditorClassIdentifier: 
+  id: 112
+  name: rhydon
+  description: "Protected by an armor-like hide, it is capable of\fliving in molten
+    lava of 3,600 degrees."
+  base_stats:
+    hp: 105
+    attack: 130
+    defense: 120
+    special_attack: 45
+    special_defense: 45
+    speed: 40
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 5b39ab90d3c79e04e9dc6eeb421e9e17, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 9a126a932c75ac347b0bcaab95bf8764, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: c74a3861aeef03146a5fa17c68e3c0f6, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 64fbe2067251faf499e9633400562cc2, type: 2}
+  - learn_level: 48
+    name: {fileID: 11400000, guid: 2cdaa37c1c2dea149bffba653d923463, type: 2}
+  - learn_level: 55
+    name: {fileID: 11400000, guid: a1c5d113340e33e43adb832ce0b192d2, type: 2}
+  - learn_level: 64
+    name: {fileID: 11400000, guid: d653114b16e81d3458ae12390d000aed, type: 2}
+  types:
+  - {fileID: 11400000, guid: 6073242af4df7804499221e154852c97, type: 2}
+  - {fileID: 11400000, guid: 856b6e7697fc99a409f8b06286888049, type: 2}
+  evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: d85fc0665dbd316418b4eed25bfbcc42, type: 3}
+    frontDefault: {fileID: 21300000, guid: 788da499b958b014bab4f0b812df0e97, type: 3}

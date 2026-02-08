@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4db05b91df445d046841a49d0f596679, type: 3}
+  m_Name: 3. flying
+  m_EditorClassIdentifier: 
+  id: 3
+  name: flying
+  double_damage_from:
+  - {fileID: 11400000, guid: 856b6e7697fc99a409f8b06286888049, type: 2}
+  - {fileID: 11400000, guid: e188e36d1242f8f4abbac5cd66ac8cfc, type: 2}
+  - {fileID: 11400000, guid: fd31f123d4752944598855b9e091f391, type: 2}
+  double_damage_to:
+  - {fileID: 11400000, guid: 642efe96ee9dc644e87c1119e24481e6, type: 2}
+  - {fileID: 11400000, guid: adb45f974dc601040912429d0cbe78aa, type: 2}
+  - {fileID: 11400000, guid: 711c988eda0231c4f878da626d985275, type: 2}
+  half_damage_from:
+  - {fileID: 11400000, guid: 642efe96ee9dc644e87c1119e24481e6, type: 2}
+  - {fileID: 11400000, guid: adb45f974dc601040912429d0cbe78aa, type: 2}
+  - {fileID: 11400000, guid: 711c988eda0231c4f878da626d985275, type: 2}
+  half_damage_to:
+  - {fileID: 11400000, guid: 856b6e7697fc99a409f8b06286888049, type: 2}
+  - {fileID: 11400000, guid: e188e36d1242f8f4abbac5cd66ac8cfc, type: 2}
+  no_damage_from:
+  - {fileID: 11400000, guid: 6073242af4df7804499221e154852c97, type: 2}
+  no_damage_to: []

@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 125. electabuzz
+  m_EditorClassIdentifier: 
+  id: 125
+  name: electabuzz
+  description: "Normally found near power plants, they can wander\faway and cause
+    major blackouts in cities."
+  base_stats:
+    hp: 65
+    attack: 83
+    defense: 57
+    special_attack: 95
+    special_defense: 85
+    speed: 105
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: a1c5d113340e33e43adb832ce0b192d2, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: ff5e326bb9d245642a61ecac5dfc6cf6, type: 2}
+  - learn_level: 34
+    name: {fileID: 11400000, guid: e9636a1c972137d41993d9084ffe8fff, type: 2}
+  - learn_level: 37
+    name: {fileID: 11400000, guid: 0f3cb4d7bb4f1eb46a8545a1a585ed3d, type: 2}
+  - learn_level: 42
+    name: {fileID: 11400000, guid: 46c014eff9e50b9478a63c5804cb3a7c, type: 2}
+  - learn_level: 49
+    name: {fileID: 11400000, guid: 1a907d44e6fe9da4791798e992ab53e2, type: 2}
+  - learn_level: 54
+    name: {fileID: 11400000, guid: 0839b8932e39508499bc2462425fd1be, type: 2}
+  types:
+  - {fileID: 11400000, guid: e188e36d1242f8f4abbac5cd66ac8cfc, type: 2}
+  evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: 27dc932fe9a00224580769d3f1cedf93, type: 3}
+    frontDefault: {fileID: 21300000, guid: 205a3d15a0f00c145a9c5fcb57ab0fb1, type: 3}

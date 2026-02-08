@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 58. growlithe
+  m_EditorClassIdentifier: 
+  id: 58
+  name: growlithe
+  description: "Very protective of its territory. It will bark and\fbite to repel
+    intruders from its space."
+  base_stats:
+    hp: 55
+    attack: 70
+    defense: 45
+    special_attack: 70
+    special_defense: 50
+    speed: 60
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 9104e2b270eb18b4d9e07615d73e7b9e, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 55a3adcbb7d8b1748a0fed23e06f6a7d, type: 2}
+  - learn_level: 18
+    name: {fileID: 11400000, guid: f771b10c13a0f0f4cbc3a0affb4c1b6c, type: 2}
+  - learn_level: 23
+    name: {fileID: 11400000, guid: a1c5d113340e33e43adb832ce0b192d2, type: 2}
+  - learn_level: 30
+    name: {fileID: 11400000, guid: d653114b16e81d3458ae12390d000aed, type: 2}
+  - learn_level: 39
+    name: {fileID: 11400000, guid: 962b709451b5fe949ad1b2a72182339e, type: 2}
+  - learn_level: 50
+    name: {fileID: 11400000, guid: fa74fb50ef5ee9b4383b7f36954b35dc, type: 2}
+  types:
+  - {fileID: 11400000, guid: d7de067c0c2c6c24fa8115d1f13e0aaa, type: 2}
+  evolve_to:
+  - evolutionConditions:
+    - trigger: use-item
+      min_level: -1
+    pokemon: {fileID: 11400000, guid: b7a99ac738d9b6c478b6fcab166bcf44, type: 2}
+  sprites:
+    backDefault: {fileID: 21300000, guid: aeeb20588e415614f836e4f6e3c9a74c, type: 3}
+    frontDefault: {fileID: 21300000, guid: d78246a23d0944149a20e30a4a8af393, type: 3}

@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 67. machoke
+  m_EditorClassIdentifier: 
+  id: 67
+  name: machoke
+  description: "Its muscular body is so powerful, it must wear a power\fsave belt
+    to be able to regulate its motions."
+  base_stats:
+    hp: 80
+    attack: 100
+    defense: 70
+    special_attack: 50
+    special_defense: 60
+    speed: 45
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 1409ad516bfc56649a52ab39ba20079a, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: a1c5d113340e33e43adb832ce0b192d2, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: e7788de6cd7e0694eb57c19ff7d07aed, type: 2}
+  - learn_level: 36
+    name: {fileID: 11400000, guid: 15a5592ee22b114488ecbf7fcf7f751a, type: 2}
+  - learn_level: 44
+    name: {fileID: 11400000, guid: f4b12c60ad9641542bd3cc739b4e5a1a, type: 2}
+  - learn_level: 52
+    name: {fileID: 11400000, guid: 9be21e0fa9c320f4493b35b065527d2b, type: 2}
+  types:
+  - {fileID: 11400000, guid: 642efe96ee9dc644e87c1119e24481e6, type: 2}
+  evolve_to:
+  - evolutionConditions:
+    - trigger: trade
+      min_level: -1
+    pokemon: {fileID: 11400000, guid: f6a0998a1ccf5084a9eb491bcb3c80fa, type: 2}
+  sprites:
+    backDefault: {fileID: 21300000, guid: 7f89af9c71b8f824583a742aa84fd385, type: 3}
+    frontDefault: {fileID: 21300000, guid: 53cec4565294a674f9221222189e1edb, type: 3}

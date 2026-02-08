@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 62. poliwrath
+  m_EditorClassIdentifier: 
+  id: 62
+  name: poliwrath
+  description: "An adept swimmer at both the front crawl and breast\fstroke. Easily
+    overtakes the best human swimmers."
+  base_stats:
+    hp: 90
+    attack: 95
+    defense: 95
+    special_attack: 70
+    special_defense: 90
+    speed: 70
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 8e3ac793e3063784d882fd05c64e04cc, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 7162343556e0f7d488b520db4c77f2a3, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: d14965259cb1b7c4a81d5d55bbdebdce, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 47b02d18984b6dd40a03f23165bdf40b, type: 2}
+  types:
+  - {fileID: 11400000, guid: 2d8d2cd79db45b54ba4b220b056cdafe, type: 2}
+  - {fileID: 11400000, guid: 642efe96ee9dc644e87c1119e24481e6, type: 2}
+  evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: d3f6232d7f6c6d343821b07347d98c23, type: 3}
+    frontDefault: {fileID: 21300000, guid: e843baa4ae88ca2499ce3274c0c7478b, type: 3}

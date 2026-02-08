@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 137. porygon
+  m_EditorClassIdentifier: 
+  id: 137
+  name: porygon
+  description: "A POK\xE9MON that consists entirely of programming\fcode. Capable
+    of moving freely in cyberspace."
+  base_stats:
+    hp: 65
+    attack: 60
+    defense: 70
+    special_attack: 85
+    special_defense: 75
+    speed: 40
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 0f6fdfe9e53720148b24577d872912a3, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: ed66814a3939b794db1e99b781d7134c, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: fc691a37d4af9954a9f06c53601a863d, type: 2}
+  - learn_level: 23
+    name: {fileID: 11400000, guid: 81b0d38be1943d345a3470f188119df1, type: 2}
+  - learn_level: 28
+    name: {fileID: 11400000, guid: 1ea9d9716599e3a42a8a04a2d2da1b4a, type: 2}
+  - learn_level: 35
+    name: {fileID: 11400000, guid: 962b709451b5fe949ad1b2a72182339e, type: 2}
+  - learn_level: 42
+    name: {fileID: 11400000, guid: c8acd14b2765d75438623005f979ebba, type: 2}
+  types:
+  - {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}
+  evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: 7184c53272919204f8e1f5282a70f3f3, type: 3}
+    frontDefault: {fileID: 21300000, guid: 9aa508eca4331fa44ab62a9adc067430, type: 3}

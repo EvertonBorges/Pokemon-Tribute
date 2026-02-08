@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 86. seel
+  m_EditorClassIdentifier: 
+  id: 86
+  name: seel
+  description: "The protruding horn on its head is very hard.\fIt is used for bashing
+    through thick ice."
+  base_stats:
+    hp: 65
+    attack: 45
+    defense: 55
+    special_attack: 45
+    special_defense: 70
+    speed: 45
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 9805e4c76b26b384d9c5134b14bd4359, type: 2}
+  - learn_level: 30
+    name: {fileID: 11400000, guid: a7ad94a791247644097a722e9b767add, type: 2}
+  - learn_level: 35
+    name: {fileID: 11400000, guid: 521f71a67a9bdf1409cfe565a1fb8315, type: 2}
+  - learn_level: 40
+    name: {fileID: 11400000, guid: c293c4991de392f47a466c5595511e65, type: 2}
+  - learn_level: 45
+    name: {fileID: 11400000, guid: d653114b16e81d3458ae12390d000aed, type: 2}
+  - learn_level: 50
+    name: {fileID: 11400000, guid: d5d1d360d7fb6014e8f3eaadf797b240, type: 2}
+  types:
+  - {fileID: 11400000, guid: 2d8d2cd79db45b54ba4b220b056cdafe, type: 2}
+  evolve_to:
+  - evolutionConditions:
+    - trigger: level-up
+      min_level: 34
+    pokemon: {fileID: 11400000, guid: 7c5cfc3ce238e604d94210a3e83937c7, type: 2}
+  sprites:
+    backDefault: {fileID: 21300000, guid: 49eda549ea07b15448d21e885f4dfdac, type: 3}
+    frontDefault: {fileID: 21300000, guid: 9c430b5509fd6814fa34246e8a2b4857, type: 3}

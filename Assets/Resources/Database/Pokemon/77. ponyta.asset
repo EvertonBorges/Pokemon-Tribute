@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 77. ponyta
+  m_EditorClassIdentifier: 
+  id: 77
+  name: ponyta
+  description: "Its hooves are 10 times harder than diamonds. It can\ftrample anything
+    completely flat in little time."
+  base_stats:
+    hp: 50
+    attack: 85
+    defense: 55
+    special_attack: 65
+    special_defense: 65
+    speed: 90
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: f771b10c13a0f0f4cbc3a0affb4c1b6c, type: 2}
+  - learn_level: 30
+    name: {fileID: 11400000, guid: 64fbe2067251faf499e9633400562cc2, type: 2}
+  - learn_level: 32
+    name: {fileID: 11400000, guid: c74a3861aeef03146a5fa17c68e3c0f6, type: 2}
+  - learn_level: 35
+    name: {fileID: 11400000, guid: a7ad94a791247644097a722e9b767add, type: 2}
+  - learn_level: 39
+    name: {fileID: 11400000, guid: b485164ae84d6244ea259d037c1ec2de, type: 2}
+  - learn_level: 43
+    name: {fileID: 11400000, guid: d653114b16e81d3458ae12390d000aed, type: 2}
+  - learn_level: 48
+    name: {fileID: 11400000, guid: 962b709451b5fe949ad1b2a72182339e, type: 2}
+  types:
+  - {fileID: 11400000, guid: d7de067c0c2c6c24fa8115d1f13e0aaa, type: 2}
+  evolve_to:
+  - evolutionConditions:
+    - trigger: level-up
+      min_level: 40
+    pokemon: {fileID: 11400000, guid: 969ad34fa2635834b942011bc834acfe, type: 2}
+  sprites:
+    backDefault: {fileID: 21300000, guid: 43361fa6195fbf145b5641a066ec829e, type: 3}
+    frontDefault: {fileID: 21300000, guid: a093fe8d0d14d534581c7bf216a86ad8, type: 3}

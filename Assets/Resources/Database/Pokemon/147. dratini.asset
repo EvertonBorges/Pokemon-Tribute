@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 147. dratini
+  m_EditorClassIdentifier: 
+  id: 147
+  name: dratini
+  description: "Long considered a mythical POK\xE9MON until recently\fwhen a small
+    colony was found living underwater."
+  base_stats:
+    hp: 41
+    attack: 64
+    defense: 45
+    special_attack: 50
+    special_defense: 50
+    speed: 50
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: a1c5d113340e33e43adb832ce0b192d2, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 992e05d1a7a66e8418174c71327ea483, type: 2}
+  - learn_level: 10
+    name: {fileID: 11400000, guid: d64d9f573445d944ab65d5b081be99bc, type: 2}
+  - learn_level: 20
+    name: {fileID: 11400000, guid: 962b709451b5fe949ad1b2a72182339e, type: 2}
+  - learn_level: 30
+    name: {fileID: 11400000, guid: 09f4b12d5cdfd2d4eacbb4b346df3072, type: 2}
+  - learn_level: 40
+    name: {fileID: 11400000, guid: 4abd857130a8beb4580587033025ddcf, type: 2}
+  - learn_level: 50
+    name: {fileID: 11400000, guid: 34501124f100f4248a0dd1077c2cce5f, type: 2}
+  types:
+  - {fileID: 11400000, guid: db70450f3c6615e47955f1ee261b4156, type: 2}
+  evolve_to:
+  - evolutionConditions:
+    - trigger: level-up
+      min_level: 30
+    pokemon: {fileID: 11400000, guid: e70ad44f3c163244b8eba06dddc22a78, type: 2}
+  sprites:
+    backDefault: {fileID: 21300000, guid: ff2f864dd2492314ebc9568918696035, type: 3}
+    frontDefault: {fileID: 21300000, guid: a713f1b9cbb11204eb8c6e3d862b4e31, type: 3}

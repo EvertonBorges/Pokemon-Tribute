@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 69. bellsprout
+  m_EditorClassIdentifier: 
+  id: 69
+  name: bellsprout
+  description: "A carnivorous POK\xE9MON that traps and eats bugs.\fIt uses its root
+    feet to soak up needed moisture."
+  base_stats:
+    hp: 50
+    attack: 75
+    defense: 35
+    special_attack: 70
+    special_defense: 30
+    speed: 40
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 5ac28a9a9349df346a1d60110dfb0ad1, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 88f41df74b57dce469c5ac966cab458b, type: 2}
+  - learn_level: 13
+    name: {fileID: 11400000, guid: 992e05d1a7a66e8418174c71327ea483, type: 2}
+  - learn_level: 15
+    name: {fileID: 11400000, guid: 464560c3dc4386b4d945f00d9926935d, type: 2}
+  - learn_level: 18
+    name: {fileID: 11400000, guid: 4af46453fbfd8a04aabf7708cb5c80b8, type: 2}
+  - learn_level: 21
+    name: {fileID: 11400000, guid: 4cb99ad9f436d184e9a252d486774496, type: 2}
+  - learn_level: 26
+    name: {fileID: 11400000, guid: 878c98b73ee96264c91c2a2606e9336a, type: 2}
+  - learn_level: 33
+    name: {fileID: 11400000, guid: eadd806ee1ab9b94085a0441b06fa34f, type: 2}
+  - learn_level: 42
+    name: {fileID: 11400000, guid: 09f4b12d5cdfd2d4eacbb4b346df3072, type: 2}
+  types:
+  - {fileID: 11400000, guid: 711c988eda0231c4f878da626d985275, type: 2}
+  - {fileID: 11400000, guid: 86937549e4613db4cb25e915c753dc2e, type: 2}
+  evolve_to:
+  - evolutionConditions:
+    - trigger: level-up
+      min_level: 21
+    pokemon: {fileID: 11400000, guid: bb323b7c05c0c1d45a1444cd09f6990a, type: 2}
+  sprites:
+    backDefault: {fileID: 21300000, guid: 1e29b93c375b6c14c8e33accb3e98883, type: 3}
+    frontDefault: {fileID: 21300000, guid: 7c07adfbce2c771429c0e765ab61693e, type: 3}

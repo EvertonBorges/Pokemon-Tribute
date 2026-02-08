@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 25. pikachu
+  m_EditorClassIdentifier: 
+  id: 25
+  name: pikachu
+  description: "When several of these POK\xE9MON gather, their\felectricity could
+    build and cause lightning storms."
+  base_stats:
+    hp: 35
+    attack: 55
+    defense: 40
+    special_attack: 50
+    special_defense: 50
+    speed: 90
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: a7ad94a791247644097a722e9b767add, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: e9636a1c972137d41993d9084ffe8fff, type: 2}
+  - learn_level: 9
+    name: {fileID: 11400000, guid: d64d9f573445d944ab65d5b081be99bc, type: 2}
+  - learn_level: 16
+    name: {fileID: 11400000, guid: ff5e326bb9d245642a61ecac5dfc6cf6, type: 2}
+  - learn_level: 26
+    name: {fileID: 11400000, guid: 7f7a112f773027a4791a144d4c233556, type: 2}
+  - learn_level: 33
+    name: {fileID: 11400000, guid: 962b709451b5fe949ad1b2a72182339e, type: 2}
+  - learn_level: 43
+    name: {fileID: 11400000, guid: 0839b8932e39508499bc2462425fd1be, type: 2}
+  types:
+  - {fileID: 11400000, guid: e188e36d1242f8f4abbac5cd66ac8cfc, type: 2}
+  evolve_to:
+  - evolutionConditions:
+    - trigger: use-item
+      min_level: -1
+    pokemon: {fileID: 11400000, guid: 1eae2754c5f3fa34793c95ebcea2938e, type: 2}
+  sprites:
+    backDefault: {fileID: 21300000, guid: f052cd3bc4bd4754dbc7e5db0a9e7d5c, type: 3}
+    frontDefault: {fileID: 21300000, guid: ab15a3daf5d48054eb987b8bea3eec9c, type: 3}

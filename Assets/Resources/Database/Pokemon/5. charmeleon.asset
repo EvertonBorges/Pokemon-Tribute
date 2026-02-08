@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 5. charmeleon
+  m_EditorClassIdentifier: 
+  id: 5
+  name: charmeleon
+  description: "When it swings its burning tail, it elevates the\ftemperature to
+    unbearably high levels."
+  base_stats:
+    hp: 58
+    attack: 64
+    defense: 58
+    special_attack: 80
+    special_defense: 65
+    speed: 80
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: f771b10c13a0f0f4cbc3a0affb4c1b6c, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: a7ad94a791247644097a722e9b767add, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 4dabfd23c68b58d41a22f86fd5217092, type: 2}
+  - learn_level: 15
+    name: {fileID: 11400000, guid: a1c5d113340e33e43adb832ce0b192d2, type: 2}
+  - learn_level: 24
+    name: {fileID: 11400000, guid: a7dffe83164543e4a9ab5c185db22071, type: 2}
+  - learn_level: 33
+    name: {fileID: 11400000, guid: 62b926586860a1249a3cd4b7b88666a2, type: 2}
+  - learn_level: 42
+    name: {fileID: 11400000, guid: fa74fb50ef5ee9b4383b7f36954b35dc, type: 2}
+  - learn_level: 56
+    name: {fileID: 11400000, guid: b485164ae84d6244ea259d037c1ec2de, type: 2}
+  types:
+  - {fileID: 11400000, guid: d7de067c0c2c6c24fa8115d1f13e0aaa, type: 2}
+  evolve_to:
+  - evolutionConditions:
+    - trigger: level-up
+      min_level: 36
+    pokemon: {fileID: 11400000, guid: 0a831ac90011ef64d99acbc4f169f336, type: 2}
+  sprites:
+    backDefault: {fileID: 21300000, guid: d3787abe19cb9fd43a947d76c208683d, type: 3}
+    frontDefault: {fileID: 21300000, guid: 43d08158e4c12c6479038616a5c74e40, type: 3}

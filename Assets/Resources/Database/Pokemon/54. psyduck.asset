@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 54. psyduck
+  m_EditorClassIdentifier: 
+  id: 54
+  name: psyduck
+  description: "While lulling its enemies with its vacant look, this\fwily POK\xE9MON
+    will use psychokinetic powers."
+  base_stats:
+    hp: 50
+    attack: 52
+    defense: 48
+    special_attack: 65
+    special_defense: 50
+    speed: 55
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 4dabfd23c68b58d41a22f86fd5217092, type: 2}
+  - learn_level: 28
+    name: {fileID: 11400000, guid: 64fbe2067251faf499e9633400562cc2, type: 2}
+  - learn_level: 31
+    name: {fileID: 11400000, guid: 61e343ba183f1074399975f5a3442e1d, type: 2}
+  - learn_level: 36
+    name: {fileID: 11400000, guid: e153beaaf426bf649a29f6b1e18f303b, type: 2}
+  - learn_level: 43
+    name: {fileID: 11400000, guid: 160dc607f78bc2f48beb36f5a680b912, type: 2}
+  - learn_level: 52
+    name: {fileID: 11400000, guid: 3d9e5de932ae6064fa0174bb00ff753a, type: 2}
+  types:
+  - {fileID: 11400000, guid: 2d8d2cd79db45b54ba4b220b056cdafe, type: 2}
+  evolve_to:
+  - evolutionConditions:
+    - trigger: level-up
+      min_level: 33
+    pokemon: {fileID: 11400000, guid: 16109d3cf9d4b044782198e1a733e12c, type: 2}
+  sprites:
+    backDefault: {fileID: 21300000, guid: e9bd21a1e9216334d933e5006ba3ed94, type: 3}
+    frontDefault: {fileID: 21300000, guid: 0a5c68e77c642cf4d890f7ecb6986313, type: 3}

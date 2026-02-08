@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 45. vileplume
+  m_EditorClassIdentifier: 
+  id: 45
+  name: vileplume
+  description: "The larger its petals, the more toxic pollen it\fcontains. Its big
+    head is heavy and hard to hold up."
+  base_stats:
+    hp: 75
+    attack: 80
+    defense: 85
+    special_attack: 110
+    special_defense: 90
+    speed: 50
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 878c98b73ee96264c91c2a2606e9336a, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 7cdd8802443cabe41a17895841d145d1, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 4af46453fbfd8a04aabf7708cb5c80b8, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 4cb99ad9f436d184e9a252d486774496, type: 2}
+  - learn_level: 15
+    name: {fileID: 11400000, guid: 464560c3dc4386b4d945f00d9926935d, type: 2}
+  types:
+  - {fileID: 11400000, guid: 711c988eda0231c4f878da626d985275, type: 2}
+  - {fileID: 11400000, guid: 86937549e4613db4cb25e915c753dc2e, type: 2}
+  evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: efcc75dbb0c6efd458eabe4b987c9a4d, type: 3}
+    frontDefault: {fileID: 21300000, guid: 9e3b5ffd66158d94babac80c87c9b20c, type: 3}

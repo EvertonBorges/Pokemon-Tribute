@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 95. onix
+  m_EditorClassIdentifier: 
+  id: 95
+  name: onix
+  description: "As it grows, the stone portions of its body harden\fto become similar
+    to a diamond, but colored black."
+  base_stats:
+    hp: 35
+    attack: 45
+    defense: 160
+    special_attack: 30
+    special_defense: 45
+    speed: 70
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 0f3cb4d7bb4f1eb46a8545a1a585ed3d, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: fc691a37d4af9954a9f06c53601a863d, type: 2}
+  - learn_level: 15
+    name: {fileID: 11400000, guid: c467bce4c3cc6c646a840abf49f68deb, type: 2}
+  - learn_level: 19
+    name: {fileID: 11400000, guid: fa5d0ef073e3e2842b34221221e2582e, type: 2}
+  - learn_level: 25
+    name: {fileID: 11400000, guid: a7dffe83164543e4a9ab5c185db22071, type: 2}
+  - learn_level: 33
+    name: {fileID: 11400000, guid: 09f4b12d5cdfd2d4eacbb4b346df3072, type: 2}
+  - learn_level: 43
+    name: {fileID: 11400000, guid: 8e77520f61e8dd74b9cc1e1bf712caa3, type: 2}
+  types:
+  - {fileID: 11400000, guid: 856b6e7697fc99a409f8b06286888049, type: 2}
+  - {fileID: 11400000, guid: 6073242af4df7804499221e154852c97, type: 2}
+  evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: f04b53cc97fb8294396a796c01eed4a3, type: 3}
+    frontDefault: {fileID: 21300000, guid: 6fbcfb9446126724f9d62ce778be7c82, type: 3}

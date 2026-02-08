@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 72. tentacool
+  m_EditorClassIdentifier: 
+  id: 72
+  name: tentacool
+  description: "Drifts in shallow seas. Anglers who hook them by\faccident are often
+    punished by its stinging acid."
+  base_stats:
+    hp: 40
+    attack: 40
+    defense: 35
+    special_attack: 50
+    special_defense: 100
+    speed: 70
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 878c98b73ee96264c91c2a2606e9336a, type: 2}
+  - learn_level: 7
+    name: {fileID: 11400000, guid: e6ec670a4f64361439f786d115d19275, type: 2}
+  - learn_level: 13
+    name: {fileID: 11400000, guid: 992e05d1a7a66e8418174c71327ea483, type: 2}
+  - learn_level: 18
+    name: {fileID: 11400000, guid: e8dbd29dbe89e56449a29bd7d11d549c, type: 2}
+  - learn_level: 22
+    name: {fileID: 11400000, guid: 47b02d18984b6dd40a03f23165bdf40b, type: 2}
+  - learn_level: 27
+    name: {fileID: 11400000, guid: 0229b4ac40b724d4aa726e212f5fc37a, type: 2}
+  - learn_level: 33
+    name: {fileID: 11400000, guid: bcc93c844a64f4f4e9f15df9952f5f73, type: 2}
+  - learn_level: 40
+    name: {fileID: 11400000, guid: 0f3cb4d7bb4f1eb46a8545a1a585ed3d, type: 2}
+  - learn_level: 48
+    name: {fileID: 11400000, guid: 3d9e5de932ae6064fa0174bb00ff753a, type: 2}
+  types:
+  - {fileID: 11400000, guid: 2d8d2cd79db45b54ba4b220b056cdafe, type: 2}
+  - {fileID: 11400000, guid: 86937549e4613db4cb25e915c753dc2e, type: 2}
+  evolve_to:
+  - evolutionConditions:
+    - trigger: level-up
+      min_level: 30
+    pokemon: {fileID: 11400000, guid: aba42cea5f16e9b409e2851d428c1c6a, type: 2}
+  sprites:
+    backDefault: {fileID: 21300000, guid: 6462ba42e79cd4847a5769d57f5d4fd0, type: 3}
+    frontDefault: {fileID: 21300000, guid: 4696085bc3a9d174a80f3330e1a7ec83, type: 3}

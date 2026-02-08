@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 70. weepinbell
+  m_EditorClassIdentifier: 
+  id: 70
+  name: weepinbell
+  description: "It spits out POISONPOWDER to immobilize the\fenemy and then finishes
+    it with a spray of ACID."
+  base_stats:
+    hp: 65
+    attack: 90
+    defense: 50
+    special_attack: 85
+    special_defense: 45
+    speed: 55
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 5ac28a9a9349df346a1d60110dfb0ad1, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 88f41df74b57dce469c5ac966cab458b, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 992e05d1a7a66e8418174c71327ea483, type: 2}
+  - learn_level: 15
+    name: {fileID: 11400000, guid: 464560c3dc4386b4d945f00d9926935d, type: 2}
+  - learn_level: 18
+    name: {fileID: 11400000, guid: 4af46453fbfd8a04aabf7708cb5c80b8, type: 2}
+  - learn_level: 23
+    name: {fileID: 11400000, guid: 4cb99ad9f436d184e9a252d486774496, type: 2}
+  - learn_level: 29
+    name: {fileID: 11400000, guid: 878c98b73ee96264c91c2a2606e9336a, type: 2}
+  - learn_level: 38
+    name: {fileID: 11400000, guid: eadd806ee1ab9b94085a0441b06fa34f, type: 2}
+  - learn_level: 49
+    name: {fileID: 11400000, guid: 09f4b12d5cdfd2d4eacbb4b346df3072, type: 2}
+  types:
+  - {fileID: 11400000, guid: 711c988eda0231c4f878da626d985275, type: 2}
+  - {fileID: 11400000, guid: 86937549e4613db4cb25e915c753dc2e, type: 2}
+  evolve_to:
+  - evolutionConditions:
+    - trigger: use-item
+      min_level: -1
+    pokemon: {fileID: 11400000, guid: adc2065954d404442813e81e69c464e7, type: 2}
+  sprites:
+    backDefault: {fileID: 21300000, guid: 75a2c7fae95302840aa0a873964fc96b, type: 3}
+    frontDefault: {fileID: 21300000, guid: 8091fb28604adfc4981d18543a9efed9, type: 3}

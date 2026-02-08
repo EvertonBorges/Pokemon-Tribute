@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 119. seaking
+  m_EditorClassIdentifier: 
+  id: 119
+  name: seaking
+  description: "In the autumn spawning season, they can be seen\fswimming power\xAD
+    fully up rivers and creeks."
+  base_stats:
+    hp: 80
+    attack: 92
+    defense: 65
+    special_attack: 65
+    special_defense: 80
+    speed: 68
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: ae45500eae5342b48b2f013ea330da9f, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: e6ec670a4f64361439f786d115d19275, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 64fbe2067251faf499e9633400562cc2, type: 2}
+  - learn_level: 24
+    name: {fileID: 11400000, guid: 9a126a932c75ac347b0bcaab95bf8764, type: 2}
+  - learn_level: 30
+    name: {fileID: 11400000, guid: 5b39ab90d3c79e04e9dc6eeb421e9e17, type: 2}
+  - learn_level: 39
+    name: {fileID: 11400000, guid: 17d45d598f6b37e418c37a8b78f55b06, type: 2}
+  - learn_level: 48
+    name: {fileID: 11400000, guid: 2cdaa37c1c2dea149bffba653d923463, type: 2}
+  - learn_level: 54
+    name: {fileID: 11400000, guid: 962b709451b5fe949ad1b2a72182339e, type: 2}
+  types:
+  - {fileID: 11400000, guid: 2d8d2cd79db45b54ba4b220b056cdafe, type: 2}
+  evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: c2f04340d64eb9e4399ac3e1db0f7e68, type: 3}
+    frontDefault: {fileID: 21300000, guid: 495cf53e97fc9a04bb931d5a230ad9a5, type: 3}

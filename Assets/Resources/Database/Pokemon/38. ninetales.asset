@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 38. ninetales
+  m_EditorClassIdentifier: 
+  id: 38
+  name: ninetales
+  description: "Very smart and very vengeful. Grabbing one of\fits many tails could
+    result in a 1000-year curse."
+  base_stats:
+    hp: 73
+    attack: 76
+    defense: 75
+    special_attack: 81
+    special_defense: 100
+    speed: 100
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: f771b10c13a0f0f4cbc3a0affb4c1b6c, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: ff5e326bb9d245642a61ecac5dfc6cf6, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 55a3adcbb7d8b1748a0fed23e06f6a7d, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 64fbe2067251faf499e9633400562cc2, type: 2}
+  types:
+  - {fileID: 11400000, guid: d7de067c0c2c6c24fa8115d1f13e0aaa, type: 2}
+  evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: e34a522888b472a46a787fae98474af4, type: 3}
+    frontDefault: {fileID: 21300000, guid: 6f722505bea501440bdb2f38c979ca8a, type: 3}

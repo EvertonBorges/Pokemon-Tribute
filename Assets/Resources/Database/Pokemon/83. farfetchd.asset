@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 83. farfetchd
+  m_EditorClassIdentifier: 
+  id: 83
+  name: farfetchd
+  description: "The sprig of green onions it holds is its\fweapon. It is used much
+    like a metal sword."
+  base_stats:
+    hp: 52
+    attack: 90
+    defense: 55
+    special_attack: 58
+    special_defense: 62
+    speed: 60
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: ae45500eae5342b48b2f013ea330da9f, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: f064efedc43e6b7428879ff3db2c4cfe, type: 2}
+  - learn_level: 7
+    name: {fileID: 11400000, guid: a1c5d113340e33e43adb832ce0b192d2, type: 2}
+  - learn_level: 15
+    name: {fileID: 11400000, guid: 5b39ab90d3c79e04e9dc6eeb421e9e17, type: 2}
+  - learn_level: 23
+    name: {fileID: 11400000, guid: 9756e155dfc7af14bbbfd5ce6b90922a, type: 2}
+  - learn_level: 31
+    name: {fileID: 11400000, guid: 962b709451b5fe949ad1b2a72182339e, type: 2}
+  - learn_level: 39
+    name: {fileID: 11400000, guid: 62b926586860a1249a3cd4b7b88666a2, type: 2}
+  types:
+  - {fileID: 11400000, guid: 0d14d95e2457b30419de6595c7d5a171, type: 2}
+  - {fileID: 11400000, guid: e3b39be3fcac2974c9f569113a83f7e3, type: 2}
+  evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: 14a6e9dd5fa69d049913eef79dfd2b35, type: 3}
+    frontDefault: {fileID: 21300000, guid: 31cf5fc02af040a418d6f2e877d3ea1c, type: 3}

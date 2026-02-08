@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 56. mankey
+  m_EditorClassIdentifier: 
+  id: 56
+  name: mankey
+  description: "Extremely quick to anger. It could be docile one\fmoment then thrashing
+    away the next instant."
+  base_stats:
+    hp: 40
+    attack: 80
+    defense: 35
+    special_attack: 35
+    special_defense: 45
+    speed: 70
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: a1c5d113340e33e43adb832ce0b192d2, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 4dabfd23c68b58d41a22f86fd5217092, type: 2}
+  - learn_level: 15
+    name: {fileID: 11400000, guid: 1409ad516bfc56649a52ab39ba20079a, type: 2}
+  - learn_level: 21
+    name: {fileID: 11400000, guid: 160dc607f78bc2f48beb36f5a680b912, type: 2}
+  - learn_level: 27
+    name: {fileID: 11400000, guid: 15a5592ee22b114488ecbf7fcf7f751a, type: 2}
+  - learn_level: 33
+    name: {fileID: 11400000, guid: f4b12c60ad9641542bd3cc739b4e5a1a, type: 2}
+  - learn_level: 39
+    name: {fileID: 11400000, guid: 778cf19129470274c9bf0d84f3103497, type: 2}
+  types:
+  - {fileID: 11400000, guid: 642efe96ee9dc644e87c1119e24481e6, type: 2}
+  evolve_to:
+  - evolutionConditions:
+    - trigger: level-up
+      min_level: 28
+    pokemon: {fileID: 11400000, guid: 41c71286863825a40805134963cfe1e2, type: 2}
+  sprites:
+    backDefault: {fileID: 21300000, guid: 429d6e03a520b8b4d9370e326c66437b, type: 3}
+    frontDefault: {fileID: 21300000, guid: e0a4dd4b876c6f94fb3b0ed413e89e4a, type: 3}

@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 9. blastoise
+  m_EditorClassIdentifier: 
+  id: 9
+  name: blastoise
+  description: "A brutal POK\xE9MON with pressurized water jets on its\fshell. They
+    are used for high speed tackles."
+  base_stats:
+    hp: 79
+    attack: 83
+    defense: 100
+    special_attack: 85
+    special_defense: 105
+    speed: 78
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 73cc8ffa149b2774c9312f5386625b90, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: fc691a37d4af9954a9f06c53601a863d, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 64fbe2067251faf499e9633400562cc2, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 47b02d18984b6dd40a03f23165bdf40b, type: 2}
+  - learn_level: 24
+    name: {fileID: 11400000, guid: 9104e2b270eb18b4d9e07615d73e7b9e, type: 2}
+  - learn_level: 31
+    name: {fileID: 11400000, guid: 6f3b220061a9f1745937593ed6dc64ab, type: 2}
+  - learn_level: 42
+    name: {fileID: 11400000, guid: 2c0a66694bf25b74eb039385f6b39d1e, type: 2}
+  - learn_level: 52
+    name: {fileID: 11400000, guid: 3d9e5de932ae6064fa0174bb00ff753a, type: 2}
+  types:
+  - {fileID: 11400000, guid: 2d8d2cd79db45b54ba4b220b056cdafe, type: 2}
+  evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: 7b9ae9fc8f950f54cbd077c843597ae2, type: 3}
+    frontDefault: {fileID: 21300000, guid: 98cca974e494b2446b8cb83ddb528df4, type: 3}

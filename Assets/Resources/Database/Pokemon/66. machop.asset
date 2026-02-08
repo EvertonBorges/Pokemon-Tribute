@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 66. machop
+  m_EditorClassIdentifier: 
+  id: 66
+  name: machop
+  description: "Loves to build its muscles. It trains in all\fstyles of martial arts
+    to become even stronger."
+  base_stats:
+    hp: 70
+    attack: 80
+    defense: 50
+    special_attack: 35
+    special_defense: 35
+    speed: 35
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 1409ad516bfc56649a52ab39ba20079a, type: 2}
+  - learn_level: 20
+    name: {fileID: 11400000, guid: e7788de6cd7e0694eb57c19ff7d07aed, type: 2}
+  - learn_level: 25
+    name: {fileID: 11400000, guid: a1c5d113340e33e43adb832ce0b192d2, type: 2}
+  - learn_level: 32
+    name: {fileID: 11400000, guid: 15a5592ee22b114488ecbf7fcf7f751a, type: 2}
+  - learn_level: 39
+    name: {fileID: 11400000, guid: f4b12c60ad9641542bd3cc739b4e5a1a, type: 2}
+  - learn_level: 46
+    name: {fileID: 11400000, guid: 9be21e0fa9c320f4493b35b065527d2b, type: 2}
+  types:
+  - {fileID: 11400000, guid: 642efe96ee9dc644e87c1119e24481e6, type: 2}
+  evolve_to:
+  - evolutionConditions:
+    - trigger: level-up
+      min_level: 28
+    pokemon: {fileID: 11400000, guid: dc8eba67e30fd264eb0d44b1eaa9dd81, type: 2}
+  sprites:
+    backDefault: {fileID: 21300000, guid: d2bbf9663c71cd048afe7e536bf5fdcb, type: 3}
+    frontDefault: {fileID: 21300000, guid: 4ef29dde6db02a34dbc76fd3bae57c35, type: 3}

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 146. moltres
+  m_EditorClassIdentifier: 
+  id: 146
+  name: moltres
+  description: "Known as the legendary bird of fire. Every flap\fof its wings creates
+    a dazzling flash of flames."
+  base_stats:
+    hp: 90
+    attack: 100
+    defense: 90
+    special_attack: 125
+    special_defense: 85
+    speed: 90
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: b485164ae84d6244ea259d037c1ec2de, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: ae45500eae5342b48b2f013ea330da9f, type: 2}
+  - learn_level: 51
+    name: {fileID: 11400000, guid: a1c5d113340e33e43adb832ce0b192d2, type: 2}
+  - learn_level: 55
+    name: {fileID: 11400000, guid: 962b709451b5fe949ad1b2a72182339e, type: 2}
+  - learn_level: 60
+    name: {fileID: 11400000, guid: cd4b284e51dcd5b4782ef1e500088f6d, type: 2}
+  types:
+  - {fileID: 11400000, guid: d7de067c0c2c6c24fa8115d1f13e0aaa, type: 2}
+  - {fileID: 11400000, guid: e3b39be3fcac2974c9f569113a83f7e3, type: 2}
+  evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: e22e72b67e78b114c87e7cf0dbe5666b, type: 3}
+    frontDefault: {fileID: 21300000, guid: be61767691d65274e8db266caefbe07d, type: 3}

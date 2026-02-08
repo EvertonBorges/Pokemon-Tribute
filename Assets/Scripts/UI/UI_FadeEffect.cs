@@ -8,6 +8,7 @@ public class UI_FadeEffect : MonoBehaviour
 
     [SerializeField] private bool startActive = false;
     [SerializeField] private AnimationCurve _fadeInCurve = AnimationCurve.Linear(0f, 0f, 1f, 1f);
+    public float FadeInDuration => _fadeInCurve.keys[^1].time;
     [SerializeField] private AnimationCurve _fadeOutCurve = AnimationCurve.Linear(0f, 0f, 1f, 1f);
 
     private bool _isShowing = false;

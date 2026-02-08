@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 139. omastar
+  m_EditorClassIdentifier: 
+  id: 139
+  name: omastar
+  description: "A prehistoric POK\xE9MON that died out when its\fheavy shell made
+    it impossible to catch prey."
+  base_stats:
+    hp: 70
+    attack: 60
+    defense: 125
+    special_attack: 115
+    special_defense: 70
+    speed: 55
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 9a126a932c75ac347b0bcaab95bf8764, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 47b02d18984b6dd40a03f23165bdf40b, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 6f3b220061a9f1745937593ed6dc64ab, type: 2}
+  - learn_level: 39
+    name: {fileID: 11400000, guid: a1c5d113340e33e43adb832ce0b192d2, type: 2}
+  - learn_level: 44
+    name: {fileID: 11400000, guid: 302c9d3436887a94a84441fcd57c6e47, type: 2}
+  - learn_level: 49
+    name: {fileID: 11400000, guid: 3d9e5de932ae6064fa0174bb00ff753a, type: 2}
+  types:
+  - {fileID: 11400000, guid: 856b6e7697fc99a409f8b06286888049, type: 2}
+  - {fileID: 11400000, guid: 2d8d2cd79db45b54ba4b220b056cdafe, type: 2}
+  evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: 6538566f1b828ea4098b8a4d8cc20c22, type: 3}
+    frontDefault: {fileID: 21300000, guid: 7e964a7320b5a324ebfca90362a243a8, type: 3}

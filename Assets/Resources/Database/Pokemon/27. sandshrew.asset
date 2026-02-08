@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 27. sandshrew
+  m_EditorClassIdentifier: 
+  id: 27
+  name: sandshrew
+  description: "Burrows deep underground in arid locations\ffar from water. It only
+    emerges to hunt for food."
+  base_stats:
+    hp: 50
+    attack: 75
+    defense: 85
+    special_attack: 20
+    special_defense: 30
+    speed: 40
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 4dabfd23c68b58d41a22f86fd5217092, type: 2}
+  - learn_level: 10
+    name: {fileID: 11400000, guid: f064efedc43e6b7428879ff3db2c4cfe, type: 2}
+  - learn_level: 17
+    name: {fileID: 11400000, guid: 62b926586860a1249a3cd4b7b88666a2, type: 2}
+  - learn_level: 24
+    name: {fileID: 11400000, guid: e8dbd29dbe89e56449a29bd7d11d549c, type: 2}
+  - learn_level: 31
+    name: {fileID: 11400000, guid: 7f7a112f773027a4791a144d4c233556, type: 2}
+  - learn_level: 38
+    name: {fileID: 11400000, guid: 160dc607f78bc2f48beb36f5a680b912, type: 2}
+  types:
+  - {fileID: 11400000, guid: 6073242af4df7804499221e154852c97, type: 2}
+  evolve_to:
+  - evolutionConditions:
+    - trigger: level-up
+      min_level: 22
+    - trigger: use-item
+      min_level: -1
+    pokemon: {fileID: 11400000, guid: f30a87089f26ffb4885e1130314ed6ba, type: 2}
+  sprites:
+    backDefault: {fileID: 21300000, guid: 658fddcf7cfa379499cc7fb670301b03, type: 3}
+    frontDefault: {fileID: 21300000, guid: 68eff552092fc7540937771cd13323e8, type: 3}

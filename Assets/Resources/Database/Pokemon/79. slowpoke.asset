@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 79. slowpoke
+  m_EditorClassIdentifier: 
+  id: 79
+  name: slowpoke
+  description: "Incredibly slow and dopey. It takes 5 seconds\ffor it to feel pain
+    when under attack."
+  base_stats:
+    hp: 90
+    attack: 65
+    defense: 65
+    special_attack: 40
+    special_defense: 40
+    speed: 15
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: e153beaaf426bf649a29f6b1e18f303b, type: 2}
+  - learn_level: 18
+    name: {fileID: 11400000, guid: 61e343ba183f1074399975f5a3442e1d, type: 2}
+  - learn_level: 22
+    name: {fileID: 11400000, guid: 9805e4c76b26b384d9c5134b14bd4359, type: 2}
+  - learn_level: 27
+    name: {fileID: 11400000, guid: a7ad94a791247644097a722e9b767add, type: 2}
+  - learn_level: 33
+    name: {fileID: 11400000, guid: 47b02d18984b6dd40a03f23165bdf40b, type: 2}
+  - learn_level: 40
+    name: {fileID: 11400000, guid: e6dc7ab45425bcf4aa8489f0949ac437, type: 2}
+  - learn_level: 48
+    name: {fileID: 11400000, guid: 50726337dc8bb214d8dab8c455bd6cb8, type: 2}
+  types:
+  - {fileID: 11400000, guid: 2d8d2cd79db45b54ba4b220b056cdafe, type: 2}
+  - {fileID: 11400000, guid: f18070f1d70e9f14aac1240b2f4370bd, type: 2}
+  evolve_to:
+  - evolutionConditions:
+    - trigger: level-up
+      min_level: 37
+    - trigger: use-item
+      min_level: -1
+    pokemon: {fileID: 11400000, guid: aac507941b0fcd44394ca6c1188aafd6, type: 2}
+  sprites:
+    backDefault: {fileID: 21300000, guid: 10c777d714d1cef41aef45fc7709108a, type: 3}
+    frontDefault: {fileID: 21300000, guid: a18b65c6924f3d94e82da30187bae667, type: 3}

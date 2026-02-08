@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 120. staryu
+  m_EditorClassIdentifier: 
+  id: 120
+  name: staryu
+  description: "An enigmatic POK\xE9MON that can effortlessly\fregenerate any appendage
+    it loses in battle."
+  base_stats:
+    hp: 30
+    attack: 45
+    defense: 55
+    special_attack: 70
+    special_defense: 55
+    speed: 85
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: fc691a37d4af9954a9f06c53601a863d, type: 2}
+  - learn_level: 17
+    name: {fileID: 11400000, guid: 47b02d18984b6dd40a03f23165bdf40b, type: 2}
+  - learn_level: 22
+    name: {fileID: 11400000, guid: 8e77520f61e8dd74b9cc1e1bf712caa3, type: 2}
+  - learn_level: 27
+    name: {fileID: 11400000, guid: 1ea9d9716599e3a42a8a04a2d2da1b4a, type: 2}
+  - learn_level: 32
+    name: {fileID: 11400000, guid: 7f7a112f773027a4791a144d4c233556, type: 2}
+  - learn_level: 37
+    name: {fileID: 11400000, guid: 837a8652b67e1b44ba341b97537639d0, type: 2}
+  - learn_level: 42
+    name: {fileID: 11400000, guid: 1a907d44e6fe9da4791798e992ab53e2, type: 2}
+  - learn_level: 47
+    name: {fileID: 11400000, guid: 3d9e5de932ae6064fa0174bb00ff753a, type: 2}
+  types:
+  - {fileID: 11400000, guid: 2d8d2cd79db45b54ba4b220b056cdafe, type: 2}
+  evolve_to:
+  - evolutionConditions:
+    - trigger: use-item
+      min_level: -1
+    pokemon: {fileID: 11400000, guid: 37249a0373a70d14282013150f5f2153, type: 2}
+  sprites:
+    backDefault: {fileID: 21300000, guid: dfaed9720c3e0e348a5a2c15cd94f76e, type: 3}
+    frontDefault: {fileID: 21300000, guid: 101dce790268eb14982b35e3421ffed1, type: 3}

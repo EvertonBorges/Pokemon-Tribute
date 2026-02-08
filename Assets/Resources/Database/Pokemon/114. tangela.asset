@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 114. tangela
+  m_EditorClassIdentifier: 
+  id: 114
+  name: tangela
+  description: "The whole body is swathed with wide vines that are\fsimilar to sea\xAD
+    weed. Its vines shake as it walks."
+  base_stats:
+    hp: 65
+    attack: 55
+    defense: 115
+    special_attack: 100
+    special_defense: 40
+    speed: 60
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: c467bce4c3cc6c646a840abf49f68deb, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 0229b4ac40b724d4aa726e212f5fc37a, type: 2}
+  - learn_level: 29
+    name: {fileID: 11400000, guid: a7f8aa9c6c6128544849ef4e8e01e413, type: 2}
+  - learn_level: 32
+    name: {fileID: 11400000, guid: 464560c3dc4386b4d945f00d9926935d, type: 2}
+  - learn_level: 36
+    name: {fileID: 11400000, guid: 4cb99ad9f436d184e9a252d486774496, type: 2}
+  - learn_level: 39
+    name: {fileID: 11400000, guid: 4af46453fbfd8a04aabf7708cb5c80b8, type: 2}
+  - learn_level: 45
+    name: {fileID: 11400000, guid: 09f4b12d5cdfd2d4eacbb4b346df3072, type: 2}
+  - learn_level: 49
+    name: {fileID: 11400000, guid: 5ac28a9a9349df346a1d60110dfb0ad1, type: 2}
+  types:
+  - {fileID: 11400000, guid: 711c988eda0231c4f878da626d985275, type: 2}
+  evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: 01558f6f5ce7ba24f8876e94c7e5ab84, type: 3}
+    frontDefault: {fileID: 21300000, guid: de45aa8cef158fe4e8f326ebac281b5c, type: 3}

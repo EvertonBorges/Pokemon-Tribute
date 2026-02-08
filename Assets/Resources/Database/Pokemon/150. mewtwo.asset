@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 150. mewtwo
+  m_EditorClassIdentifier: 
+  id: 150
+  name: mewtwo
+  description: "It was created by a scientist after years of horrific\fgene splicing
+    and DNA engineering experiments."
+  base_stats:
+    hp: 106
+    attack: 110
+    defense: 90
+    special_attack: 154
+    special_defense: 90
+    speed: 130
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: e153beaaf426bf649a29f6b1e18f303b, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 61e343ba183f1074399975f5a3442e1d, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 50726337dc8bb214d8dab8c455bd6cb8, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 7f7a112f773027a4791a144d4c233556, type: 2}
+  - learn_level: 63
+    name: {fileID: 11400000, guid: bcc93c844a64f4f4e9f15df9952f5f73, type: 2}
+  - learn_level: 70
+    name: {fileID: 11400000, guid: 1ea9d9716599e3a42a8a04a2d2da1b4a, type: 2}
+  - learn_level: 75
+    name: {fileID: 11400000, guid: 2d5890e5a702b724291c6cd54b91cc11, type: 2}
+  - learn_level: 81
+    name: {fileID: 11400000, guid: e6dc7ab45425bcf4aa8489f0949ac437, type: 2}
+  types:
+  - {fileID: 11400000, guid: f18070f1d70e9f14aac1240b2f4370bd, type: 2}
+  evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: a424de064aa1e874eb472be74c8d5d32, type: 3}
+    frontDefault: {fileID: 21300000, guid: c1349e5621fd5c94da461f53c58c073f, type: 3}

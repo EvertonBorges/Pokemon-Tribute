@@ -11,7 +11,7 @@ public static class Manager_Events
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSplashScreen)]
     private static void Setup()
     {
-        foreach (var item in EventsExtensions.Fields)
+        foreach (var item in Extensions.Fields)
         {
             var obj = Activator.CreateInstance(item.Value.FieldType);
             item.Value.SetValue(null, obj);
@@ -21,6 +21,9 @@ public static class Manager_Events
 
     public static class Player
     {
+        public static Event<Vector2> OnTeleport;
+        public static Event<Vector2> OnRotate;
+
         public static Event<Vector2> OnMovement;
         public static Event OnButtonA;
         public static Event OnButtonB;
@@ -28,17 +31,25 @@ public static class Manager_Events
         public static Event OnButtonSelect;
     }
 
+    public static class Battle
+    {
+        public static Event<SO_Slot_Pokemon> UpdateHp;
+        public static Event<SO_Slot_Pokemon> PokemonDefeated;
+    }
+
     public static class GameManager
     {
         public static Event Pause;
         public static Event Unpause;
+
+        public static Event<bool, Action> OnTransite;
     }
 
-    public static bool TryGetEvent(EventInspector eventInspector, out IEvent ev)
+    public static bool TryGetEvent(InspectorEvent inspectorEvent, out IEvent ev)
     {
         ev = null;
 
-        if (!EventsExtensions.TryGetField(eventInspector, out FieldInfo field))
+        if (!Extensions.TryGetField(inspectorEvent, out FieldInfo field))
             return false;
 
         ev = (IEvent) field.GetValue(null);
@@ -46,8 +57,19 @@ public static class Manager_Events
         return ev != null;
     }
 
+    public static void Add(InspectorEvent inspectorEvent, Action callback)
+    {
+        IEvent ev;
 
-    public static class EventsExtensions
+        if (!Extensions.TryGetField(inspectorEvent, out FieldInfo field))
+            return;
+
+        ev = (IEvent) field.GetValue(inspectorEvent);
+
+        ev.Add(callback, inspectorEvent.Order);
+    }
+
+    public static class Extensions
     {
         private static readonly Type MainType = typeof(Manager_Events);
         
@@ -67,9 +89,6 @@ public static class Manager_Events
         private static void Setup()
         {
             GetFieldsRecursively(MainType);
-
-            // foreach (var item in m_fields.Keys)
-            //     Debug.Log($"Path: {item}");
         }
 
         private static void GetFieldsRecursively(Type type)
@@ -85,7 +104,9 @@ public static class Manager_Events
         private static bool IsValidEventType(Type type)
         {
             if (typeof(IEvent).IsAssignableFrom(type)) return false;
-            if (type == typeof(EventsExtensions)) return false;
+
+            if (type == typeof(Extensions)) return false;
+            
             return true;
         }
 
@@ -100,7 +121,7 @@ public static class Manager_Events
             return result;
         }
 
-        public static bool TryGetField(EventInspector eventInspector, out FieldInfo field)
+        public static bool TryGetField(InspectorEvent eventInspector, out FieldInfo field)
         {
             field = null;
 

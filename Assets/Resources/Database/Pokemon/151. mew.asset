@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 151. mew
+  m_EditorClassIdentifier: 
+  id: 151
+  name: mew
+  description: "So rare that it is still said to be a mirage by\fmany experts. Only
+    a few people have seen it worldwide."
+  base_stats:
+    hp: 100
+    attack: 100
+    defense: 100
+    special_attack: 100
+    special_defense: 100
+    speed: 100
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: b9497bec049c9f242b3bfd8c87164874, type: 2}
+  - learn_level: 10
+    name: {fileID: 11400000, guid: 7e78268bf17904540bc1b7d39aa16786, type: 2}
+  - learn_level: 20
+    name: {fileID: 11400000, guid: 43ea0d3dabbc70840a0fadac70c0df80, type: 2}
+  - learn_level: 30
+    name: {fileID: 11400000, guid: 9b09832d208679c4a904620bc0811a2d, type: 2}
+  - learn_level: 40
+    name: {fileID: 11400000, guid: 50726337dc8bb214d8dab8c455bd6cb8, type: 2}
+  types:
+  - {fileID: 11400000, guid: f18070f1d70e9f14aac1240b2f4370bd, type: 2}
+  evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: 475574ca9d2c9844981562c62daf73c7, type: 3}
+    frontDefault: {fileID: 21300000, guid: f12e7c9e229f11c4687defbd97aa9848, type: 3}

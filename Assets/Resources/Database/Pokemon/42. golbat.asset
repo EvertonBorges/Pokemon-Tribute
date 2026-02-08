@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 42. golbat
+  m_EditorClassIdentifier: 
+  id: 42
+  name: golbat
+  description: "Once it strikes, it will not stop draining energy\ffrom the victim
+    even if it gets too heavy to fly."
+  base_stats:
+    hp: 75
+    attack: 80
+    defense: 70
+    special_attack: 65
+    special_defense: 75
+    speed: 90
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 9104e2b270eb18b4d9e07615d73e7b9e, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 16d8546f247771a4aa50b35c11e431b7, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 0f3cb4d7bb4f1eb46a8545a1a585ed3d, type: 2}
+  - learn_level: 10
+    name: {fileID: 11400000, guid: e6ec670a4f64361439f786d115d19275, type: 2}
+  - learn_level: 21
+    name: {fileID: 11400000, guid: fddb64226b591dd44a8f069242677a14, type: 2}
+  - learn_level: 32
+    name: {fileID: 11400000, guid: d890a1d6adfb2e947aa045cf74f1a5c5, type: 2}
+  - learn_level: 43
+    name: {fileID: 11400000, guid: 1780899c17e6ce742950b4a2c2840c09, type: 2}
+  types:
+  - {fileID: 11400000, guid: 86937549e4613db4cb25e915c753dc2e, type: 2}
+  - {fileID: 11400000, guid: e3b39be3fcac2974c9f569113a83f7e3, type: 2}
+  evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: 54ea580a0f13ae74ca0b18cae46def0f, type: 3}
+    frontDefault: {fileID: 21300000, guid: e73f66f7b13d04c4ba5de6917f18904d, type: 3}

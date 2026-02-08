@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 107. hitmonchan
+  m_EditorClassIdentifier: 
+  id: 107
+  name: hitmonchan
+  description: "While apparently doing nothing, it fires punches in\flightning fast
+    volleys that are impossible to see."
+  base_stats:
+    hp: 50
+    attack: 105
+    defense: 79
+    special_attack: 35
+    special_defense: 110
+    speed: 76
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 962b709451b5fe949ad1b2a72182339e, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 96f1172dd091a024b8a6a8d2da929129, type: 2}
+  - learn_level: 33
+    name: {fileID: 11400000, guid: 270c30cc9114b064da7e74954ebcdc0d, type: 2}
+  - learn_level: 38
+    name: {fileID: 11400000, guid: c5a50d6eb381b804ab324acc0c5deab1, type: 2}
+  - learn_level: 43
+    name: {fileID: 11400000, guid: 46c014eff9e50b9478a63c5804cb3a7c, type: 2}
+  - learn_level: 48
+    name: {fileID: 11400000, guid: 43ea0d3dabbc70840a0fadac70c0df80, type: 2}
+  - learn_level: 53
+    name: {fileID: 11400000, guid: 255bb8ee33b47e94f95e89fa474573a3, type: 2}
+  types:
+  - {fileID: 11400000, guid: 642efe96ee9dc644e87c1119e24481e6, type: 2}
+  evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: da23a16b0de7b8a4280ad646fd3f389a, type: 3}
+    frontDefault: {fileID: 21300000, guid: 495fd449fcfcfa043a285b4f128a0491, type: 3}

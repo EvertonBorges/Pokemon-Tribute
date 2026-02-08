@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 89. muk
+  m_EditorClassIdentifier: 
+  id: 89
+  name: muk
+  description: "Thickly covered with a filthy, vile sludge. It\fis so toxic, even
+    its footprints contain poison."
+  base_stats:
+    hp: 105
+    attack: 105
+    defense: 75
+    special_attack: 65
+    special_defense: 100
+    speed: 50
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 61e343ba183f1074399975f5a3442e1d, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: 012fb6183adfb4f4e9c4ccbed9e738c6, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: b9497bec049c9f242b3bfd8c87164874, type: 2}
+  - learn_level: 33
+    name: {fileID: 11400000, guid: 837a8652b67e1b44ba341b97537639d0, type: 2}
+  - learn_level: 37
+    name: {fileID: 11400000, guid: 90c8bda4e5dbe4945a53b0b28cc0a345, type: 2}
+  - learn_level: 45
+    name: {fileID: 11400000, guid: 8e77520f61e8dd74b9cc1e1bf712caa3, type: 2}
+  - learn_level: 53
+    name: {fileID: 11400000, guid: 0f3cb4d7bb4f1eb46a8545a1a585ed3d, type: 2}
+  - learn_level: 60
+    name: {fileID: 11400000, guid: d74c9638f518d9c459b3bd3b728c95f1, type: 2}
+  types:
+  - {fileID: 11400000, guid: 86937549e4613db4cb25e915c753dc2e, type: 2}
+  evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: f5ffbc9314357aa44a8ac2b23593c986, type: 3}
+    frontDefault: {fileID: 21300000, guid: ccc8a9d7df4bd954a807139902be13d1, type: 3}

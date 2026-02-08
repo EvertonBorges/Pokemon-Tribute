@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95262036971032b48bcbeb471345b4ba, type: 3}
+  m_Name: 122. mr-mime
+  m_EditorClassIdentifier: 
+  id: 122
+  name: mr-mime
+  description: "If interrupted while it is miming, it will\fslap around the offender
+    with its broad hands."
+  base_stats:
+    hp: 40
+    attack: 45
+    defense: 65
+    special_attack: 100
+    special_defense: 120
+    speed: 90
+  moves:
+  - learn_level: 1
+    name: {fileID: 11400000, guid: bcc93c844a64f4f4e9f15df9952f5f73, type: 2}
+  - learn_level: 1
+    name: {fileID: 11400000, guid: e153beaaf426bf649a29f6b1e18f303b, type: 2}
+  - learn_level: 23
+    name: {fileID: 11400000, guid: 1a907d44e6fe9da4791798e992ab53e2, type: 2}
+  - learn_level: 31
+    name: {fileID: 11400000, guid: 7162343556e0f7d488b520db4c77f2a3, type: 2}
+  - learn_level: 39
+    name: {fileID: 11400000, guid: 8c39d975566c15a448f136bdc6c96bc5, type: 2}
+  - learn_level: 47
+    name: {fileID: 11400000, guid: 7941e5513de1e0847ad60b444f5ab5c8, type: 2}
+  types:
+  - {fileID: 11400000, guid: f18070f1d70e9f14aac1240b2f4370bd, type: 2}
+  evolve_to: []
+  sprites:
+    backDefault: {fileID: 21300000, guid: a88879ebe21494340ae2921501b3bb58, type: 3}
+    frontDefault: {fileID: 21300000, guid: 2e96faf587751a8438351a06d076514b, type: 3}
