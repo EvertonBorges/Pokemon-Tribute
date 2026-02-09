@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64502c98f51de9446987deb0e9d99388, type: 3}
+  m_Name: SO_GrassPokemons_Route_22
+  m_EditorClassIdentifier: Assembly-CSharp::SO_GrassPokemons
+  <Pokemons>k__BackingField:
+    _serializedList:
+    - Key: {fileID: 11400000, guid: 8d20c851b2730544cb636f097ea0257a, type: 2}
+      Value:
+        rate: 45
+        minMaxLevel: {x: 2, y: 4}
+    - Key: {fileID: 11400000, guid: 3d71e32144546e742b395b4f770a8e32, type: 2}
+      Value:
+        rate: 10
+        minMaxLevel: {x: 3, y: 5}
+    - Key: {fileID: 11400000, guid: 4f8bbb79cd02afa4cb593fc2c1656e1c, type: 2}
+      Value:
+        rate: 5
+        minMaxLevel: {x: 3, y: 4}
+    - Key: {fileID: 11400000, guid: 522cbe9cf50f4b9488e98cdb23640863, type: 2}
+      Value:
+        rate: 40
+        minMaxLevel: {x: 2, y: 4}

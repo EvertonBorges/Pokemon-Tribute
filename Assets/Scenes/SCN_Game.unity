@@ -3654,6 +3654,7 @@ GameObject:
   - component: {fileID: 695927487}
   - component: {fileID: 695927486}
   - component: {fileID: 695927488}
+  - component: {fileID: 695927489}
   m_Layer: 0
   m_Name: Grass_Route_01
   m_TagString: Untagged
@@ -6688,6 +6689,20 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!114 &695927489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695927484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85bfd2a40c0a63e439b1849909951861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Grass
+  _pokemons: {fileID: 11400000, guid: a09ba8831d0beca4a9ee7ea1dcb28044, type: 2}
+  _encounterRate: 35
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -83967,6 +83982,7 @@ GameObject:
   - component: {fileID: 1530878858}
   - component: {fileID: 1530878857}
   - component: {fileID: 1530878859}
+  - component: {fileID: 1530878860}
   m_Layer: 0
   m_Name: Grass_Route_02
   m_TagString: Untagged
@@ -84985,6 +85001,20 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!114 &1530878860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530878855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85bfd2a40c0a63e439b1849909951861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Grass
+  _pokemons: {fileID: 0}
+  _encounterRate: 35
 --- !u!1001 &1534061204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85180,6 +85210,7 @@ GameObject:
   - component: {fileID: 1676494100}
   - component: {fileID: 1676494099}
   - component: {fileID: 1676494101}
+  - component: {fileID: 1676494102}
   m_Layer: 0
   m_Name: Grass_Route_22
   m_TagString: Untagged
@@ -85758,6 +85789,20 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!114 &1676494102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676494097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85bfd2a40c0a63e439b1849909951861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Grass
+  _pokemons: {fileID: 11400000, guid: cffdc38afe3a24e47889440507986813, type: 2}
+  _encounterRate: 35
 --- !u!1 &1685628629
 GameObject:
   m_ObjectHideFlags: 0
@@ -126176,10 +126221,6 @@ PrefabInstance:
     - target: {fileID: 2398207653226645373, guid: 55bc8e856fc68d247a60f7d6fc752c65, type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2398207653226645373, guid: 55bc8e856fc68d247a60f7d6fc752c65, type: 3}
-      propertyPath: m_RootOrder
-      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2398207653226645373, guid: 55bc8e856fc68d247a60f7d6fc752c65, type: 3}
       propertyPath: m_AnchorMax.x

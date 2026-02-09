@@ -121,6 +121,8 @@ public class PlayerController : MonoBehaviour
 
         _animator.SetState(CharacterEnumState.IDLE);
 
+        Manager_Events.Player.Events.OnMove.Notify();
+
         transform.position = to;
 
         var collider = Physics2D.OverlapPoint(to, _doorLayerMask);
@@ -184,7 +186,7 @@ public class PlayerController : MonoBehaviour
         Manager_Events.Player.OnTeleport += Teleport;
         Manager_Events.Player.OnRotate += Rotate;
 
-        Manager_Events.Player.OnMovement += OnMovement;
+        Manager_Events.Player.OnMove += OnMovement;
         Manager_Events.Player.OnButtonA += OnButtonA;
         Manager_Events.Player.OnButtonB += OnButtonB;
         Manager_Events.Player.OnButtonPause += OnButtonPause;
@@ -196,7 +198,7 @@ public class PlayerController : MonoBehaviour
         Manager_Events.Player.OnTeleport -= Teleport;
         Manager_Events.Player.OnRotate -= Rotate;
 
-        Manager_Events.Player.OnMovement -= OnMovement;
+        Manager_Events.Player.OnMove -= OnMovement;
         Manager_Events.Player.OnButtonA -= OnButtonA;
         Manager_Events.Player.OnButtonB -= OnButtonB;
         Manager_Events.Player.OnButtonPause -= OnButtonPause;

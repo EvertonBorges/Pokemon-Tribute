@@ -24,11 +24,16 @@ public static class Manager_Events
         public static Event<Vector2> OnTeleport;
         public static Event<Vector2> OnRotate;
 
-        public static Event<Vector2> OnMovement;
+        public static Event<Vector2> OnMove;
         public static Event OnButtonA;
         public static Event OnButtonB;
         public static Event OnButtonPause;
         public static Event OnButtonSelect;
+
+        public static class Events
+        {
+            public static Event OnMove;
+        }
     }
 
     public static class Battle

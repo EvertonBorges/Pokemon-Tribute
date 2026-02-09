@@ -16,7 +16,7 @@ public static class Manager_Input
         inputActions = new InputActions();
         gameplayActions = inputActions.Gameplay;
 
-        gameplayActions.Movement.performed += ctx => Manager_Events.Player.OnMovement.Notify(ctx.ReadValue<Vector2>());
+        gameplayActions.Movement.performed += ctx => Manager_Events.Player.OnMove.Notify(ctx.ReadValue<Vector2>());
 
         gameplayActions.ButtonPause.performed += ctx => Manager_Events.Player.OnButtonPause.Notify();
         gameplayActions.ButtonSelect.performed += ctx => Manager_Events.Player.OnButtonSelect.Notify();
